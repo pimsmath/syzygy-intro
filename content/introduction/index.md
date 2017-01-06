@@ -22,6 +22,5 @@ If you have a Jupyter server \(such as XXX.syzygy.ca\) you may clone a github re
 ```
 git clone https://github.com/mlamoureux/UsingSyzygy.git
 ```
-&copy; 2016 Michael Lamoureux
 
 ![Pims logo](http://media.pims.math.ca/logos/webhorizfulllarge.png)
