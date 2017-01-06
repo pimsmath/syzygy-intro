@@ -22,7 +22,7 @@ Code samples for the book can be launched on Binder. Click here:
 If you have a Jupyter server \(such as XXX.syzygy.ca\) you may clone a github repository of all the code in this book using this command from your Unix/bash shell:
 
 ```
-git clone https://github.com/mlamoureux/UsingSyzygy.git
+git clone https://github.com/pimsmath/syzygy-intro
 ```
 
 ![Pims logo](http://media.pims.math.ca/logos/webhorizfulllarge.png)
