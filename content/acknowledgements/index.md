@@ -4,7 +4,7 @@ title: "Acknowledgements"
 weight: 400
 ---
 
-This ebook was written by Michael Lamoureux. The site was built by James Colliander with [Hugo](https://www.gohugo.io/) using the [Material theme](http://github.com/digitalcraftsman/hugo-material-docs).
+This eBook was written by Michael Lamoureux. The site was built by James Colliander with [Hugo](https://www.gohugo.io/) using the [Material theme](http://github.com/digitalcraftsman/hugo-material-docs).
 
 The Syzygy service is brought to you by The Pacific Institute for the Mathematical Sciences in collaboration and on infrastructure from Compute Canada and Cybera.
 

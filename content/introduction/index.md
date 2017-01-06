@@ -6,11 +6,13 @@ weight: 10
 
 # Using Syzygy
 
-The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science \([https://www.pims.math.ca](https://www.pims.math.ca)\) and Compute Canada \([https://www.computecanada.ca](https://www.computecanada.ca)\).
+The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science \([https://www.pims.math.ca](https://www.pims.math.ca)\), Compute Canada \([https://www.computecanada.ca](https://www.computecanada.ca)\) and Cybera \([http://www.cybera.ca/](http://www.cybera.ca/)\).
 
 Syzygy is pronounced like the start of "Sizzle" -- sizz eh gee. It means the [alignment of three or more celestial objects](http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html). In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.
 
 ![syzygy-image](https://upload.wikimedia.org/wikipedia/commons/c/c2/Three_Planets_Dance_Over_La_Silla.jpg)
+(Image credit: [European Southern Observatory](https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg))
+
 
 This eBook is a brief introduction on how to use these computing tools.
 
