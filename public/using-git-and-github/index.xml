@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Using-git-and-github-rsses on Introduction to Syzygy</title>
+    <link>https://syzygy-intro.surge.sh/using-git-and-github/index.xml</link>
+    <description>Recent content in Using-git-and-github-rsses on Introduction to Syzygy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://syzygy-intro.surge.sh/using-git-and-github/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://syzygy-intro.surge.sh/using-git-and-github/using-git-and-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syzygy-intro.surge.sh/using-git-and-github/using-git-and-github/</guid>
+      <description>
+
+&lt;h1 id=&#34;using-git-and-github&#34;&gt;Using Git and Github&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is a Unix command used for sharing code and other computer files with colleagues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; is a popular place on the web to store your code and other computer files, either privately or for the whole world to see. These collections are organized into units (like folders) called repositories.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is also used for version control when working on a large computer project, where you need to keep track of changes in many different files, possibly written by many different people. Because &lt;strong&gt;Git&lt;/strong&gt; can be used for very complex projects, it is a very powerful tool.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s keep things simple here. The author of this book has a public &lt;strong&gt;Github&lt;/strong&gt; site, which has many repositories that he has created for various purposes. You are welcome to look at his public site here: &lt;a href=&#34;https://github.com/mlamoureux&#34;&gt;https://github.com/mlamoureux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a repository for the source code written for this eBook, you can look at it here: &lt;a href=&#34;https://github.com/mlamoureux/UsingSyzygy&#34;&gt;https://github.com/mlamoureux/UsingSyzygy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To make a copy of this repository on your syzygy.ca account, simply open a new Notebook (say, in Python) and enter the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%bash
+git clone https://github.com/mlamoureux/UsingSyzygy.git 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will make a new folder on your Jupyter Hub called &amp;ldquo;UsingSyzygy&amp;rdquo; that will have all the code inside that folder. You can now open those files and run the code in your server.&lt;/p&gt;
+
+&lt;p&gt;Now, as you get more experience with &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;Github&lt;/strong&gt;, you might like to clone some other people&amp;rsquo;s repositories and use their code. It is a good idea to keep your Jupyter Hub organized, so you can create a new folder, and clone the new stuff directly into that new folder. A series of Notebook commands to do this would look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%mkdir MyNewDirectory 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%cd MyNewDirectory
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%bash
+git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can find THE-USER-NAME and THE-REPOSITORY-NAME.git right on &lt;strong&gt;Github&lt;/strong&gt; when you are looking at someone&amp;rsquo;s repository. There is a button on the right, that says &amp;ldquo;Clone or download.&amp;rdquo; Click on &amp;ldquo;Clone or download&amp;rdquo; and request a &amp;ldquo;Clone with HTTPS.&amp;rdquo; You will then get the https address for the repo, which you can paste into the &lt;strong&gt;git clone&lt;/strong&gt; command above.&lt;/p&gt;
+
+&lt;p&gt;Of course, you can also do this in a terminal window (by opening &amp;ldquo;New Terminal&amp;rdquo; in the front page of your Jupyter server). But frankly, I hate the Unix terminal and its command line, so I would naturally advise you to be like me and just avoid Unix.  Use the Notebook directly. :-)&lt;/p&gt;
+
+&lt;p&gt;Some details on cloning &lt;strong&gt;Github&lt;/strong&gt; repos are here:
+&lt;a href=&#34;https://help.github.com/articles/cloning-a-repository/&#34;&gt;https://help.github.com/articles/cloning-a-repository/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IMPORTANT NOTE: If you are cloning from a PRIVATE repo on &lt;strong&gt;Github&lt;/strong&gt; you will need to do it from the Unix terminal, as the server will ask you for a username and password (to ensure that you really have access to that private repo).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Git and GitHub</title>
+      <link>https://syzygy-intro.surge.sh/using-git-and-github/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://syzygy-intro.surge.sh/using-git-and-github/</guid>
+      <description>
+
+&lt;h2 id=&#34;using-git-and-github&#34;&gt;Using Git and Github&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is a Unix command used for sharing code and other computer files with colleagues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; is a popular place on the web to store your code and other computer files, either privately or for the whole world to see. These collections are organized into units (like folders) called repositories.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; is also used for version control when working on a large computer project, where you need to keep track of changes in many different files, possibly written by many different people. Because &lt;strong&gt;Git&lt;/strong&gt; can be used for very complex projects, it is a very powerful tool.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s keep things simple here. The author of this book has a public &lt;strong&gt;Github&lt;/strong&gt; site, which has many repositories that he has created for various purposes. You are welcome to look at his public site here: &lt;a href=&#34;https://github.com/mlamoureux&#34;&gt;https://github.com/mlamoureux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a repository for the source code written for this eBook, you can look at it here: &lt;a href=&#34;https://github.com/mlamoureux/UsingSyzygy&#34;&gt;https://github.com/mlamoureux/UsingSyzygy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To make a copy of this repository on your syzygy.ca account, simply open a new Notebook (say, in Python) and enter the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%bash
+git clone https://github.com/mlamoureux/UsingSyzygy.git 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will make a new folder on your Jupyter Hub called &amp;ldquo;UsingSyzygy&amp;rdquo; that will have all the code inside that folder. You can now open those files and run the code in your server.&lt;/p&gt;
+
+&lt;p&gt;Now, as you get more experience with &lt;strong&gt;Git&lt;/strong&gt; and &lt;strong&gt;Github&lt;/strong&gt;, you might like to clone some other people&amp;rsquo;s repositories and use their code. It is a good idea to keep your Jupyter Hub organized, so you can create a new folder, and clone the new stuff directly into that new folder. A series of Notebook commands to do this would look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%mkdir MyNewDirectory 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%cd MyNewDirectory
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%bash
+git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can find THE-USER-NAME and THE-REPOSITORY-NAME.git right on &lt;strong&gt;Github&lt;/strong&gt; when you are looking at someone&amp;rsquo;s repository. There is a button on the right, that says &amp;ldquo;Clone or download.&amp;rdquo; Click on &amp;ldquo;Clone or download&amp;rdquo; and request a &amp;ldquo;Clone with HTTPS.&amp;rdquo; You will then get the https address for the repo, which you can paste into the &lt;strong&gt;git clone&lt;/strong&gt; command above.&lt;/p&gt;
+
+&lt;p&gt;Of course, you can also do this in a terminal window (by opening &amp;ldquo;New Terminal&amp;rdquo; in the front page of your Jupyter server). But frankly, I hate the Unix terminal and its command line, so I would naturally advise you to be like me and just avoid Unix.  Use the Notebook directly. :-)&lt;/p&gt;
+
+&lt;p&gt;Some details on cloning &lt;strong&gt;Github&lt;/strong&gt; repos are here:
+&lt;a href=&#34;https://help.github.com/articles/cloning-a-repository/&#34;&gt;https://help.github.com/articles/cloning-a-repository/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IMPORTANT NOTE: If you are cloning from a PRIVATE repo on &lt;strong&gt;Github&lt;/strong&gt; you will need to do it from the Unix terminal, as the server will ask you for a username and password (to ensure that you really have access to that private repo).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
