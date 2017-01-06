@@ -1,7 +1,7 @@
 ---
 date: 2016-03-09T19:56:50+01:00
 title: "Using Git and GitHub"
-weight: 20
+weight: 70
 ---
 ## Using Git and Github
 

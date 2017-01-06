@@ -17,7 +17,7 @@ googleAnalytics = ""
 	provider = "GitHub"
 	repo_url = "https://github.com/pimsmath/syzygy-intro"
 
-	version = "0.0.3"
+	version = "0.0.4"
 	logo = ""
 	favicon = "/img/logos/favicon.ico"
 
@@ -45,10 +45,6 @@ googleAnalytics = ""
 	email   = "jupyter@pims.math.ca"
 
 
-[[menu.main]]
-	name   = ""
-	url    = "/"
-	weight = 0
 
 
 [[menu.main]]
@@ -60,12 +56,6 @@ googleAnalytics = ""
 	name   = "Getting Started"
 	url    = "getting-started/"
 	weight = 20
-
-[[menu.main]]
-	name   = "Adding content (THEME)"
-	url    = "adding-content/"
-	weight = 200
-
 
 
 [[menu.main]]

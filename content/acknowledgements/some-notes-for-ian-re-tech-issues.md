@@ -1,4 +1,8 @@
-
+---
+date: 2017-01-05T15:18:00-08:00
+title: "Notes for Ian"
+weight: 500
+---
 
 ##1. 
 On ubc.syzygy.ca, in Python 3, when I load in matplotlib, it takes too long as it builds fonts and such. Here is the warning I get:

@@ -1,7 +1,7 @@
 ---
 date: 2016-03-09T19:56:50+01:00
 title: "Unix Tricks"
-weight: 20
+weight: 60
 ---
 
 ## Unix tricks

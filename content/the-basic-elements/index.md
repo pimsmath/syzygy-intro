@@ -1,7 +1,7 @@
 ---
 date: 2016-03-09T19:56:50+01:00
 title: "The Basic Elements"
-weight: 20
+weight: 25
 ---
 
 The syzygy computing service is an implementation of the Jupyter Hub on dedicated hardware accessible over the web. There is a great deal of information about Jupyter available at the Jupyter project site, 
