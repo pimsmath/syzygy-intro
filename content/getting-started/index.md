@@ -10,7 +10,12 @@ We quickly show you how to log in, and a few other pointers.
 
 Click on the subsections to read further. 
 
+
 ## Logging In, and Browsers.
+
+<img src="/img/sfu-jupyter.png" alt="SFU login" 
+	width =300" align = "right">
+
 
 Log into the syzygy service by using your home university credentials. Currently, three sites are up and running:
 

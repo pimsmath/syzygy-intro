@@ -10,14 +10,14 @@ googleAnalytics = ""
 [params]
 	# General information
 	author = "Michael Lamoureux"
-	description = "A documentation site for the syzygy.ca service."
+	description = "An introduction syzygy.ca service."
 #	copyright = "Michael Lamoureux"
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/pimsmath/UsingSyzygy_files"
+	repo_url = "https://github.com/pimsmath/syzygy-intro"
 
-	version = "0.0.2"
+	version = "0.0.3"
 	logo = ""
 	favicon = "/img/logos/favicon.ico"
 

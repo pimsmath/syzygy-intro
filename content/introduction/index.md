@@ -22,46 +22,6 @@ If you have a Jupyter server \(such as XXX.syzygy.ca\) you may clone a github re
 ```
 git clone https://github.com/mlamoureux/UsingSyzygy.git
 ```
-
-December 2016. Copyright Michael Lamoureux
+&copy; 2016 Michael Lamoureux
 
 ![Pims logo](http://media.pims.math.ca/logos/webhorizfulllarge.png)
-
-# Summary
-
-* [Introduction](README.md)
-* [Getting Started](chapter1.md)
-    * [Logging In](logging-in.md)
-    * [Notebooks, terminals and Unix](unix-and-terminals.md)
-* [The Basic Elements](the-basic-elements.md)
-    * [Using the Hub](using-the-hub.md)
-    * [Using Notebooks](using-notebooks.md)
-    * [Pretty text and math in a Notebook](pretty-text-and-math-in-a-notebook.md)
-    * [Computing in a Notebook](computing-in-a-notebook.md)
-* [Python for Computing](using-python.md)
-    * [Python 2 or 3](python-2-or-3.md)
-    * [Plotting](P_Plotting.md)
-    * [Animating Plots](P_AnimatedPlots.md)
-    * [Scientific Computing](P_SciComp.md)
-    * [Data Analysis](P_Data_analysis.md)
-    * [Audio Generation](P_Audio.md)
-    * [YouTube](P_Youtube.md)
-    * [d3 and games](P_d3-play.md)
-* [Julia for Computing](using-julia.md)
-    * [Plotting with PyPlot](J_SimplePlots.md)
-    * [Plotting with Gadfly](J_Gadfly.md)
-    * [High res graphics into files](J_Graphics.md)
-    * [Animated Plots in Julia](J_Animation.md)
-    * [Seismic Julia Package](J_Seismic.md)
-    * [Animated Plots in Julia](animated-plots-in-julia.md)
-* [R for Computing](using-r.md)
-    * Simple plots
-    * Data analysis
-* [Unix Tricks](unix-tricks.md)
-    * [Moving files around](moving-files-around.md)
-    * [Unix in a Notebook](unix-in-a-notebook.md)
-    * [Magic in a Notebook](magic-in-a-notebook.md)
-* [Using Git and Github](using-git-and-github.md)
-* [Using Gitbook](using-gitbook.md)
-* Animated Plots in Julia
-

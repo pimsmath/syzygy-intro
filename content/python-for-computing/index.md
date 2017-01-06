@@ -22,7 +22,7 @@ How different are the two versions? Not much. The command 2/3 returns 0 in Pytho
 
 **Summary:** Use** Python 3**, please. 
 
-## Plotting in a Python notebook.
+## Plotting in a Python notebook
 
 Three things before you can plot. 
 
@@ -921,7 +921,7 @@ This was an exercise to  try out some resourse in Python. Specifically, we want 
 We take advantage of the fact that there is a lot of financial data freely accessible on the web, and lots of people post information about how to use it.
 
 
-## Pandas in Python
+### Pandas in Python
 
 ### How to access real data from the web and apply data analysis tools.
 
@@ -941,7 +941,7 @@ I will be using PYLAB as well in this section, so we can make use of NUMPY and M
 For free, historical data on commodities like Oil, you can try this site: http://www.databank.rbs.com
 This site will download data directly into spreadsheets for you, plot graphs of historical data, etc. Here is an example of oil prices (West Texas Intermdiate), over the last 15 years. Look how low it goes...
 
-![Image from RBS DataBank](RBS_graph.jpg)
+![Image from RBS DataBank](/img/RBS_graph.jpg)
 
 Yahoo supplies current stock and commodity prices. Here is an intereting site that tells you how to download loads of data into a csv file. 
 http://www.financialwisdomforum.org/gummy-stuff/Yahoo-data.htm
@@ -2082,10 +2082,13 @@ YouTubeVideo('kthi--SH2Nk')   # Counting to 100 in Cree
 
 We can use a resource called d3 to great very complex user interfaces in a Notebook.
 
-In this example,  a cluster of balls is created that moves around as the computer mouse chases the balls, as in the figure here.
+In this example,  a cluster of balls is created that moves around as the computer mouse chases the balls, as displayed here. Click the picture to interact with the example.
+
+<a href="/img/assets/P_d3_html.html">
+  <img src="/img/assets/Balls.png" alt="Chase the balls" >
+</a>
 
 
-![](/img/assets/Balls.png)
 
 This code was poached from here:  
 [https://github.com/skariel/IPython_d3_js_demo/blob/master/d3_js_demo.ipynb](https://github.com/skariel/IPython_d3_js_demo/blob/master/d3_js_demo.ipynb)

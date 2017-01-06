@@ -132,7 +132,7 @@ to get a clickable link [GitHub](http://github.com)
 
 Use the dollar sign \$ to indicate the start and end of TeX code for your math.
 
-```python
+```
 Here is a basic integral: $\int \cos(x) dx = \sin(x)$
 ```
 Here is a basic integral: $$\int \cos(x) dx = 
@@ -140,7 +140,7 @@ Here is a basic integral: $$\int \cos(x) dx =
 
 ### Images
 
-```python
+```
 Here is some code to embed an image from the web:
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
