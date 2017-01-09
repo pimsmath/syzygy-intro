@@ -33,7 +33,7 @@ fi
 # Push source and build repos.
 echo "Pushing master and gh-pages branches to github"
 if ! git push origin master; then
-  echo "Failed to push master to origin!
+  echo "Failed to push master to origin!"
   exit
 fi
 if ! git subtree push --prefix=public ${REPO_PATH} gh-pages ; then

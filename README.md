@@ -27,8 +27,8 @@ Step 3 combines a few steps into one, it should
 
   a. Run `hugo` to update the contents of the ./public directory
   b. `git commit -A` your changes on the master branch
-  c. push the master branch to github
-  d. push the gh-pages branch (./public directory) to github
+  c. push the master branch to github.com
+  d. push the gh-pages branch (./public directory) to github.com
 
 Once the last step is completed the changes should be publicly visible on
 intro.syzygy.ca.
