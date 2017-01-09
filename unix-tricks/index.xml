@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unix-tricks on Introduction to Syzygy</title>
+    <link>http://intro.syzygy.ca/unix-tricks/index.xml</link>
+    <description>Recent content in Unix-tricks on Introduction to Syzygy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Mar 2016 19:56:50 +0100</lastBuildDate>
+    <atom:link href="http://intro.syzygy.ca/unix-tricks/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unix Tricks</title>
+      <link>http://intro.syzygy.ca/unix-tricks/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>http://intro.syzygy.ca/unix-tricks/</guid>
+      <description>
+
+&lt;h2 id=&#34;unix-tricks&#34;&gt;Unix tricks&lt;/h2&gt;
+
+&lt;p&gt;In the background, Jupyter Hub runs on Unix, and you can access the Unix bash shell to do all your Unix magic from the command line. Just open a new &amp;ldquo;terminal&amp;rdquo; from the front page of your Jupyter server.&lt;/p&gt;
+
+&lt;p&gt;However, I am not a big Unix fan. I prefer to point and click. So here are a few tricks I&amp;rsquo;ve learned to avoid the terminal commands.&lt;/p&gt;
+
+&lt;h2 id=&#34;unix-and-magic-in-a-notebook&#34;&gt;Unix and Magic in a Notebook.&lt;/h2&gt;
+
+&lt;p&gt;While running a Jupyter Notebook, you can access many Unix commands directly, without opening a terminal window.&lt;/p&gt;
+
+&lt;p&gt;These are called &amp;ldquo;magic&amp;rdquo; commands and always start with the percent sign %.&lt;/p&gt;
+
+&lt;p&gt;Here are a few familiar Unix commands you might find useful:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;%ls &amp;ndash; to list all files in the current directory&lt;/li&gt;
+&lt;li&gt;%cd &amp;ndash; to see the name of your current directory&lt;/li&gt;
+&lt;li&gt;%cd dirname - to change directory (enter the name of the directory you want)&lt;/li&gt;
+&lt;li&gt;%cp oldfile newfile &amp;ndash; to copy the oldfile onto a newfile&lt;/li&gt;
+&lt;li&gt;%rm filename &amp;ndash; to remove (delete) the file named &amp;ldquo;filename&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thankfully, you can move all around the directory tree using these magic commands. So for instance, you might want to copy a file from Directory1 into Directory2. You would use a command like this:
+- %cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename&lt;/p&gt;
+
+&lt;p&gt;Where &amp;ldquo;myusername&amp;rdquo; is whatever the Jupyter server has called your account. Use the %cd command to see the path name that includes your user name.&lt;/p&gt;
+
+&lt;p&gt;To see all possible magic commands available in a Jupyter notebook, type the (magic) command
+- %lsmagic&lt;/p&gt;
+
+&lt;p&gt;With a double percentage sign %% you signal to Jupyter that the whole cell is to be interpreted accordingly. For instance a cell like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%latex
+\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;tells the notebook to read the whole cell as latex code, and render it accordingly.&lt;/p&gt;
+
+&lt;p&gt;A good reference to what all these magic commands can do is here: &lt;a href=&#34;https://ipython.org/ipython-doc/3/interactive/magics.html&#34;&gt;https://ipython.org/ipython-doc/3/interactive/magics.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;magic-in-a-notebook&#34;&gt;Magic in a Notebook&lt;/h2&gt;
+
+&lt;p&gt;In the last section, we discussed how to access Unix commands from the Jupyter Notebook. The keyis to use &amp;ldquo;magic&amp;rdquo; commands, that start with a percentage sign %.&lt;/p&gt;
+
+&lt;p&gt;There are many more magic commands available. To see all possible magic commands available in a Jupyter notebook, type the (magic) command
+- %lsmagic&lt;/p&gt;
+
+&lt;p&gt;A good reference to what all these magic commands can do is here: &lt;a href=&#34;https://ipython.org/ipython-doc/3/interactive/magics.html&#34;&gt;https://ipython.org/ipython-doc/3/interactive/magics.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With a double percentage sign %% you signal to Jupyter that the whole cell is to be interpreted accordingly. For instance a cell like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%latex
+\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;tells the notebook to read the whole cell as latex code, and render it accordingly.&lt;/p&gt;
+
+&lt;p&gt;There are similar commands for creating cells with HTML code, Ruby, Perl, JavaScript, etc etc.&lt;/p&gt;
+
+&lt;p&gt;(Maybe I will give a few examples here too.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
