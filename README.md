@@ -32,11 +32,3 @@ Step 3 combines a few steps into one, it should
 
 Once the last step is completed the changes should be publicly visible on
 intro.syzygy.ca.
-You should work in the master branch, making changes to markdown posts under
-content etc. and you can preview your work with the usual hugo commands (e.g.
-`hugo server`. Once you are happy with your changes locally, you should build
-the static files under public (by running `hugo`) and then commit your changes
-into the master branch. At this stage you should be ready to publish the content
-under ./public at intro.syzygy.ca to do this, we push the changes in the master
-branch to github, then push the subtree (./public) to the gh-pages branch on
-github. The final 

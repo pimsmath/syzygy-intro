@@ -1,4 +1,7 @@
 #!/bin/bash
+set -x
+REPO_PATH="https://github.com/pimsmath/syzygy-intro.git"
+
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 if [ $# -eq 1 ]
