@@ -31,4 +31,4 @@ Step 3 combines a few steps into one, it should
   d. push the gh-pages branch (./public directory) to github.com
 
 Once the last step is completed the changes should be publicly visible on
-intro.syzygy.ca.
+intro.syzygy.ca
