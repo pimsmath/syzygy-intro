@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 REPO_PATH="https://github.com/pimsmath/syzygy-intro.git"
 
 
