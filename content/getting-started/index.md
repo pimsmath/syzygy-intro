@@ -17,17 +17,21 @@ Click on the subsections to read further.
 	width =300" align = "right">
 
 
-Log into the syzygy service by using your home university credentials. Currently, three sites are up and running:
+Log into the syzygy service by using your home university credentials or Google credentials. Currently, four sites are up and running:
 
-* https://sfu.syzygy.ca    Simon Fraser University
-* https://ucalgary.syzygy.ca  University of Calgary
-* https://ubc.syzygy.ca University of British Columbia
+* [https://cybera.syzygy.ca](https://cybera.syzygy.ca) Cybera (via Google Authentication)
+* [https://sfu.syzygy.ca](https://sfu.syzygy.ca)    Simon Fraser University
+* [https://ubc.syzygy.ca](https://ubc.syzygy.ca) University of British Columbia
+* [https://ucalgary.syzygy.ca](https://ucalgary.syzygy.ca)  University of Calgary
 
 Your "university credentials" will be something like your campus-wide login ID, student or employee number, etc. You will also need to enter the password connected to your campus-wide login ID or number. This information is held privately by your university IT group, so privacy is assured by your university. 
+
+Anyone with Google credentials can use [https://cybera.syzygy.ca](https://cybera.syzygy.ca) for research, learning or innovation (including post secondary institutions, K-12 and business incubators).
 
 You can use any web browser that you like. However, some experience suggests the following:
 - Firefox is better at rendering math formulas, but cut/copy/paste does not work in the terminal.
 - Chrome is better at cut/copy/paste in the terminal, important when using GIT, for instance.
+- Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons. 
 
 
