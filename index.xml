@@ -10,6 +10,37 @@
     <atom:link href="http://intro.syzygy.ca/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Introduction</title>
+      <link>http://intro.syzygy.ca/introduction/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>http://intro.syzygy.ca/introduction/</guid>
+      <description>
+
+&lt;h1 id=&#34;using-syzygy&#34;&gt;Using Syzygy&lt;/h1&gt;
+
+&lt;p&gt;The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science (&lt;a href=&#34;https://www.pims.math.ca&#34;&gt;https://www.pims.math.ca&lt;/a&gt;), Compute Canada (&lt;a href=&#34;https://www.computecanada.ca&#34;&gt;https://www.computecanada.ca&lt;/a&gt;) and Cybera (&lt;a href=&#34;http://www.cybera.ca/&#34;&gt;http://www.cybera.ca/&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Syzygy is pronounced like the start of &amp;ldquo;Sizzle&amp;rdquo; &amp;ndash; sizz eh gee. It means the &lt;a href=&#34;http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html&#34;&gt;alignment of three or more celestial objects&lt;/a&gt;. In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/c/c2/Three_Planets_Dance_Over_La_Silla.jpg&#34; alt=&#34;syzygy-image&#34; /&gt;
+(Image credit: &lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg&#34;&gt;European Southern Observatory&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;This eBook is a brief introduction on how to use these computing tools.&lt;/p&gt;
+
+&lt;p&gt;Code samples for the book can be launched on Binder. Click here:&lt;br /&gt;
+&lt;a href=&#34;http://mybinder.org:/repo/mlamoureux/usingsyzygy&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have a Jupyter server (such as XXX.syzygy.ca) you may clone a github repository of all the code in this book using this command from your Unix/bash shell:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/pimsmath/syzygy-intro
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://media.pims.math.ca/logos/webhorizfulllarge.png&#34; alt=&#34;Pims logo&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>http://intro.syzygy.ca/getting-started/</link>
       <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
@@ -28,19 +59,23 @@
 &lt;p&gt;&lt;img src=&#34;http://intro.syzygy.ca/img/sfu-jupyter.png&#34; alt=&#34;SFU login&#34; 
     width =300&#34; align = &#34;right&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Log into the syzygy service by using your home university credentials. Currently, three sites are up and running:&lt;/p&gt;
+&lt;p&gt;Log into the syzygy service by using your home university credentials or Google credentials. Currently, four sites are up and running:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybera.syzygy.ca&#34;&gt;https://cybera.syzygy.ca&lt;/a&gt; Cybera (via Google Authentication)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sfu.syzygy.ca&#34;&gt;https://sfu.syzygy.ca&lt;/a&gt;    Simon Fraser University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ucalgary.syzygy.ca&#34;&gt;https://ucalgary.syzygy.ca&lt;/a&gt;  University of Calgary&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ubc.syzygy.ca&#34;&gt;https://ubc.syzygy.ca&lt;/a&gt; University of British Columbia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ucalgary.syzygy.ca&#34;&gt;https://ucalgary.syzygy.ca&lt;/a&gt;  University of Calgary&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Your &amp;ldquo;university credentials&amp;rdquo; will be something like your campus-wide login ID, student or employee number, etc. You will also need to enter the password connected to your campus-wide login ID or number. This information is held privately by your university IT group, so privacy is assured by your university.&lt;/p&gt;
 
+&lt;p&gt;Anyone with Google credentials can use &lt;a href=&#34;https://cybera.syzygy.ca&#34;&gt;https://cybera.syzygy.ca&lt;/a&gt; for research, learning or innovation (including post secondary institutions, K-12 and business incubators).&lt;/p&gt;
+
 &lt;p&gt;You can use any web browser that you like. However, some experience suggests the following:
 - Firefox is better at rendering math formulas, but cut/copy/paste does not work in the terminal.
 - Chrome is better at cut/copy/paste in the terminal, important when using GIT, for instance.
+- Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons.&lt;/p&gt;
 
 &lt;h2 id=&#34;notebooks-terminals-and-unix&#34;&gt;Notebooks, terminals and Unix&lt;/h2&gt;
@@ -2967,168 +3002,6 @@ git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git
 &lt;img src=&#34;http://intro.syzygy.ca/img/logos/pims-horiz.png&#34; alt=&#34;PIMS logo&#34; width=500 height=&#34;&#34;&gt;
 &lt;img src=&#34;http://intro.syzygy.ca/img/logos/biligual-cc-web-logo-flat-white.png&#34; alt=&#34;Compute Canada logo&#34; width=500 height=&#34;&#34;&gt;
 &lt;img src=&#34;http://intro.syzygy.ca/img/logos/cybera-png-main.png&#34; alt=&#34;Cybera logo&#34; width=500 height=&#34;&#34;&gt; --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Summary</title>
-      <link>http://intro.syzygy.ca/introduction/SUMMARY/</link>
-      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
-      
-      <guid>http://intro.syzygy.ca/introduction/SUMMARY/</guid>
-      <description>
-
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;README.md&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;chapter1.md&#34;&gt;Getting Started&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;logging-in.md&#34;&gt;Logging In&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;unix-and-terminals.md&#34;&gt;Notebooks, terminals and Unix&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;the-basic-elements.md&#34;&gt;The Basic Elements&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;using-the-hub.md&#34;&gt;Using the Hub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-notebooks.md&#34;&gt;Using Notebooks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;pretty-text-and-math-in-a-notebook.md&#34;&gt;Pretty text and math in a Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;computing-in-a-notebook.md&#34;&gt;Computing in a Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-python.md&#34;&gt;Python for Computing&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;python-2-or-3.md&#34;&gt;Python 2 or 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_Plotting.md&#34;&gt;Plotting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_AnimatedPlots.md&#34;&gt;Animating Plots&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_SciComp.md&#34;&gt;Scientific Computing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_Data_analysis.md&#34;&gt;Data Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_Audio.md&#34;&gt;Audio Generation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_Youtube.md&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;P_d3-play.md&#34;&gt;d3 and games&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-julia.md&#34;&gt;Julia for Computing&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;J_SimplePlots.md&#34;&gt;Plotting with PyPlot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;J_Gadfly.md&#34;&gt;Plotting with Gadfly&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;J_Graphics.md&#34;&gt;High res graphics into files&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;J_Animation.md&#34;&gt;Animated Plots in Julia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;J_Seismic.md&#34;&gt;Seismic Julia Package&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;animated-plots-in-julia.md&#34;&gt;Animated Plots in Julia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-r.md&#34;&gt;R for Computing&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Simple plots&lt;/li&gt;
-&lt;li&gt;Data analysis&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;unix-tricks.md&#34;&gt;Unix Tricks&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;moving-files-around.md&#34;&gt;Moving files around&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;unix-in-a-notebook.md&#34;&gt;Unix in a Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;magic-in-a-notebook.md&#34;&gt;Magic in a Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-git-and-github.md&#34;&gt;Using Git and Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;using-gitbook.md&#34;&gt;Using Gitbook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Animated Plots in Julia&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Notes for Ian</title>
-      <link>http://intro.syzygy.ca/acknowledgements/some-notes-for-ian-re-tech-issues/</link>
-      <pubDate>Thu, 05 Jan 2017 15:18:00 -0800</pubDate>
-      
-      <guid>http://intro.syzygy.ca/acknowledgements/some-notes-for-ian-re-tech-issues/</guid>
-      <description>
-
-&lt;p&gt;##1.
-On ubc.syzygy.ca, in Python 3, when I load in matplotlib, it takes too long as it builds fonts and such. Here is the warning I get:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/opt/conda/lib/python3.5/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
-  warnings.warn(&#39;Matplotlib is building the font cache using fc-list. This may take a moment.&#39;)
-/opt/conda/lib/python3.5/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
-  warnings.warn(&#39;Matplotlib is building the font cache using fc-list. This may take a moment.&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;2&#34;&gt;2.&lt;/h2&gt;
-
-&lt;p&gt;In my file AnimatedPlots.ipyth, the code works fine on ubc.syzygy.ca but fails on mybinder.org
-It seems it cannot find the animator code there. Error message is this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;HTML(anim.to_html5_video())
-
----------------------------------------------------------------------------
-RuntimeError                              Traceback (most recent call last)
-&amp;lt;ipython-input-6-5114ccf53b4c&amp;gt; in &amp;lt;module&amp;gt;()
-----&amp;gt; 1 HTML(anim.to_html5_video())
-
-/home/main/anaconda2/envs/python3/lib/python3.5/site-packages/matplotlib/animation.py in to_html5_video(self)
-    977                 # We create a writer manually so that we can get the
-    978                 # appropriate size for the tag
---&amp;gt; 979                 Writer = writers[rcParams[&#39;animation.writer&#39;]]
-    980                 writer = Writer(codec=&#39;h264&#39;,
-    981                                 bitrate=rcParams[&#39;animation.bitrate&#39;],
-
-/home/main/anaconda2/envs/python3/lib/python3.5/site-packages/matplotlib/animation.py in __getitem__(self, name)
-     87     def __getitem__(self, name):
-     88         if not self.avail:
----&amp;gt; 89             raise RuntimeError(&amp;quot;No MovieWriters available!&amp;quot;)
-     90         return self.avail[name]
-     91 
-
-RuntimeError: No MovieWriters available!
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://intro.syzygy.ca/</link>
-      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
-      
-      <guid>http://intro.syzygy.ca/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>http://intro.syzygy.ca/introduction/</link>
-      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
-      
-      <guid>http://intro.syzygy.ca/introduction/</guid>
-      <description>
-
-&lt;h1 id=&#34;using-syzygy&#34;&gt;Using Syzygy&lt;/h1&gt;
-
-&lt;p&gt;The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science (&lt;a href=&#34;https://www.pims.math.ca&#34;&gt;https://www.pims.math.ca&lt;/a&gt;), Compute Canada (&lt;a href=&#34;https://www.computecanada.ca&#34;&gt;https://www.computecanada.ca&lt;/a&gt;) and Cybera (&lt;a href=&#34;http://www.cybera.ca/&#34;&gt;http://www.cybera.ca/&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Syzygy is pronounced like the start of &amp;ldquo;Sizzle&amp;rdquo; &amp;ndash; sizz eh gee. It means the &lt;a href=&#34;http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html&#34;&gt;alignment of three or more celestial objects&lt;/a&gt;. In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/c/c2/Three_Planets_Dance_Over_La_Silla.jpg&#34; alt=&#34;syzygy-image&#34; /&gt;
-(Image credit: &lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg&#34;&gt;European Southern Observatory&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;This eBook is a brief introduction on how to use these computing tools.&lt;/p&gt;
-
-&lt;p&gt;Code samples for the book can be launched on Binder. Click here:&lt;br /&gt;
-&lt;a href=&#34;http://mybinder.org:/repo/mlamoureux/usingsyzygy&#34;&gt;&lt;img src=&#34;http://mybinder.org/badge.svg&#34; alt=&#34;Binder&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have a Jupyter server (such as XXX.syzygy.ca) you may clone a github repository of all the code in this book using this command from your Unix/bash shell:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/pimsmath/syzygy-intro
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://media.pims.math.ca/logos/webhorizfulllarge.png&#34; alt=&#34;Pims logo&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://intro.syzygy.ca/introduction/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://intro.syzygy.ca/getting-started/</loc>
     <lastmod>2016-03-09T19:56:50+01:00</lastmod>
   </url>
@@ -39,26 +44,6 @@
   <url>
     <loc>http://intro.syzygy.ca/acknowledgements/</loc>
     <lastmod>2017-01-05T15:18:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://intro.syzygy.ca/introduction/SUMMARY/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://intro.syzygy.ca/acknowledgements/some-notes-for-ian-re-tech-issues/</loc>
-    <lastmod>2017-01-05T15:18:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://intro.syzygy.ca/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://intro.syzygy.ca/introduction/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
   </url>
   
   <url>

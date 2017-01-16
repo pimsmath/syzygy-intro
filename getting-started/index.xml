@@ -28,19 +28,23 @@
 &lt;p&gt;&lt;img src=&#34;http://intro.syzygy.ca/img/sfu-jupyter.png&#34; alt=&#34;SFU login&#34; 
     width =300&#34; align = &#34;right&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Log into the syzygy service by using your home university credentials. Currently, three sites are up and running:&lt;/p&gt;
+&lt;p&gt;Log into the syzygy service by using your home university credentials or Google credentials. Currently, four sites are up and running:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybera.syzygy.ca&#34;&gt;https://cybera.syzygy.ca&lt;/a&gt; Cybera (via Google Authentication)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sfu.syzygy.ca&#34;&gt;https://sfu.syzygy.ca&lt;/a&gt;    Simon Fraser University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ucalgary.syzygy.ca&#34;&gt;https://ucalgary.syzygy.ca&lt;/a&gt;  University of Calgary&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ubc.syzygy.ca&#34;&gt;https://ubc.syzygy.ca&lt;/a&gt; University of British Columbia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ucalgary.syzygy.ca&#34;&gt;https://ucalgary.syzygy.ca&lt;/a&gt;  University of Calgary&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Your &amp;ldquo;university credentials&amp;rdquo; will be something like your campus-wide login ID, student or employee number, etc. You will also need to enter the password connected to your campus-wide login ID or number. This information is held privately by your university IT group, so privacy is assured by your university.&lt;/p&gt;
 
+&lt;p&gt;Anyone with Google credentials can use &lt;a href=&#34;https://cybera.syzygy.ca&#34;&gt;https://cybera.syzygy.ca&lt;/a&gt; for research, learning or innovation (including post secondary institutions, K-12 and business incubators).&lt;/p&gt;
+
 &lt;p&gt;You can use any web browser that you like. However, some experience suggests the following:
 - Firefox is better at rendering math formulas, but cut/copy/paste does not work in the terminal.
 - Chrome is better at cut/copy/paste in the terminal, important when using GIT, for instance.
+- Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons.&lt;/p&gt;
 
 &lt;h2 id=&#34;notebooks-terminals-and-unix&#34;&gt;Notebooks, terminals and Unix&lt;/h2&gt;
