@@ -1,4 +1,4 @@
-baseurl = "http://intro.syzygy.ca/"
+baseurl = "http://syzygy-intro1.surge.sh/"
 languageCode = "en-us"
 title = "Introduction to Syzygy"
 theme = "hugo-material-docs"
@@ -11,27 +11,28 @@ googleAnalytics = ""
 	# General information
 	author = "Michael Lamoureux"
 	description = "An introduction syzygy.ca service."
-#	copyright = "Michael Lamoureux"
+	copyright = "Michael Lamoureux"
+    email = "jupyter@pims.math.ca"
 
 	# Repository
 	provider = "GitHub"
 	repo_url = "https://github.com/pimsmath/syzygy-intro"
 
-	version = "0.0.8"
+	version = "0.0.9"
 	logo = ""
 	favicon = "/img/logos/favicon.ico"
 
 	permalink = "#"
 
 	# Custom assets
-	custom_css = []
+	custom_css = ['static/application.css']
 	custom_js  = []
 
 	# Syntax highlighting theme
 	highlight_css  = ""
 
 	[params.palette]
-    	primary = "purple"
+    	primary = "indigo"
     	accent  = "orange"
 
     [params.font]
@@ -44,12 +45,9 @@ googleAnalytics = ""
 	github  = "pimsmath"
 	email   = "jupyter@pims.math.ca"
 
-
-
-
 [[menu.main]]
-	name   = "Introduction"
-	url    = "introduction/"
+	name   = "Front"
+	url    = "/"
 	weight = 10
 
 [[menu.main]]
@@ -64,22 +62,22 @@ googleAnalytics = ""
 	weight = 30
 
 
-
 [[menu.main]]
 	name   = "Python for Computing"
 	url    = "python-for-computing/"
 	weight = 40
+
 
 [[menu.main]]
 	name   = "Julia for Computing"
 	url    = "julia-for-computing/"
 	weight = 50
 
+
 [[menu.main]]
 	name   = "R for Computing"
 	url    = "r-for-computing/"
 	weight = 60
-
 
 
 [[menu.main]]
@@ -88,17 +86,15 @@ googleAnalytics = ""
 	weight = 70
 
 
-
-
-
 [[menu.main]]
 	name   = "Using Git and GitHub"
 	url    = "using-git-and-github/"
 	weight = 80
 
-
-
-
+[[menu.main]]
+	name   = "Troubleshooting/FAQ"
+	url    = "troubleshooting/"
+	weight = 90
 
 [[menu.main]]
 	name   = "Acknowledgements"
