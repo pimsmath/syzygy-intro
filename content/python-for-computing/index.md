@@ -6,19 +6,33 @@ weight: 30
 
 ## Python for Computing
 
-There are many online resources for learning Python. A good place to start is the documentation provided by the Python Software Foundation, located here: https://www.python.org/doc/
+There are many online resources for learning Python. A good place to start is
+the documentation provided by the Python Software Foundation, located here:
+https://www.python.org/doc/
 
-This chapter focuses on how to use Python within a Jupyter notebook. Doing simple calculations in Python is very straightforward. However, once you try to do somethig complex, there are a few tricks to learn.  In particular,  how to get plots to appear in the notebook, how to do animations, and a few other niceties. 
+This chapter focuses on how to use Python within a Jupyter notebook. Doing
+simple calculations in Python is very straightforward. However, once you try to
+do something complex, there are a few tricks to learn.  In particular,  how to
+get plots to appear in the notebook, how to do animations, and a few other
+niceties. 
 
 ## Python 2 or 3
 
 Please use **Python 3**. That is the modern version of the language. 
 
-Many people recommend using Python 2 because some software libraries (particularly in scientific computing) have not been converted yet to the new version of Python. This can be a problem, but really, **Python 3** has been around for almost a decade (released in Dec 2008) so get with the game, folks!
+Many people recommend using Python 2 because some software libraries
+(particularly in scientific computing) have not been converted yet to the new
+version of Python. This can be a problem, but really, **Python 3** has been
+around for almost a decade (released in Dec 2008) so get with the game, folks!
 
-For the record, Apple's Mac OS X still is only equipped with Python 2. You can upgrade from the usual sources (e.g. Anaconda). This only makes a difference if you want to run your code locally.
+For the record, Apple's Mac OS X still is only equipped with Python 2. You can
+upgrade from the usual sources (e.g. Anaconda). This only makes a difference if
+you want to run your code locally.
 
-How different are the two versions? Not much. The command 2/3 returns 0 in Python 2 (integer division) while 2/3 returns .66666666666 in **Python 3** (floating point division). And printing is a bit different. And there is enough new, good stuff in **Python 3** that you really should use it
+How different are the two versions? Not much. The command 2/3 returns 0 in
+Python 2 (integer division) while 2/3 returns .66666666666 in **Python 3**
+(floating point division). And printing is a bit different. And there is enough
+new, good stuff in **Python 3** that you really should use it
 
 **Summary:** Use** Python 3**, please. 
 
@@ -26,9 +40,9 @@ How different are the two versions? Not much. The command 2/3 returns 0 in Pytho
 
 Three things before you can plot. 
 
-- you tell Jupyter that you want plots to appear inline
-- you load in numerical Python so you can deal with numerical arrays
-- you load in PyPlot to do your plotting. 
+  - you tell Jupyter that you want plots to appear inline
+  - you load in numerical Python so you can deal with numerical arrays
+  - you load in PyPlot to do your plotting. 
 
 This is done with the following code:
 
@@ -39,10 +53,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-You don't need to use the "as np" or the "as plt" but it helps to keep the namespace clean. So when you call functions like "sin" you need to say where it comes from, as in "np.sin"
+You don't need to use the "as np" or the "as plt" but it helps to keep the
+namespace clean. So when you call functions like "sin" you need to say where it
+comes from, as in "np.sin"
 
-Now, to plot a few numbers, you just call the plot function, with the numbers as an array:
-
+Now, to plot a few numbers, you just call the plot function, with the numbers as
+an array:
 
 ```python
 plt.plot([1,4,9,16,25])
@@ -51,7 +67,8 @@ plt.plot([1,4,9,16,25])
 ![png](/img/P_Poutput_3_1.png)
 
 
-You can plot a piece of the sine function in a similar manner, passing a list of numbers to the sin function:
+You can plot a piece of the sine function in a similar manner, passing a list of
+numbers to the `sin` function:
 
 
 ```python
@@ -74,22 +91,22 @@ plt.plot(x,y)
 
 ## Animating Plots
 
-We can use html5 for animation, as suggested in this web page: http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-notebooks/
+We can use html5 for animation, as suggested in this web page:
+http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-notebooks/
 
 This seems to be the modern way to do animation in Python. 
 
 
 
 First step is to initialize some things in Python.
-- we need %matplotlib inline to get things to plot right on the notebook
-- we need numpy for the math
-- se need matplotlib for plotting
-- we need animation from matplotlib, and HTML from iPython.display to show the animations
+
+  - we need %matplotlib inline to get things to plot right on the notebook
+  - we need numpy for the math
+  - we need matplotlib for plotting
+  - we need animation from matplotlib, and HTML from iPython.display to show the
+    animations
 
 We get all these with the following imports:
-
-
-
 
 ```python
 %matplotlib inline
@@ -101,13 +118,13 @@ from IPython.display import HTML
 
 We now have four steps to get an animated plot
 
-- set up the figure frame
-- define the initializing function
-- define the function that draws each frame of the animation
-- call the animator function, which creates all the frames and saves them for you
+  - set up the figure frame
+  - define the initializing function
+  - define the function that draws each frame of the animation
+  - call the animator function, which creates all the frames and saves them for
+    you
 
 Then we are ready to call "HTML" to display the animation.
-
 
 
 ```python
@@ -121,10 +138,7 @@ line, = ax.plot([], [], lw=2)
 # NOTE: THIS WILL DISPLAY JUST AN EMPTY BOX.
 ```
 
-
 ![png](/img/P_Aoutput_3_0.png)
-
-
 
 ```python
 # initialization function: plot the background of each frame
@@ -154,8 +168,6 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
 ```python
 HTML(anim.to_html5_video())
 ```
-
-
 
 
 <video width="600.0" height="400.0" controls autoplay loop>
@@ -899,7 +911,8 @@ AAAtaWxzdAAAACWpdG9vAAAAHWRhdGEAAAABAAAAAExhdmY1Ny40MS4xMDA=
 
 
 
- Anytime you need the animation, you can call it up at will, with the following code:
+ Anytime you need the animation, you can call it up at will, with the following
+ code:
 
 
 ```python
@@ -912,45 +925,58 @@ rc('animation', html='html5')
 
 ### A simple demo with pandas in Python
 
+This notebook is based on course notes from Lamoureux's course Math 651 at the
+University of Calgary, Winter 2016.
 
+This was an exercise to  try out some resource in Python. Specifically, we want
+to scrape some data from the web concerning stock prices, and display in a
+Panda. Then do some basic data analysis on the information.
 
-This notebook is based on course notes from Lamoureux's course Math 651 at the University of Calgary, Winter 2016.
-
-This was an exercise to  try out some resourse in Python. Specifically, we want to scrape some data from the web concerning stock prices, and display in a Panda. Then do some basic data analysis on the information.
-
-We take advantage of the fact that there is a lot of financial data freely accessible on the web, and lots of people post information about how to use it.
+We take advantage of the fact that there is a lot of financial data freely
+accessible on the web, and lots of people post information about how to use it.
 
 
 ### Pandas in Python
 
 ### How to access real data from the web and apply data analysis tools.
 
-I am using the book __Python for Data Analysis__ by Wes McKinney as a reference for this section.
+I am using the book __Python for Data Analysis__ by Wes McKinney as a reference
+for this section.
 
-The point of using Python for this is that a lot of people have created good code to do this. 
+The point of using Python for this is that a lot of people have created good
+code to do this. 
 
-The pandas name comes from Panel Data, an econometrics terms for multidimensional structured data sets, as well as from Python Data Analysis.
+The pandas name comes from Panel Data, an econometrics terms for
+multidimensional structured data sets, as well as from Python Data Analysis.
 
-The dataframe objects that appear in pandas originated in R. But apparently thery have more functionality in Python than in R. 
+The dataframe objects that appear in pandas originated in R. But apparently
+they have more functionality in Python than in R. 
 
-I will be using PYLAB as well in this section, so we can make use of NUMPY and MATPLOTLIB.
+I will be using PYLAB as well in this section, so we can make use of NUMPY and
+MATPLOTLIB.
 
 ### Accessing financial data
 
-
-For free, historical data on commodities like Oil, you can try this site: http://www.databank.rbs.com
-This site will download data directly into spreadsheets for you, plot graphs of historical data, etc. Here is an example of oil prices (West Texas Intermdiate), over the last 15 years. Look how low it goes...
+For free, historical data on commodities like Oil, you can try this site:
+http://www.databank.rbs.com This site will download data directly into
+spreadsheets for you, plot graphs of historical data, etc. Here is an example of
+oil prices (West Texas Intermediate), over the last 15 years. Look how low it
+goes...
 
 ![Image from RBS DataBank](/img/RBS_graph.jpg)
 
-Yahoo supplies current stock and commodity prices. Here is an intereting site that tells you how to download loads of data into a csv file. 
+Yahoo supplies current stock and commodity prices. Here is an interesting site
+that tells you how to download loads of data into a csv file. 
 http://www.financialwisdomforum.org/gummy-stuff/Yahoo-data.htm
 
-Here is another site that discusses accessing various financial data sources. http://quant.stackexchange.com/questions/141/what-data-sources-are-available-online
+Here is another site that discusses accessing various financial data sources.
+http://quant.stackexchange.com/questions/141/what-data-sources-are-available-online
 
 
 ### Loading data off the web
-To get away from the highly contentious issues of oil prices and political parties, let's look at some simple stock prices -- say Apple and Microsoft. We can import some basic webtools to get prices directly from Yahoo.
+To get away from the highly contentious issues of oil prices and political
+parties, let's look at some simple stock prices -- say Apple and Microsoft. We
+can import some basic webtools to get prices directly from Yahoo.
 
 
 
@@ -997,10 +1023,6 @@ plot(msft)
 
 ```python
 aapl
-
-```
-
-
 
 
     Date
@@ -1066,12 +1088,12 @@ aapl
     2016-06-14     97.459999
     2016-06-15     97.139999
     Name: Adj Close, dtype: float64
+```
 
 
 
-
+Let's look at the changes in the stock prices, normalized as a percentage
 ```python
-# Let's look at the changes in the stock prices, normalized as a percentage
 aapl_rets = aapl.pct_change()
 msft_rets = msft.pct_change()
 subplot(2,1,1)
@@ -1080,66 +1102,51 @@ subplot(2,1,2)
 plot(msft_rets)
 ```
 
-
-
-
-    [<matplotlib.lines.Line2D at 0x7fa2617a5990>]
-
-
-
-
 ![png](/img/output_6_1.png)
 
 
-
+Let's look at the correlation between these two series
 ```python
-# Let's look at the correlation between these two series
 pd.rolling_corr(aapl_rets, msft_rets, 250).plot()
-```
 
     /opt/conda/envs/python2/lib/python2.7/site-packages/ipykernel/__main__.py:2: FutureWarning: pd.rolling_corr is deprecated for Series and will be removed in a future version, replace with 
     	Series.rolling(window=250).corr(other=<Series>)
       from ipykernel import kernelapp as app
-
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fa262d44a10>
-
-
+```
 
 
 ![png](/img/output_7_2.png)
 
 
 ### Getting fancy.
-Now, we can use some more sophisticated statistical tools, like least squares regression. However, I had to do some work to get Python to recognize these items. But I didn't work too hard, I just followed the error messages.
+Now, we can use some more sophisticated statistical tools, like least squares
+regression. However, I had to do some work to get Python to recognize these
+items. But I didn't work too hard, I just followed the error messages.
 
-It became clear that I needed to go back to a terminal window to load in some packages. The two commands I had to type in were
-- pip install statsmodels
-- pip install patsy
+It became clear that I needed to go back to a terminal window to load in some
+packages. The two commands I had to type in were
 
-'pip' is an 'python installer package' that install packages of code onto your computer (or whatever machine is running your python). The two packages 'statsmodels' and 'patsy' are assorted statistical packages. I don't know much about them, but they are easy to find on the web.
+  - pip install statsmodels
+  - pip install patsy
+
+'pip' is an 'python installer package' that install packages of code onto your
+computer (or whatever machine is running your python). The two packages
+'statsmodels' and 'patsy' are assorted statistical packages. I don't know much
+about them, but they are easy to find on the web.
 
 
 ```python
 # We may also try a least square regression, also built in as a panda function
 model = pd.ols(y=aapl_rets, x={'MSFT': msft_rets},window=256)
 
-```
-
     /opt/conda/envs/python2/lib/python2.7/site-packages/ipykernel/__main__.py:2: FutureWarning: The pandas.stats.ols module is deprecated and will be removed in a future version. We refer to external packages like statsmodels, see some examples here: http://statsmodels.sourceforge.net/stable/regression.html
       from ipykernel import kernelapp as app
-
+```
 
 
 ```python
 model.beta
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1467,26 +1474,15 @@ model.beta
 </div>
 
 
-
-
 ```python
 model.beta['MSFT'].plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fa2617a5550>
-
-
-
-
 ![png](/img/output_11_1.png)
 
 
-
+Those two graphs looked similar. Let's plot them together
 ```python
-# Those two graphs looked similar. Let's plot them together
 subplot(2,1,1)
 pd.rolling_corr(aapl_rets, msft_rets, 250).plot()
 title('Rolling correlations')
@@ -1495,20 +1491,10 @@ model.beta['MSFT'].plot()
 title('Least squaresn model')
 
 
-```
-
     /opt/conda/envs/python2/lib/python2.7/site-packages/ipykernel/__main__.py:3: FutureWarning: pd.rolling_corr is deprecated for Series and will be removed in a future version, replace with 
     	Series.rolling(window=250).corr(other=<Series>)
       app.launch_new_instance()
-
-
-
-
-
-    <matplotlib.text.Text at 0x7fa24cf18d90>
-
-
-
+```
 
 ![png](/img/output_12_2.png)
 
@@ -1520,10 +1506,6 @@ There is all kinds of neat info on the web. Here is the SPY exchange-traded fund
 ```python
 px = web.get_data_yahoo('SPY')['Adj Close']*10
 px
-```
-
-
-
 
     Date
     2010-01-04     998.08658
@@ -1589,20 +1571,8 @@ px
     2016-06-15    2077.50000
     Name: Adj Close, dtype: float64
 
-
-
-
-```python
 plot(px)
 ```
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x7fa24ce5fa90>]
-
-
-
 
 ![png](/img/output_15_1.png)
 
@@ -1610,18 +1580,26 @@ plot(px)
 
 This is a sample of doing some real scientific computing in Python.
 
-We refer to some ideas in the book "Python for Scientists" by John M. Stewart. Specifically, we want to explore a numerical solver for ordinary differential equations \(ODEs\), called ODEint. This solver is based on _lsoda_, a Fortran package from Lawrence Livermore Labs that is a reliable workhorse for solving these difficult problems.
+We refer to some ideas in the book "Python for Scientists" by John M. Stewart.
+Specifically, we want to explore a numerical solver for ordinary differential
+equations \(ODEs\), called ODEint. This solver is based on _lsoda_, a Fortran
+package from Lawrence Livermore Labs that is a reliable workhorse for solving
+these difficult problems.
 
-We look at four different ODEs that are interesting, and numerically challenging. They are:
+We look at four different ODEs that are interesting, and numerically
+challenging. They are:
 
-* the harmonic oscillator \(or linear pendulum\)
-* the non-linear pendulum
-* the Lorenz equation, which is the model for chaotic behaviour
-* the van der Pols equation, which is an example of a stiff ODE with periodic behaviour.
+  * the harmonic oscillator \(or linear pendulum\)
+  * the non-linear pendulum
+  * the Lorenz equation, which is the model for chaotic behaviour
+  * the van der Pols equation, which is an example of a stiff ODE with periodic behaviour.
 
-We do some basic tests of an ODE numerical solver, to test its accuracy, and to consider whether our asymptotic analysis of a pendulum is any good.
+We do some basic tests of an ODE numerical solver, to test its accuracy, and to
+consider whether our asymptotic analysis of a pendulum is any good.
 
-As in previous examples, we must start with code to tell the Notebook to plot items inline, and load in packages to do numerical computations \(numpy\), scientific computation \(scipy\) and plotting \(matplotlib\).
+As in previous examples, we must start with code to tell the Notebook to plot
+items inline, and load in packages to do numerical computations \(numpy\),
+scientific computation \(scipy\) and plotting \(matplotlib\).
 
 ```python
 %matplotlib inline
@@ -1630,13 +1608,17 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint # This is the numerical solver
 ```
 
-We start with a second order linear equation, that has the usual harmonic oscillator solutions.
+We start with a second order linear equation, that has the usual harmonic
+oscillator solutions.
 
-$$ y''(t) + \omega^2 y(t) = 0, \qquad y(0) = 1, y'(0) = 0.$$
+$$ 
+y''(t) + \omega^2 y(t) = 0, \qquad y(0) = 1, y'(0) = 0.
+$$
 
-To put this into the numerical solver, we need to reformulate as a 2 dimensional, first order system:  
-$$\mathbf{y} = (y,y')^T, \qquad \mathbf{y}'(t) = (y', -\omega^2 y)^T.$$  
-Here is a simple code snippet that solves the problem numerically.
+To put this into the numerical solver, we need to reformulate as a 2
+dimensional, first order system:  $$\mathbf{y} = (y,y')^T, \qquad \mathbf{y}'(t)
+= (y', -\omega^2 y)^T.$$  Here is a simple code snippet that solves the problem
+numerically.
 
 ```python
 def rhs(Y,t,omega):  # this is the function of the right hand side of the ODE
@@ -1654,8 +1636,8 @@ plt.plot(t_arr,y,t_arr,ydot)
 
 ![png](/img/P_Soutput_3_1.png)
 
+Let's draw a phase portrait, plotting y and ydot together
 ```python
-# Let's draw a phase portrait, plotting y and ydot together
 plt.plot(y,ydot)
 plt.title("Solution curve when omega = %4g" % omega)
 plt.xlabel("y values")
@@ -1664,7 +1646,9 @@ plt.ylabel("ydot values")
 
 ![png](/img/P_Soutput_4_1.png)
 
-Now, I would like to test how accurate this numerical code is, by comparing the exact solution with the numerical solution. The exact solution is given by the initial values of y\_init, and omega, and involves cosines and sines.
+Now, I would like to test how accurate this numerical code is, by comparing the
+exact solution with the numerical solution. The exact solution is given by the
+initial values of y\_init, and omega, and involves cosines and sines.
 
 ```python
 t_arr=np.linspace(0,2*np.pi,101)
@@ -1679,16 +1663,18 @@ plt.plot(t_arr,y,t_arr,y_exact)
 
 ![png](/img/P_Soutput_6_1.png)
 
+We plot the difference
 ```python
-# We plot the difference
 plt.plot(t_arr,y-y_exact)
 ```
 
 ![png](/img/P_Soutput_7_1.png)
 
-So, in the test I did above, we see an error that oscillates and grows with time, getting to about size 2x 10^\(-7\). Which is single precision accuray.
+So, in the test I did above, we see an error that oscillates and grows with
+time, getting to about size 2x 10^\(-7\). Which is single precision accuracy.
 
-Now, apparently ODEint figures out good step sizes on its own. Let's try running the code again, with different number of steps in the t-variable.
+Now, apparently ODEint figures out good step sizes on its own. Let's try running
+the code again, with different number of steps in the t-variable.
 
 ```python
 numsteps=1000001  # adjust this parameter
@@ -1704,7 +1690,8 @@ plt.plot(t_arr,y-y_exact)
 
 ![png](/img/P_Soutput_9_1.png)
 
-Okay, I went up to one million steps, and the error only reduced to about 1.0x10^\(-7\). Not much of an improvement.
+Okay, I went up to one million steps, and the error only reduced to about
+1.0x10^\(-7\). Not much of an improvement.
 
 Let's try another experiment, where we go for a really long time. Say 100 time longer than the example above.
 
