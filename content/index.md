@@ -13,6 +13,8 @@ to use these computing tools.
   * [Get started](/getting-started/)
 
 ![Syzygy Astronomy](/img/syzygy.jpg)
+(Image credit: [European Southern
+Observatory](https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg))
 
 Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
 alignment of three or more celestial objects. In this book, it represents the

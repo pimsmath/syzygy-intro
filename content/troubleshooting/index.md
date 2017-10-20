@@ -1,7 +1,7 @@
 ---
 date: 2017-10-19T17:56:50+07:00
 title: "Troubleshooting"
-weight: 20
+weight: 80
 ---
 
 From time to time you might experience problems with the syzygy.ca service. The
