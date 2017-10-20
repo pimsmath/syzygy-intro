@@ -98,8 +98,8 @@ googleAnalytics = ""
     weight = 90
 
 [[menu.main]]
-    name   = "Acknowledegments"
-    url    = "acknowledegments/"
+    name   = "Acknowledgements"
+    url    = "acknowledgements/"
     weight = 100
 
 
