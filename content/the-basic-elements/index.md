@@ -61,10 +61,10 @@ Select a file listed in the Hub by clicking on the square box at the left of the
 file's name. You are then given the option to "rename" the file. Click on the
 rename button, and then enter one of the following:
 
-  - newname  -- to give the file the new name
-  - ../oldname -- to move the file up and out of the current folder, into the
+  - `newname`  -- to give the file the new name
+  - `../oldname` -- to move the file up and out of the current folder, into the
     previous forder
-  - foldername/oldname -- to move the file into the folder called "foldername."
+  - `foldername/oldname` -- to move the file into the folder called "foldername."
     This folder should already exist (because you created it earlier with a "new
     folder" command).
 

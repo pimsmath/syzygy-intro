@@ -59,7 +59,7 @@ your server (see above).
 
 The current default storage allocation for users is 1GB. If you find that you
 are getting out of storage messages or are unable to save files, you may have
-reached the quota. To recover from this, please email jupyter@pims.math.ca with
+reached the quota. To recover from this, please email <jupyter@pims.math.ca> with
 your username and the name of the server you are using.
 
 ## Missing Output
