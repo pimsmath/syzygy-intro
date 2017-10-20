@@ -8,9 +8,9 @@
   <head lang="en-us">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Getting Started - Introduction to Syzygy</title>
-    <meta name="generator" content="Hugo 0.18.1" />
+    <meta name="generator" content="Hugo 0.21-DEV" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
@@ -55,7 +55,7 @@
     
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700%7CUbuntu&#43;Mono">
     <style>
       body, input {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -66,12 +66,14 @@
     </style>
 
     
+    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
+    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
 
   </head>
-  <body class="palette-primary-purple palette-accent-orange">
+  <body class="palette-primary-indigo palette-accent-orange">
 
 
 
@@ -121,7 +123,7 @@
     </div>
     <div class="stretch">
       <div class="field">
-        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+        <input class="query" type="text" placeholder="Search" autocomplete="off" spellcheck>
       </div>
     </div>
     <div class="button button-reset" role="button" aria-label="Search">
@@ -129,6 +131,7 @@
     </div>
   </div>
 </nav>
+
 </header>
 
 <main class="main">
@@ -138,7 +141,7 @@
     <div class="banner">
       
       <div class="name">
-        <strong>Introduction to Syzygy <span class="version">0.0.8</span></strong>
+        <strong>Introduction to Syzygy <span class="version">0.0.9</span></strong>
         
           <br>
           pimsmath/syzygy-intro
@@ -180,9 +183,9 @@
 
 
 
-<a  title="Introduction" href="http://intro.syzygy.ca/introduction/">
+<a  title="Front" href="http://intro.syzygy.ca/">
 	
-	Introduction
+	Front
 </a>
 
 
@@ -327,6 +330,24 @@
 
 
 
+<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+	
+	Troubleshooting/FAQ
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
 <a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
 	
 	Acknowledgements
@@ -343,19 +364,29 @@
 
         
         <hr>
-        
+        <span class="section">The author</span>
         
         <ul>
           
-
+          <li>
+            <a href="https://twitter.com/pimsmath" target="_blank" title="@pimsmath on Twitter">
+              @pimsmath on Twitter
+            </a>
+          </li>
           
 
-         
+          
+          <li>
+            <a href="https://github.com/pimsmath" target="_blank" title="@pimsmath on GitHub">
+              @pimsmath on GitHub
+            </a>
+          </li>
+          
 
           
           <li>
             <a href="mailto:jupyter@pims.math.ca" title="Email of jupyter@pims.math.ca">
-              email: jupyter@pims.math.ca
+              Contact via email
             </a>
           </li>
           
@@ -374,8 +405,6 @@
 
 			
 
-<h2 id="getting-started">Getting started</h2>
-
 <p>We quickly show you how to log in, and a few other pointers.</p>
 
 <p>Click on the subsections to read further.</p>
@@ -385,18 +414,33 @@
 <p><img src="http://intro.syzygy.ca/img/sfu-jupyter.png" alt="SFU login" 
     width =300" align = "right"></p>
 
-<p>Log into the syzygy service by using your home university credentials or Google credentials. Currently, four sites are up and running:</p>
+<p>Log into the syzygy service by using your home university credentials or Google
+credentials. Currently, the following sites are up and running:</p>
 
 <ul>
-<li><a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> Cybera (via Google Authentication)</li>
-<li><a href="https://sfu.syzygy.ca">https://sfu.syzygy.ca</a>    Simon Fraser University</li>
+<li><a href="https://sfu.syzygy.ca">https://sfu.syzygy.ca</a> Simon Fraser University</li>
 <li><a href="https://ubc.syzygy.ca">https://ubc.syzygy.ca</a> University of British Columbia</li>
-<li><a href="https://ucalgary.syzygy.ca">https://ucalgary.syzygy.ca</a>  University of Calgary</li>
+<li><a href="https://ucalgary.syzygy.ca">https://ucalgary.syzygy.ca</a> University of
+Calgary</li>
+<li><a href="https://uleth.syzygy.ca">https://uleth.syzygy.ca</a> University of Lethbridge</li>
+<li><a href="https://usask.syzygy.ca">https://usask.syzygy.ca</a> University of Saskatchewan</li>
+<li><a href="https://utoronto.syzygy.ca">https://utoronto.syzygy.ca</a> University of Toronto</li>
+<li><a href="https://uvic.syzygy.ca">https://uvic.syzygy.ca</a> University of Victoria</li>
+<li><a href="https://uwaterloo.syzygy.ca">https://uwaterloo.syzygy.ca</a> University of Waterloo</li>
+<li><a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> Cybera (via Google Authentication)</li>
+<li><a href="https://pims.syzygy.ca">https://cybera.syzygy.ca</a> PIMS (via Google Authentication)</li>
 </ul>
 
-<p>Your &ldquo;university credentials&rdquo; will be something like your campus-wide login ID, student or employee number, etc. You will also need to enter the password connected to your campus-wide login ID or number. This information is held privately by your university IT group, so privacy is assured by your university.</p>
+<p>Your &ldquo;university credentials&rdquo; will be something like your campus-wide login ID,
+student or employee number, etc. You will also need to enter the password
+connected to your campus-wide login ID or number. This information is held
+privately by your university IT group, so privacy is assured by your university.</p>
 
-<p>Anyone with Google credentials can use <a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> for research, learning or innovation (including post secondary institutions, K-12 and business incubators).</p>
+<p>Anyone with Google credentials can use
+<a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> or
+<a href="https://pims.syzygy.ca">https://pims.syzygy.ca</a> for research, learning or
+innovation (including post secondary institutions, K-12 and business
+incubators).</p>
 
 <p>You can use any web browser that you like. However, some experience suggests the following:
 - Firefox is better at rendering math formulas, but cut/copy/paste does not work in the terminal.
@@ -404,49 +448,86 @@
 - Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons.</p>
 
+<p>Code samples for the book can also be launched on Binder: <a href="http://mybinder.org:/repo/mlamoureux/usingsyzygy"><img src="http://mybinder.org/badge.svg" alt="Binder" /></a></p>
+
 <h2 id="notebooks-terminals-and-unix">Notebooks, terminals and Unix</h2>
 
-<p>Once you&rsquo;ve logged in, the syzygy service will start a <strong>server</strong> for you, which is the computing service you are accessing. (If it doesn&rsquo;t start automatically, click on the &ldquo;Start Server&rdquo; button.) Once the server is running, you will be presented with a list of files and folders that exist in your account. This is called the Hub, and is a view like the Finder on a Mac, or the File Explorer on a Windows computer.</p>
+<p>Once you&rsquo;ve logged in, the syzygy service will start a <strong>server</strong> for you, which
+is the computing service you are accessing. (If it doesn&rsquo;t start automatically,
+click on the &ldquo;Start Server&rdquo; button.) Once the server is running, you will be
+presented with a list of files and folders that exist in your account. This is
+called the Hub, and is a view like the Finder on a Mac, or the File Explorer on
+a Windows computer.</p>
 
-<p>From this Hub, you can click on files and folders to open them, you can select them and take actions like renaming them, duplicating them, or removing them. Some of the files will have the suffix .ipynb, which stands for &ldquo;iPython Notebook.&rdquo; Despite the name, the Notebook might have nothing to do with Python &ndash; it is there for historical reasons.</p>
+<p>From this Hub, you can click on files and folders to open them, you can select
+them and take actions like renaming them, duplicating them, or removing them.
+Some of the files will have the suffix .ipynb, which stands for &ldquo;iPython
+Notebook.&rdquo; Despite the name, the Notebook might have nothing to do with Python
+&ndash; it is there for historical reasons.</p>
 
-<p>Notebooks are files containing formatted text, math formulas, and computer code. Most of the time you will be creating and working with Notebooks in syzygy,  Each Notebook has a collection of cells, which you create, edit and run.</p>
+<p>Notebooks are files containing formatted text, math formulas, and computer code.
+Most of the time you will be creating and working with Notebooks in syzygy,
+Each Notebook has a collection of cells, which you create, edit and run.</p>
 
-<p>So keep this as your focus for your work &ndash; you will work in Notebooks, and you will create pieces of text, math, and code to use.</p>
+<p>So keep this as your focus for your work &ndash; you will work in Notebooks, and you
+will create pieces of text, math, and code to use.</p>
 
-<p>However, sometimes you need to know that in the background of the Jupyter Hub is a Unix machine that does all the work. In the PIMS case, this is running on hardware from Compute Canada, or Cybera.</p>
+<p>However, sometimes you need to know that in the background of the Jupyter Hub is
+a Unix machine that does all the work. In the PIMS case, this is running on
+hardware from Compute Canada, or Cybera.</p>
 
-<p>To access the Unix shell, you can open a terminal from the Hub, and do all the usual Unix bash shell operations. You can&rsquo;t access superuser commands (sudo, etc.) but you can do just about everything else you like in Unix. If you are an experienced Unix user, feel free to open a terminal and browse around.</p>
+<p>To access the Unix shell, you can open a terminal from the Hub, and do all the
+usual Unix bash shell operations. You can&rsquo;t access superuser commands (sudo,
+etc.) but you can do just about everything else you like in Unix. If you are an
+experienced Unix user, feel free to open a terminal and browse around.</p>
 
-<p>Personally, I try to avoid using the Unix shell, but there are times when it is a must. (For instance, to install certain packages, or to access files on Github or on remote machinces.) There are notes on how to do this later in this book.</p>
+<p>Personally, I try to avoid using the Unix shell, but there are times when it is
+a must. (For instance, to install certain packages, or to access files on Github
+or on remote machinces.) There are notes on how to do this later in this book.</p>
 
 <h2 id="moving-files-around">Moving files around</h2>
 
-<p>At some point you will want to reorganize the many files and folders you have in your Jupyter Hub.</p>
+<p>At some point you will want to reorganize the many files and folders you have in
+your Jupyter Hub.</p>
 
-<p>If you like Unix, you can always open a new terminal and move files around using the &ldquo;mv&rdquo; or &ldquo;cp&rdquo; commands.</p>
+<p>If you like Unix, you can always open a new terminal and move files around using
+the &ldquo;mv&rdquo; or &ldquo;cp&rdquo; commands.</p>
 
 <p>If you want to avoid Unix, you can use the  Hub&rsquo;s naming system to move files around.</p>
 
-<p>Select a file in the Hub by clicking on the square box at the left of the file&rsquo;s name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the rename button, and then enter one of the following:
+<p>Select a file in the Hub by clicking on the square box at the left of the file&rsquo;s
+name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the rename
+button, and then enter one of the following:
 - newname  &ndash; to give the file the new name
-- ../oldname &ndash; to move the file up and out of the current folder, into the previous forlder
-- foldername/oldname &ndash; to move the file into the folder called &ldquo;foldername.&rdquo; This folder should already exist (because you created it earlier with a &ldquo;new folder&rdquo; command).</p>
+- ../oldname &ndash; to move the file up and out of the current folder, into the
+  previous forlder
+- foldername/oldname &ndash; to move the file into the folder called &ldquo;foldername.&rdquo;
+  This folder should already exist (because you created it earlier with a &ldquo;new
+  folder&rdquo; command).</p>
 
 <p>These renaming methods also work to move folders and their contents.</p>
 
-<p>To move across several branches in the directory tree, you need to know the full path name of your files and where they are to go. This means you need to find out the name of your root tree structure. A fast way to do this is to use the magic command %cd in a notebook.</p>
+<p>To move across several branches in the directory tree, you need to know the full
+path name of your files and where they are to go. This means you need to find
+out the name of your root tree structure. A fast way to do this is to use the
+magic command %cd in a notebook.</p>
 
-<p>Open a notebook, click on an empty cell, and type %cd, hit shift-return. It will return the director root name. Typically something like /home/username or /home/usernumber.</p>
+<p>Open a notebook, click on an empty cell, and type %cd, hit shift-return. It will
+return the director root name. Typically something like <code>/home/username</code> or
+<code>/home/usernumber</code>.</p>
 
-<p>You can now use this to move a file into any folder. Just rename the file something like /home/username/folderA/filename. (the folderA better exist already, for you to move something into this.)</p>
+<p>You can now use this to move a file into any folder. Just rename the file
+something like <code>/home/username/folderA/filename</code>. (the folderA better exist
+already, for you to move something into this.)</p>
 
-<p>See the Unix Tricks section on Unix magic for more tips on moving files.</p>
+<p>See the <a href="http://intro.syzygy.ca/unix-tricks/">Unix Tricks</a> section on Unix magic for more tips on
+moving files.</p>
 
 
 			<aside class="copyright" role="note">
-					
-				&copy; 2017 Michael Lamoureux.
+				
+				&copy; 2017 Michael Lamoureux
+				
 			</aside>
 
 			<footer class="footer">

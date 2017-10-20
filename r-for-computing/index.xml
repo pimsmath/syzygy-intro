@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R-for-computings on Introduction to Syzygy</title>
-    <link>http://intro.syzygy.ca/r-for-computing/index.xml</link>
+    <link>http://intro.syzygy.ca/r-for-computing/</link>
     <description>Recent content in R-for-computings on Introduction to Syzygy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Michael Lamoureux</copyright>
     <lastBuildDate>Wed, 09 Mar 2016 19:56:50 +0100</lastBuildDate>
-    <atom:link href="http://intro.syzygy.ca/r-for-computing/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://intro.syzygy.ca/r-for-computing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>R for Computing</title>
@@ -15,14 +18,8 @@
       <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
       
       <guid>http://intro.syzygy.ca/r-for-computing/</guid>
-      <description>
-
-&lt;h1 id=&#34;r-for-computing&#34;&gt;R for Computing&lt;/h1&gt;
-
-&lt;p&gt;Some notes on how to use R.&lt;/p&gt;
-
-&lt;p&gt;(Note that the binder button will not run R code for you.)&lt;/p&gt;
-</description>
+      <description>R for Computing Some notes on how to use R.
+(Note that the binder button will not run R code for you.)</description>
     </item>
     
   </channel>

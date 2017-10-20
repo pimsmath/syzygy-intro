@@ -8,9 +8,9 @@
   <head lang="en-us">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Introduction to Syzygy</title>
-    <meta name="generator" content="Hugo 0.18.1" />
+    <meta name="generator" content="Hugo 0.21-DEV" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
@@ -55,7 +55,7 @@
     
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700%7CUbuntu&#43;Mono">
     <style>
       body, input {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -66,15 +66,16 @@
     </style>
 
     
+    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
+    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
     <link href="http://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    <link href="http://intro.syzygy.ca/index.xml" rel="feed" type="application/rss+xml" title="Introduction to Syzygy" />
     
 
   </head>
-  <body class="palette-primary-purple palette-accent-orange">
+  <body class="palette-primary-indigo palette-accent-orange">
 
 
 
@@ -124,7 +125,7 @@
     </div>
     <div class="stretch">
       <div class="field">
-        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+        <input class="query" type="text" placeholder="Search" autocomplete="off" spellcheck>
       </div>
     </div>
     <div class="button button-reset" role="button" aria-label="Search">
@@ -132,6 +133,7 @@
     </div>
   </div>
 </nav>
+
 </header>
 
 <main class="main">
@@ -141,7 +143,7 @@
     <div class="banner">
       
       <div class="name">
-        <strong>Introduction to Syzygy <span class="version">0.0.8</span></strong>
+        <strong>Introduction to Syzygy <span class="version">0.0.9</span></strong>
         
           <br>
           pimsmath/syzygy-intro
@@ -183,11 +185,14 @@
 
 
 
-<a  title="Introduction" href="http://intro.syzygy.ca/introduction/">
+<a class="current" title="Front" href="http://intro.syzygy.ca/">
 	
-	Introduction
+	Front
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -327,6 +332,24 @@
 
 
 
+<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+	
+	Troubleshooting/FAQ
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
 <a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
 	
 	Acknowledgements
@@ -343,19 +366,29 @@
 
         
         <hr>
-        
+        <span class="section">The author</span>
         
         <ul>
           
-
+          <li>
+            <a href="https://twitter.com/pimsmath" target="_blank" title="@pimsmath on Twitter">
+              @pimsmath on Twitter
+            </a>
+          </li>
           
 
-         
+          
+          <li>
+            <a href="https://github.com/pimsmath" target="_blank" title="@pimsmath on GitHub">
+              @pimsmath on GitHub
+            </a>
+          </li>
+          
 
           
           <li>
             <a href="mailto:jupyter@pims.math.ca" title="Email of jupyter@pims.math.ca">
-              email: jupyter@pims.math.ca
+              Contact via email
             </a>
           </li>
           
@@ -371,13 +404,33 @@
 	<article class="article">
 		<div class="wrapper">
 			
+				<h1>Introduction to Syzygy </h1>
 
+				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
+Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
+and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
+educators and innovators across Canada. This site is a brief introduction on how
+to use these computing tools.</p>
 
-			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Three_Planets_Dance_Over_La_Silla.jpg" alt="Three Planets Dance Over La Silla, image credit: European Southern Observatory">
+<ul>
+<li><a href="http://intro.syzygy.ca/getting-started/">Get started</a></li>
+</ul>
+
+<p><img src="http://intro.syzygy.ca/img/syzygy.jpg" alt="Syzygy Astronomy" />
+(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
+Observatory</a>)</p>
+
+<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
+alignment of three or more celestial objects. In this book, it represents the
+alignment of text, math, and code in a convenient tool called a Jupyter
+notebook.</p>
+
+			
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2017 Michael Lamoureux.
+				&copy; 2017 Michael Lamoureux
+				
 			</aside>
 
 			<footer class="footer">

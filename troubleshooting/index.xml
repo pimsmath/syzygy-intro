@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshootings on Introduction to Syzygy</title>
+    <link>http://intro.syzygy.ca/troubleshooting/</link>
+    <description>Recent content in Troubleshootings on Introduction to Syzygy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Michael Lamoureux</copyright>
+    <lastBuildDate>Thu, 19 Oct 2017 17:56:50 +0700</lastBuildDate>
+    
+	<atom:link href="http://intro.syzygy.ca/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://intro.syzygy.ca/troubleshooting/</link>
+      <pubDate>Thu, 19 Oct 2017 17:56:50 +0700</pubDate>
+      
+      <guid>http://intro.syzygy.ca/troubleshooting/</guid>
+      <description>From time to time you might experience problems with the syzygy.ca service. The tips below may help you get things going again without further intervention, but if not, please contact {{ Site.params.email }}
+Restarting your Server Restarting your server can clear up a number of issues. If you see any of the following messages, please try restarting your server.
+ 500 internal server error, permissi9n failure checking authorization, I may need a new token  To restart your server, click on the Control panel button at the top right of the notebook.</description>
+    </item>
+    
+  </channel>
+</rss>

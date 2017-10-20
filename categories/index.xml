@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Introduction to Syzygy</title>
+    <link>http://intro.syzygy.ca/categories/</link>
+    <description>Recent content in Categories on Introduction to Syzygy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Michael Lamoureux</copyright>
+    
+	<atom:link href="http://intro.syzygy.ca/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
