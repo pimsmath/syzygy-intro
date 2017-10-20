@@ -38,7 +38,7 @@ code in your server.
 
 Now, as you get more experience with **Git** and **Github**, you might like to
 clone some other people's repositories and use their code. It is a good idea to
-keep your Jupyter Hub organized, so you can create a new folder, and clone the
+keep your account organized, so you can create a new folder, and clone the
 new stuff directly into that new folder. A series of Notebook commands to do
 this would look like this:
 
@@ -50,7 +50,7 @@ this would look like this:
 %cd MyNewDirectory
 ```
 
-```python
+```shell
 !git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
 ```
 

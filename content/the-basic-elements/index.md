@@ -9,10 +9,11 @@ dedicated hardware accessible over the web. There is a great deal of information
 about Jupyter available at the Jupyter project site, http://jupyter.org/
 
 There are four key concepts to master:
-- the Hub
-- the Notebook
-- Markdown Language (in a Notebook) 
-- Computing (in a Notebook).
+
+  - the Hub
+  - the Notebook
+  - Markdown Language (in a Notebook) 
+  - Computing (in a Notebook).
 
 This chapter discusses all four.
 
@@ -185,9 +186,8 @@ Here is a basic integral: $$\int \cos(x) dx =
 
 ### Images
 
-```
 Here is some code to embed an image from the web:
-
+```
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 ```
 

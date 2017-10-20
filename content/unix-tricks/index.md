@@ -17,9 +17,8 @@ tricks I've learned to avoid the terminal commands.
 ## Unix and Magic in a Notebook.
 
 While running a Jupyter Notebook, you can access many Unix commands directly,
-without opening a terminal window. 
-
-These are called "magic" commands and always start with the percent sign %.
+without opening a terminal window using so called "magic" commands. These
+commands always start with the percent sign %.
 
 Here are a few familiar Unix commands you might find useful:
 
@@ -35,49 +34,41 @@ Directory2. You would use a command like this:
   - `%cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename`
 
 Where "myusername" is whatever the Jupyter server has called your account. Use
-the %cd command to see the path name that includes your user name.
+the `%cd` (with no arguments) followed by `%pwd` to see the path to your home
+directory (including your user name.)
 
-To see all possible magic commands available in a Jupyter notebook, type the
+{{< note title="Advanced use" >}}
+In a python 3 kernel you can also run arbitrary unix commands by putting an
+exclamation mark "!" at the beginning of a line, e.g.
+```
+!cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename
+```
+Whenever possible, prefer the '%' for, but ! is also available.
+{{< /note >}}
+
+
+## More Magic in a Notebook
+
+The magic system is much richer than just the unix commands listed above. A good
+reference to what is possible is available in the [ipython
+documentation](http://ipython.readthedocs.io/en/stable/interactive/magics.html)
+
+With a double percentage sign %% you signal to Jupyter that the whole cell is to
+be interpreted accordingly. For instance a cell like this:
+
+```python
+%%latex
+\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
+```
+tells the notebook to read the whole cell as latex code, and render it
+accordingly.
+$$
+\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
+$$
+
+To see all defined magic commands available in a Jupyter notebook, type the
 (magic) command
 - `%lsmagic`
 
-With a double percentage sign %% you signal to Jupyter that the whole cell is to
-be interpreted accordingly. For instance a cell like this:
-
-```python
-%%latex
-\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
-```
-tells the notebook to read the whole cell as latex code, and render it
-accordingly.
-
-
-## Magic in a Notebook
-
-In the last section, we discussed how to access Unix commands from the Jupyter
-Notebook. The key is to use "magic" commands, that start with a percentage sign
-%.
-
-There are many more magic commands available. To see all possible magic commands
-available in a Jupyter notebook, type the (magic) command
-- `%lsmagic`
-
-A good reference to what all these magic commands can do is here:
-https://ipython.org/ipython-doc/3/interactive/magics.html
-
-
-With a double percentage sign %% you signal to Jupyter that the whole cell is to
-be interpreted accordingly. For instance a cell like this:
-
-
-```python
-%%latex
-\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
-```
-tells the notebook to read the whole cell as latex code, and render it
-accordingly.
-
-There are similar commands for creating cells with HTML code, Ruby, Perl,
-JavaScript, etc etc. 
-
-(Maybe I will give a few examples here too.)
+Magics can help with debugging, working with files, defining macros and much
+much more.

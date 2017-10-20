@@ -38,7 +38,7 @@ here are some common ones
   * `~/R` - R packages and configuration files.
 
 {{< warning title="Be Careful" >}}
-These files are unrecoverable once deleted**
+These files are unrecoverable once deleted
 {{< /warning >}}
 
 If you have determined that files in one or more of these locations is causing a
@@ -59,8 +59,8 @@ your server (see above).
 
 The current default storage allocation for users is 1GB. If you find that you
 are getting out of storage messages or are unable to save files, you may have
-reached the quota. To recover from this, please email {{ Site.Params.email }} with your
-username and the name of the server you are using.
+reached the quota. To recover from this, please email jupyter@pims.math.ca with
+your username and the name of the server you are using.
 
 ## Missing Output
 

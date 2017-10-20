@@ -276,7 +276,7 @@ only certain energy levels to be allowed, depending on a parameter
 
 $$\mu = e^{2\pi i \theta}.$$
 
-We take two universal unitaries $$u,v$$ which satisfy a commutation relation
+We take two universal unitaries $u,v$ which satisfy a commutation relation
 
 $$ vu = \mu uv.$$
 
@@ -285,30 +285,30 @@ adjoint operator
 
 $$h = u + u^* + v + v^*.$$
 
-The curious thing is that the spectrum of $$h$$ is either a union of intervals,
-or a Cantor set, depending on whether $$\theta$$ is rational or irrational.
+The curious thing is that the spectrum of $h$ is either a union of intervals,
+or a Cantor set, depending on whether $\theta$ is rational or irrational.
 Which seems odd in physics, that a tiny perturbation in one parameter should
 give such a fundamental change in the nature of the spectra. 
 
-In the case where $$\theta = p/q$$ is rational, we can compute the spectrum
+In the case where $\theta = p/q$ is rational, we can compute the spectrum
 exactly.
 
-We define here two unitaries $$U$$ and $$V$$ that are $$q\times q$$ matrices.
-$$U$$ is a diagonal matrix, while $$V$$ is a permutation matrix. They satisfy
+We define here two unitaries $U$ and $V$ that are $q\times q$ matrices.
+$U$ is a diagonal matrix, while $V$ is a permutation matrix. They satisfy
 the fundamental intertwining identity
 
 $$ VU = e^{2\pi i \theta} UV, \mbox{ where } \theta = p/q.$$
 
-Replacing $$U,V$$ by a scalar multiple $$z_1U, z_2V$$ will satisfy the same
-commutation constraint. Setting $$z_1 = z_2 = 1$$ gives one extreme set of
+Replacing $U,V$ by a scalar multiple $z_1U, z_2V$ will satisfy the same
+commutation constraint. Setting $z_1 = z_2 = 1$ gives one extreme set of
 spectral points, that form one-half of the interval endpoints that make up the
-spectrum. Setting $$z_1 = z_2 = e^{2\pi i/q}$$ gives the other extreme set,
+spectrum. Setting $z_1 = z_2 = e^{2\pi i/q}$ gives the other extreme set,
 forming the other set of endpoints. 
 
 ### The code
 
-The matrix $$H$$ defined below is the self adjoint sum of these unitaries, and
-$$L$$ has constants thrown in to get the other extreme points of the spectra. 
+The matrix $H$ defined below is the self adjoint sum of these unitaries, and
+$L$ has constants thrown in to get the other extreme points of the spectra. 
 
 We compute the eigenvalues, then throw them into a file that plots all the
 lines. 

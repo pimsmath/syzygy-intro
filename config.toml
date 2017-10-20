@@ -1,4 +1,4 @@
-baseurl = "http://intro.syzygy.ca/"
+baseurl = "http://syzygy-intro1.surge.sh/"
 languageCode = "en-us"
 title = "Introduction to Syzygy"
 theme = "hugo-material-docs"
@@ -25,8 +25,8 @@ googleAnalytics = ""
 
     permalink = "#"
 
-    # Custom assets
-    custom_css = ['static/application.css']
+    # Custom assets (mathjax config is in footer_js.html because of type="text/x-mathjax-config")
+    custom_css = []
     custom_js  = ["https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"]
 
     # Syntax highlighting theme
