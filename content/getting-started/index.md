@@ -112,11 +112,11 @@ out the name of your root tree structure. A fast way to do this is to use the
 magic command %cd in a notebook.
 
 Open a notebook, click on an empty cell, and type %cd, hit shift-return. It will
-return the director root name. Typically something like /home/username or
-/home/usernumber.
+return the director root name. Typically something like `/home/username` or
+`/home/usernumber`.
 
 You can now use this to move a file into any folder. Just rename the file
-something like /home/username/folderA/filename. (the folderA better exist
+something like `/home/username/folderA/filename`. (the folderA better exist
 already, for you to move something into this.)
 
 

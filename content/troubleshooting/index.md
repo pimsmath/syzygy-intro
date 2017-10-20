@@ -45,11 +45,11 @@ If you have determined that files in one or more of these locations is causing a
 problem for you, you can delete them using the UNIX rm command. From inside a
 notebook you can do e.g.
 
-```
+```shell
 !rm ~/.jupyter/jupyter_notebook_config.py
 ```
 Or from the terminal
-```
+```shell
 rm ~/.jupyter/jupyter_notebook_config.py
 ```
 Changes to the notebook configuration will only take effect once you restart
@@ -75,14 +75,14 @@ notebook when saving, you can overrride this default by creating or modifying
 the `~/.jupyter/jupyter_notebook_config.py` in your home directory.
 
 From inside a python 3 notebook you could do
-```
+```shell
 !mkdir -p ~/.jupyter
 !echo "c.FileContentsManager.pre_save_hook = None" > ~/.jupyter/jupyter_notebook_config
 ```
 
 The current pre_save hook looks like
 
-```
+```python
 def scrub_output_pre_save(model, **kwargs):
     """scrub output before saving notebooks"""
     # only run on notebooks
