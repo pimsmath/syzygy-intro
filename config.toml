@@ -1,4 +1,4 @@
-baseurl = "http://syzygy-intro1.surge.sh/"
+baseurl = "http://intro.syzygy.ca/"
 languageCode = "en-us"
 title = "Introduction to Syzygy"
 theme = "hugo-material-docs"
