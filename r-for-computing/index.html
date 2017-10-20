@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -273,7 +271,7 @@
 
 
 
-<a class="current" title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a class="current" title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -294,7 +292,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -312,7 +310,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -490,6 +488,8 @@
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -532,6 +532,11 @@
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

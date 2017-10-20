@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -273,7 +271,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -291,7 +289,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -309,7 +307,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -327,7 +325,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -345,7 +343,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -408,7 +406,7 @@
 
 <p>Syzygy is pronounced like the start of &ldquo;Sizzle&rdquo; &ndash; sizz eh gee. It means the <a href="http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html">alignment of three or more celestial objects</a>. In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.</p>
 
-<p><img src="http://intro.syzygy.ca/img/syzygy.jpg" alt="syzygy-image" />
+<p><img src="/img/syzygy.jpg" alt="syzygy-image" />
 (Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern Observatory</a>)</p>
 
 <p>This eBook is a brief introduction on how to use these computing tools.</p>
@@ -486,6 +484,8 @@
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -528,6 +528,11 @@
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

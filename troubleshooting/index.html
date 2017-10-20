@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -273,7 +271,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -291,7 +289,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -309,7 +307,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -327,7 +325,7 @@
 
 
 
-<a class="current" title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a class="current" title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -444,7 +442,7 @@ XXXX</code>)</li>
 
 <div class="admonition warning">
 <p class="admonition-title">Be Careful</p>
-<p>These files are unrecoverable once deleted**</p>
+<p>These files are unrecoverable once deleted</p>
 </div>
 
 <p>If you have determined that files in one or more of these locations is causing a
@@ -466,8 +464,8 @@ your server (see above).</p>
 
 <p>The current default storage allocation for users is 1GB. If you find that you
 are getting out of storage messages or are unable to save files, you may have
-reached the quota. To recover from this, please email {{ Site.Params.email }} with your
-username and the name of the server you are using.</p>
+reached the quota. To recover from this, please email <a href="mailto:jupyter@pims.math.ca">jupyter@pims.math.ca</a> with
+your username and the name of the server you are using.</p>
 
 <h2 id="missing-output">Missing Output</h2>
 
@@ -588,6 +586,8 @@ c.FileContentsManager.pre_save_hook = scrub_output_pre_save
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -630,6 +630,11 @@ c.FileContentsManager.pre_save_hook = scrub_output_pre_save
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

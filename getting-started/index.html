@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a class="current" title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a class="current" title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -222,7 +220,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -240,7 +238,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -258,7 +256,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -276,7 +274,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -294,7 +292,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -312,7 +310,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -411,7 +409,7 @@
 
 <h2 id="logging-in-and-browsers">Logging In, and Browsers.</h2>
 
-<p><img src="http://intro.syzygy.ca/img/sfu-jupyter.png" alt="SFU login" 
+<p><img src="/img/sfu-jupyter.png" alt="SFU login" 
     width =300" align = "right"></p>
 
 <p>Log into the syzygy service by using your home university credentials or Google
@@ -428,7 +426,7 @@ Calgary</li>
 <li><a href="https://uvic.syzygy.ca">https://uvic.syzygy.ca</a> University of Victoria</li>
 <li><a href="https://uwaterloo.syzygy.ca">https://uwaterloo.syzygy.ca</a> University of Waterloo</li>
 <li><a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> Cybera (via Google Authentication)</li>
-<li><a href="https://pims.syzygy.ca">https://cybera.syzygy.ca</a> PIMS (via Google Authentication)</li>
+<li><a href="https://pims.syzygy.ca">https://pims.syzygy.ca</a> PIMS (via Google Authentication)</li>
 </ul>
 
 <p>Your &ldquo;university credentials&rdquo; will be something like your campus-wide login ID,
@@ -447,8 +445,6 @@ incubators).</p>
 - Chrome is better at cut/copy/paste in the terminal, important when using GIT, for instance.
 - Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons.</p>
-
-<p>Code samples for the book can also be launched on Binder: <a href="http://mybinder.org:/repo/mlamoureux/usingsyzygy"><img src="http://mybinder.org/badge.svg" alt="Binder" /></a></p>
 
 <h2 id="notebooks-terminals-and-unix">Notebooks, terminals and Unix</h2>
 
@@ -491,19 +487,22 @@ or on remote machinces.) There are notes on how to do this later in this book.</
 your Jupyter Hub.</p>
 
 <p>If you like Unix, you can always open a new terminal and move files around using
-the &ldquo;mv&rdquo; or &ldquo;cp&rdquo; commands.</p>
+the <code>mv</code> or <code>cp</code> commands.</p>
 
 <p>If you want to avoid Unix, you can use the  Hub&rsquo;s naming system to move files around.</p>
 
 <p>Select a file in the Hub by clicking on the square box at the left of the file&rsquo;s
 name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the rename
-button, and then enter one of the following:
-- newname  &ndash; to give the file the new name
-- ../oldname &ndash; to move the file up and out of the current folder, into the
-  previous forlder
-- foldername/oldname &ndash; to move the file into the folder called &ldquo;foldername.&rdquo;
-  This folder should already exist (because you created it earlier with a &ldquo;new
-  folder&rdquo; command).</p>
+button, and then enter one of the following:</p>
+
+<ul>
+<li><code>newname</code>  &ndash; to give the file the new name</li>
+<li><code>../oldname</code> &ndash; to move the file up and out of the current folder, into the
+previous forlder</li>
+<li><code>foldername/oldname</code> &ndash; to move the file into the folder called &ldquo;foldername.&rdquo;
+This folder should already exist (because you created it earlier with a &ldquo;new
+folder&rdquo; command).</li>
+</ul>
 
 <p>These renaming methods also work to move folders and their contents.</p>
 
@@ -520,7 +519,7 @@ return the director root name. Typically something like <code>/home/username</co
 something like <code>/home/username/folderA/filename</code>. (the folderA better exist
 already, for you to move something into this.)</p>
 
-<p>See the <a href="http://intro.syzygy.ca/unix-tricks/">Unix Tricks</a> section on Unix magic for more tips on
+<p>See the <a href="/unix-tricks/">Unix Tricks</a> section on Unix magic for more tips on
 moving files.</p>
 
 
@@ -602,6 +601,8 @@ moving files.</p>
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -644,6 +645,11 @@ moving files.</p>
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

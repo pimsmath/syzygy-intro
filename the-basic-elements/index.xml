@@ -19,8 +19,8 @@
       
       <guid>http://intro.syzygy.ca/the-basic-elements/</guid>
       <description>The syzygy computing service is an implementation of the Jupyter Hub on dedicated hardware accessible over the web. There is a great deal of information about Jupyter available at the Jupyter project site, http://jupyter.org/
-There are four key concepts to master: - the Hub - the Notebook - Markdown Language (in a Notebook) - Computing (in a Notebook).
-This chapter discusses all four.
+There are four key concepts to master:
+ the Hub the Notebook Markdown Language (in a Notebook) Computing (in a Notebook).  This chapter discusses all four.
 Using the Hub You get to the Hub by logging into the syzygy.</description>
     </item>
     

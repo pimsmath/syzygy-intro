@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a class="current" title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a class="current" title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -240,7 +238,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -258,7 +256,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -276,7 +274,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -294,7 +292,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -312,7 +310,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -405,81 +403,128 @@
 
 			
 
-<p>The syzygy computing service is an implementation of the Jupyter Hub on dedicated hardware accessible over the web. There is a great deal of information about Jupyter available at the Jupyter project site,
-<a href="http://jupyter.org/">http://jupyter.org/</a></p>
+<p>The syzygy computing service is an implementation of the Jupyter Hub on
+dedicated hardware accessible over the web. There is a great deal of information
+about Jupyter available at the Jupyter project site, <a href="http://jupyter.org/">http://jupyter.org/</a></p>
 
-<p>There are four key concepts to master:
-- the Hub
-- the Notebook
-- Markdown Language (in a Notebook)
-- Computing (in a Notebook).</p>
+<p>There are four key concepts to master:</p>
+
+<ul>
+<li>the Hub</li>
+<li>the Notebook</li>
+<li>Markdown Language (in a Notebook)</li>
+<li>Computing (in a Notebook).</li>
+</ul>
 
 <p>This chapter discusses all four.</p>
 
 <h2 id="using-the-hub">Using the Hub</h2>
 
-<p>You get to the Hub by logging into the syzygy.ca service and clicking the button to &ldquo;Start My Server.&rdquo;</p>
+<p>You get to the Hub by logging into the syzygy.ca service and clicking the button
+to &ldquo;Start My Server.&rdquo;</p>
 
 <p>The Hub is a page that lists all your files and folders. It looks like this:</p>
 
-<p><img src="http://intro.syzygy.ca/img/assets/Hub.png" alt="Hub image" /></p>
+<p><img src="/img/assets/Hub.png" alt="Hub image" /></p>
 
-<p>As you can see, the Hub looks a lot like the list of files and folders you would see in the Finder on MacOS, or in the File Explorer in Windows.</p>
+<p>As you can see, the Hub looks a lot like the list of files and folders you would
+see in the Finder on MacOS, or in the File Explorer in Windows.</p>
 
-<p>At the top right corner of this front page is a &ldquo;Control Panel&rdquo; that lets you access your Jupyter server, to turn it on or off. Also is the logout button, to end your session.</p>
+<p>At the top right corner of this front page is a &ldquo;Control Panel&rdquo; that lets you
+access your Jupyter server, to turn it on or off. Also is the logout button, to
+end your session.</p>
 
 <p>The main body is the list of folders and files that you have on your server.</p>
 
-<p>Click on a file or folder to open it. Use the checkbox on the left to select a file, then do something with it. For instance, you can choose to rename it, copy it, stop it from running, or delete it.</p>
+<p>Click on a file or folder to open it. Use the checkbox on the left to select a
+file, then do something with it. For instance, you can choose to rename it, copy
+it, stop it from running, or delete it.</p>
 
-<p>It is a good idea to create folders at the top level, to organize your work into usable spaces. It turns out it is hard to move a file once it is created. (More on this below.) So you should start by organizing your folders and files at the top level.</p>
+<p>It is a good idea to create folders at the top level, to organize your work into
+usable spaces. It turns out it is hard to move a file once it is created. (More
+on this below.) So you should start by organizing your folders and files at the
+top level.</p>
 
-<p>Near the top right, you see the upload button, which allows you to upload a file from your computer onto the Jupyter Hub. You can upload any file, including any data files or image files you might wish to analyse.</p>
+<p>Near the top right, you see the upload button, which allows you to upload a file
+from your computer onto the Jupyter Hub. You can upload any file, including any
+data files or image files you might wish to analyse.</p>
 
-<p>Also near the top right is the &ldquo;New&rdquo; button, which allows you to create a new folder or file. You can make text files, notebook files in Python, Julia or R, or open a Unix terminal window.</p>
+<p>Also near the top right is the &ldquo;New&rdquo; button, which allows you to create a new
+folder or file. You can make text files, notebook files in Python, Julia or R,
+or open a Unix terminal window.</p>
 
 <h2 id="moving-files-between-folders">Moving files between folders</h2>
 
-<p>It&rsquo;s not documented, but there is a way to move files and folders in and out of various folders directly from the Hub.</p>
+<p>It&rsquo;s not documented, but there is a way to move files and folders in and out of
+various folders directly from the Hub.</p>
 
-<p>Select a file listed in the Hub by clicking on the square box at the left of the file&rsquo;s name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the rename button, and then enter one of the following:
-- newname  &ndash; to give the file the new name
-- ../oldname &ndash; to move the file up and out of the current folder, into the previous forlder
-- foldername/oldname &ndash; to move the file into the folder called &ldquo;foldername.&rdquo; This folder should already exist (because you created it earlier with a &ldquo;new folder&rdquo; command).</p>
+<p>Select a file listed in the Hub by clicking on the square box at the left of the
+file&rsquo;s name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the
+rename button, and then enter one of the following:</p>
+
+<ul>
+<li><code>newname</code>  &ndash; to give the file the new name</li>
+<li><code>../oldname</code> &ndash; to move the file up and out of the current folder, into the
+previous forder</li>
+<li><code>foldername/oldname</code> &ndash; to move the file into the folder called &ldquo;foldername.&rdquo;
+This folder should already exist (because you created it earlier with a &ldquo;new
+folder&rdquo; command).</li>
+</ul>
 
 <p>These renaming methods also work to move folders and their contents.</p>
 
-<p>To move across several branches in the directory tree, you need to know the full path name of your files and where they are to go. This means you need to find out the name of your root tree structure. A fast way to do this is to use the magic command %cd in a notebook.</p>
+<p>To move across several branches in the directory tree, you need to know the full
+path name of your files and where they are to go. This means you need to find
+out the name of your root tree structure. A fast way to do this is to use the
+magic command <code>%cd</code> in a notebook.</p>
 
-<p>Open a notebook, click on an empty cell, and type %cd, hit shift-return. It will return the director root name. Typically something like /home/username or /home/usernumber.</p>
+<p>Open a notebook, click on an empty cell, and type <code>%cd</code>, hit shift-return. It
+will return the director root name. Typically something like <code>/home/username</code> or
+<code>/home/usernumber</code>.</p>
 
-<p>You can now use this to move a file into any folder. Just rename the file something like /home/username/folderA/filename. (the folderA better exist already, for you to move something into this.)</p>
+<p>You can now use this to move a file into any folder. Just rename the file
+something like <code>/home/username/folderA/filename</code>. (the folderA better exist
+already, for you to move something into this.)</p>
 
 <h2 id="using-notebooks">Using Notebooks</h2>
 
-<p>From the Hub, you can click on a Notebook (a files with the suffix .ipynb) or create a new one with the &ldquo;New&rdquo; button. You need to pick a computing language (Python, Julia or R) when you create a new Notebook; for now, just choose <strong>Python 3</strong>.</p>
+<p>From the Hub, you can click on a Notebook (a files with the suffix .ipynb) or
+create a new one with the &ldquo;New&rdquo; button. You need to pick a computing language
+(Python, Julia or R) when you create a new Notebook; for now, just choose
+<strong>Python 3</strong>.</p>
 
 <p>The Notebook will look something like this.</p>
 
-<p><img src="http://intro.syzygy.ca/img/assets/Notebook.png" alt="png" /></p>
+<p><img src="/img/assets/Notebook.png" alt="png" /></p>
 
-<p>At the top is the name of the notebook (in this case, &ldquo;Untitled&rdquo;). You can click on that name and edit it to whatever you like.</p>
+<p>At the top is the name of the notebook (in this case, &ldquo;Untitled&rdquo;). You can click
+on that name and edit it to whatever you like.</p>
 
-<p>Just under the title is the menu bar, which allows you to do many things with the Notebook, including saving it, downloading it to your own computer, editing it, inserting new cells, and so on.</p>
+<p>Just under the title is the menu bar, which allows you to do many things with
+the Notebook, including saving it, downloading it to your own computer, editing
+it, inserting new cells, and so on.</p>
 
 <p>There is also an icon bar of menu short cuts. All of them are pretty obvious.</p>
 
-<p>Below the menu controls is the Notebook content, which consists of a sequence of cells. Each cell can contain Markdown text or computer code. You select which kind of content for that cell from the little icon in the icon bar a the top.</p>
+<p>Below the menu controls is the Notebook content, which consists of a sequence of
+cells. Each cell can contain Markdown text or computer code. You select which
+kind of content for that cell from the little icon in the icon bar at the top.</p>
 
-<p>In the example illustrated here, the first cell is just text. It says &ldquo;This is an example of a Notebook.&rdquo; The second cell is Markdown text, including a math formula in LaTeX format. It starts &ldquo;Here is an example of some math&hellip;&rdquo;</p>
+<p>In the example illustrated here, the first cell is just text. It says &ldquo;This is
+an example of a Notebook.&rdquo; The second cell is Markdown text, including a math
+formula in LaTeX format. It starts &ldquo;Here is an example of some math&hellip;&rdquo;</p>
 
-<p>The third cell shows the math formula as a real math formula, with an integral sign and all. The math is just typed in (like in the second cell), and then you hit &ldquo;shift-return&rdquo; on the keyboard to typeset the math.</p>
+<p>The third cell shows the math formula as a real math formula, with an integral
+sign and all. The math is just typed in (like in the second cell), and then you
+hit &ldquo;shift-return&rdquo; on the keyboard to typeset the math.</p>
 
-<p>The final few cells show some code, that loads in some plotting tools and makes a simple plot.</p>
+<p>The final few cells show some code, that loads in some plotting tools and makes
+a simple plot.</p>
 
 <h2 id="pretty-text-and-math-markdown-language">Pretty Text and Math (Markdown Language)</h2>
 
-<p>One great feature of the Jupyter Notebooks is that they can contain formatted text, and mathematics, using the Markdown language.</p>
+<p>One great feature of the Jupyter Notebooks is that they can contain formatted
+text, and mathematics, using the Markdown language.</p>
 
 <p>Markdown is a rich language: a quick introduction to it is available here:
 <a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
@@ -488,7 +533,10 @@
 
 <h3 id="editting-and-typesetting">Editting and typesetting</h3>
 
-<p>You simply type your text and Markdown symbols into a cell, and hit &ldquo;shift-return&rdquo; to typeset the cell into pretty text (and math). Click on the cell again to undo the typesetting, so you can edit and fix your text. Make sure, of course, that you have marked the cell as &ldquo;Markdown&rdquo; and not &ldquo;Code.&rdquo;</p>
+<p>You simply type your text and Markdown symbols into a cell, and hit
+&ldquo;shift-return&rdquo; to typeset the cell into pretty text (and math). Click on the
+cell again to undo the typesetting, so you can edit and fix your text. Make
+sure, of course, that you have marked the cell as &ldquo;Markdown&rdquo; and not &ldquo;Code.&rdquo;</p>
 
 <h3 id="headers">Headers</h3>
 
@@ -539,9 +587,9 @@ to get a clickable link <a href="http://github.com">GitHub</a></p>
 
 <h3 id="images">Images</h3>
 
-<pre><code>Here is some code to embed an image from the web:
+<p>Here is some code to embed an image from the web:</p>
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+<pre><code>![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 </code></pre>
 
 <p><img src="https://octodex.github.com/images/yaktocat.png" alt="Image of Yaktocat" /></p>
@@ -625,6 +673,8 @@ to get a clickable link <a href="http://github.com">GitHub</a></p>
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -667,6 +717,11 @@ to get a clickable link <a href="http://github.com">GitHub</a></p>
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

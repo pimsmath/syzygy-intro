@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -273,7 +271,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -291,7 +289,7 @@
 
 
 
-<a class="current" title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a class="current" title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -312,7 +310,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -407,64 +405,74 @@
 
 <h2 id="unix-tricks">Unix tricks</h2>
 
-<p>In the background, Jupyter Hub runs on Unix, and you can access the Unix bash shell to do all your Unix magic from the command line. Just open a new &ldquo;terminal&rdquo; from the front page of your Jupyter server.</p>
+<p>In the background, Jupyter Hub runs on Unix, and you can access the Unix bash
+shell to do all your Unix magic from the command line. Just open a new
+&ldquo;terminal&rdquo; from the front page of your Jupyter server.</p>
 
-<p>However, I am not a big Unix fan. I prefer to point and click. So here are a few tricks I&rsquo;ve learned to avoid the terminal commands.</p>
+<p>However, I am not a big Unix fan. I prefer to point and click. So here are a few
+tricks I&rsquo;ve learned to avoid the terminal commands.</p>
 
 <h2 id="unix-and-magic-in-a-notebook">Unix and Magic in a Notebook.</h2>
 
-<p>While running a Jupyter Notebook, you can access many Unix commands directly, without opening a terminal window.</p>
-
-<p>These are called &ldquo;magic&rdquo; commands and always start with the percent sign %.</p>
+<p>While running a Jupyter Notebook, you can access many Unix commands directly,
+without opening a terminal window using so called &ldquo;magic&rdquo; commands. These
+commands always start with the percent sign %.</p>
 
 <p>Here are a few familiar Unix commands you might find useful:</p>
 
 <ul>
-<li>%ls &ndash; to list all files in the current directory</li>
-<li>%cd &ndash; to see the name of your current directory</li>
-<li>%cd dirname - to change directory (enter the name of the directory you want)</li>
-<li>%cp oldfile newfile &ndash; to copy the oldfile onto a newfile</li>
-<li>%rm filename &ndash; to remove (delete) the file named &ldquo;filename&rdquo;</li>
+<li><code>%ls</code> &ndash; to list all files in the current directory</li>
+<li><code>%cd</code> &ndash; to see the name of your current directory</li>
+<li><code>%cd dirname</code> - to change directory (enter the name of the directory you want)</li>
+<li><code>%cp oldfile newfile</code> &ndash; to copy the oldfile onto a newfile</li>
+<li><code>%rm filename</code> &ndash; to remove (delete) the file named &ldquo;filename&rdquo;</li>
 </ul>
 
-<p>Thankfully, you can move all around the directory tree using these magic commands. So for instance, you might want to copy a file from Directory1 into Directory2. You would use a command like this:
-- %cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename</p>
+<p>Thankfully, you can move all around the directory tree using these magic
+commands. So for instance, you might want to copy a file from Directory1 into
+Directory2. You would use a command like this:
+  - <code>%cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename</code></p>
 
-<p>Where &ldquo;myusername&rdquo; is whatever the Jupyter server has called your account. Use the %cd command to see the path name that includes your user name.</p>
+<p>Where &ldquo;myusername&rdquo; is whatever the Jupyter server has called your account. Use
+the <code>%cd</code> (with no arguments) followed by <code>%pwd</code> to see the path to your home
+directory (including your user name.)</p>
 
-<p>To see all possible magic commands available in a Jupyter notebook, type the (magic) command
-- %lsmagic</p>
+<div class="admonition note">
+<p class="admonition-title">Advanced use</p>
+<p>In a python 3 kernel you can also run arbitrary unix commands by putting an
+exclamation mark &ldquo;!&rdquo; at the beginning of a line, e.g.</p>
 
-<p>With a double percentage sign %% you signal to Jupyter that the whole cell is to be interpreted accordingly. For instance a cell like this:</p>
+<pre><code>!cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename
+</code></pre>
+
+<p>Whenever possible, prefer the &lsquo;%&rsquo; for, but ! is also available.</p>
+</div>
+
+<h2 id="more-magic-in-a-notebook">More Magic in a Notebook</h2>
+
+<p>The magic system is much richer than just the unix commands listed above. A good
+reference to what is possible is available in the <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">ipython
+documentation</a></p>
+
+<p>With a double percentage sign %% you signal to Jupyter that the whole cell is to
+be interpreted accordingly. For instance a cell like this:</p>
 
 <pre><code class="language-python">%%latex
 \[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
 </code></pre>
 
-<p>tells the notebook to read the whole cell as latex code, and render it accordingly.</p>
+<p>tells the notebook to read the whole cell as latex code, and render it
+accordingly.
+$$
+[ \int_0^1 f(x) \,dx = F(1) - F(0) ]
+$$</p>
 
-<p>A good reference to what all these magic commands can do is here: <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">https://ipython.org/ipython-doc/3/interactive/magics.html</a></p>
+<p>To see all defined magic commands available in a Jupyter notebook, type the
+(magic) command
+- <code>%lsmagic</code></p>
 
-<h2 id="magic-in-a-notebook">Magic in a Notebook</h2>
-
-<p>In the last section, we discussed how to access Unix commands from the Jupyter Notebook. The keyis to use &ldquo;magic&rdquo; commands, that start with a percentage sign %.</p>
-
-<p>There are many more magic commands available. To see all possible magic commands available in a Jupyter notebook, type the (magic) command
-- %lsmagic</p>
-
-<p>A good reference to what all these magic commands can do is here: <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">https://ipython.org/ipython-doc/3/interactive/magics.html</a></p>
-
-<p>With a double percentage sign %% you signal to Jupyter that the whole cell is to be interpreted accordingly. For instance a cell like this:</p>
-
-<pre><code class="language-python">%%latex
-\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
-</code></pre>
-
-<p>tells the notebook to read the whole cell as latex code, and render it accordingly.</p>
-
-<p>There are similar commands for creating cells with HTML code, Ruby, Perl, JavaScript, etc etc.</p>
-
-<p>(Maybe I will give a few examples here too.)</p>
+<p>Magics can help with debugging, working with files, defining macros and much
+much more.</p>
 
 
 			<aside class="copyright" role="note">
@@ -545,6 +553,8 @@
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -587,6 +597,11 @@
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

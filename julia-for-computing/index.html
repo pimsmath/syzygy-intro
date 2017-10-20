@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a class="current" title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a class="current" title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -276,7 +274,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -294,7 +292,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -312,7 +310,7 @@
 
 
 
-<a  title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a  title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -407,26 +405,43 @@
 
 <h2 id="julia-for-computing">Julia for Computing</h2>
 
-<p>The Julia computing language is a relative newcomer to the compute world that is proving to be very powerful and effective for scientific computation. It aims to combine the flexibility and ease-of-use of am interpreted, dynamic language (like Matlab) with the speed and efficiency of a compiled, statically typed language (like C or C++).</p>
+<p>The Julia computing language is a relative newcomer to the compute world that is
+proving to be very powerful and effective for scientific computation. It aims to
+combine the flexibility and ease-of-use of am interpreted, dynamic language
+(like Matlab) with the speed and efficiency of a compiled, statically typed
+language (like C or C++).</p>
 
-<p>There are many online resources for learning the Julia language. A good place to start is the documentation provided by the Julia developers at: <a href="http://docs.julialang.org/">http://docs.julialang.org/</a></p>
+<p>There are many online resources for learning the Julia language. A good place to
+start is the documentation provided by the Julia developers at:
+<a href="http://docs.julialang.org/">http://docs.julialang.org/</a></p>
 
-<p>A good resource for new users is here: <a href="https://en.wikibooks.org/wiki/Introducing_Julia">https://en.wikibooks.org/wiki/Introducing_Julia</a></p>
+<p>A good resource for new users is the <a href="https://en.wikibooks.org/wiki/Introducing_Julia">Introducing Julia
+wikibook</a></p>
 
-<p>There are many software packages that have been developed for Julia to do many common computational tasks. The list of registered Julia packages can be found at <a href="http://pkg.julialang.org">http://pkg.julialang.org</a>.</p>
+<p>There are many software packages that have been developed for Julia to do many
+common computational tasks. The list of registered Julia packages can be found
+at <a href="http://pkg.julialang.org">http://pkg.julialang.org</a>.</p>
 
-<p>This chapter focuses on how to use Julia within a Jupyter notebook. Doing simple calculations in Julia is very straightforward. We show how to make a few plots, and how to build rich graphics files.</p>
+<p>This chapter focuses on how to use Julia within a Jupyter notebook. Doing simple
+calculations in Julia is very straightforward. We show how to make a few plots,
+and how to build rich graphics files.</p>
 
-<p>A couple of caveats: The Julia language is still under development, and so some functionality is a bit shaky. For instance, loading a new package (Pkg.add(&ldquo;whatever&rdquo;)) often will fail. Also, the &ldquo;binder button&rdquo; in this book will not run Julia code for you.</p>
+<p>A couple of caveats: The Julia language is still under development, and so some
+ functionality is a bit shaky. For instance, loading a new package
+ (Pkg.add(&ldquo;whatever&rdquo;)) often will fail. Also, the &ldquo;binder button&rdquo; in this book
+ will not run Julia code for you.</p>
 
 <h2 id="plotting-with-pyplot">Plotting with PyPlot</h2>
 
-<p>In Julia, the PyPlot package will be most familiar to users of Python&rsquo;s PyPlot package, as well Matlab users.
-Unlike Python, no &ldquo;magic&rdquo; commands are needed to get Julia to plot onto the Jupyter notebook page.</p>
+<p>In Julia, the PyPlot package will be most familiar to users of Python&rsquo;s PyPlot
+package, as well Matlab users.  Unlike Python, no &ldquo;magic&rdquo; commands are needed to
+get Julia to plot onto the Jupyter notebook page.</p>
 
-<p>To learn more about the PyPlot package for Julia, refer to the Github repo:<a href="https://github.com/JuliaPy/PyPlot.jl">https://github.com/JuliaPy/PyPlot.jl</a></p>
+<p>To learn more about the PyPlot package for Julia, refer to the Github
+repo:<a href="https://github.com/JuliaPy/PyPlot.jl">https://github.com/JuliaPy/PyPlot.jl</a></p>
 
-<p>To start, begin with the &ldquo;using&rdquo; command to inform Julia that you wish to use the PyPlot package.</p>
+<p>To start, begin with the &ldquo;using&rdquo; command to inform Julia that you wish to use
+the PyPlot package.</p>
 
 <pre><code class="language-julia">using PyPlot
 </code></pre>
@@ -436,11 +451,7 @@ Unlike Python, no &ldquo;magic&rdquo; commands are needed to get Julia to plot o
 <pre><code class="language-julia">plot([1,2,3,4])
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/output_3_0.png" alt="png" /></p>
-
-<pre><code>1-element Array{Any,1}:
- PyObject &lt;matplotlib.lines.Line2D object at 0x7f6e338e1cf8&gt;
-</code></pre>
+<p><img src="/img/output_3_0.png" alt="png" /></p>
 
 <p>To plot y versus x values, put them both into the plot command.</p>
 
@@ -449,13 +460,10 @@ y = x.^3 - 3*x
 plot(x,y)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/output_5_0.png" alt="png" /></p>
+<p><img src="/img/output_5_0.png" alt="png" /></p>
 
-<pre><code>1-element Array{Any,1}:
- PyObject &lt;matplotlib.lines.Line2D object at 0x7f6e3387cbe0&gt;
-</code></pre>
-
-<p>To plot a surface, creat your x and y variables, expand to a grid, and use this to define the z values on the surface</p>
+<p>To plot a surface, create your x and y variables, expand to a grid, and use this
+to define the z values on the surface</p>
 
 <pre><code class="language-julia">n = 100
 x = linspace(-3, 3, n)
@@ -469,92 +477,109 @@ z=exp(-xgrid.^2 - ygrid.^2)
 plot_surface(x,y,z)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/output_7_0.png" alt="png" /></p>
-
-<pre><code>PyObject &lt;mpl_toolkits.mplot3d.art3d.Poly3DCollection object at 0x7f6e330b1550&gt;
-</code></pre>
+<p><img src="/img/output_7_0.png" alt="png" /></p>
 
 <p>You might like to color your surface plot with a color map:</p>
 
 <pre><code class="language-julia">plot_surface(x,y,z,cmap=&quot;jet&quot;)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/output_9_0.png" alt="png" /></p>
-
-<pre><code>PyObject &lt;mpl_toolkits.mplot3d.art3d.Poly3DCollection object at 0x7f6e337812e8&gt;
-</code></pre>
+<p><img src="/img/output_9_0.png" alt="png" /></p>
 
 <p>To plot this surface instead as an image, use the &ldquo;imshow&rdquo; command, which is somewhat like &ldquo;imagesc&rdquo; in Matlab.</p>
 
 <pre><code class="language-julia">imshow(z)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/output_11_0.png" alt="png" /></p>
-
-<pre><code>PyObject &lt;matplotlib.image.AxesImage object at 0x7f6e336a7be0&gt;
-</code></pre>
+<p><img src="/img/output_11_0.png" alt="png" /></p>
 
 <h2 id="plotting-with-gadfly">Plotting with Gadfly</h2>
 
-<p>The Gadfly package for Julia is a very nice plotting package that allows interactive control of the plots from within the notebook. According to the documentation, it is based largely on Hadley Wickhams&rsquo;s ggplot2 (<a href="http://ggplot2.org/">http://ggplot2.org/</a>) for R and Leland Wilkinson&rsquo;s book The Grammar of Graphics (<a href="https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html">https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html</a>). It was Daniel C. Jones&rsquo; brainchild and is now maintained by the community.</p>
+<p>The Gadfly package for Julia is a very nice plotting package that allows
+interactive control of the plots from within the notebook. According to the
+documentation, it is based largely on Hadley Wickhams&rsquo;s
+<a href="http://ggplot2.org/">ggplot2</a> for R and Leland Wilkinson&rsquo;s book <a href="https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html">The Grammar of
+Graphics</a>. It
+was Daniel C. Jones&rsquo; brainchild and is now maintained by the community.</p>
 
 <p>Details on the package are here: <a href="http://gadflyjl.org/stable/index.html">http://gadflyjl.org/stable/index.html</a></p>
 
-<p>To start using Gadfly, use the &ldquo;using&rdquo; command to inform Julia that you want to use this package.</p>
+<p>To start using Gadfly, use the &ldquo;using&rdquo; command to inform Julia that you want to
+use this package.</p>
 
 <pre><code class="language-julia">using Gadfly
 </code></pre>
 
-<p>Use the plot command to plot x and y values. Clicking on the graph gives you access to controls to pan and zoom.</p>
+<p>Use the plot command to plot x and y values. Clicking on the graph gives you
+access to controls to pan and zoom.</p>
 
 <pre><code class="language-julia">plot(x=[1,2,3,4,5,6],y=[1,4,9,16,25,36])
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/Gadfly1.png" alt="png" /></p>
+<p><img src="/img/Gadfly1.png" alt="png" /></p>
 
-<p>A few details line lines and points can be added explicitly to the plot, as follows.</p>
+<p>A few details line lines and points can be added explicitly to the plot, as
+follows.</p>
 
 <pre><code class="language-julia">plot(x=[0,1,2,3,4,5,6], y=[0,1,4,9,16,25,36], Geom.point, Geom.line)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/Gadfly2.png" alt="png" /></p>
+<p><img src="/img/Gadfly2.png" alt="png" /></p>
 
 <p>Gadfly even knows how to plot functions directly, as in this example.</p>
 
 <pre><code class="language-julia">plot([sin, cos], 0, 30)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/Gadfly3.png" alt="png" /></p>
+<p><img src="/img/Gadfly3.png" alt="png" /></p>
 
-<p>Gadfly excels at plotting data from large data sets. Here we load in some standard R data sets and plot the information therein.</p>
+<p>Gadfly excels at plotting data from large data sets. Here we load in some
+standard R data sets and plot the information therein.</p>
 
 <pre><code class="language-julia">using RDatasets
 plot(dataset(&quot;datasets&quot;, &quot;iris&quot;), x=&quot;SepalLength&quot;, y=&quot;SepalWidth&quot;, Geom.point)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/Gadfly4.png" alt="png" /></p>
+<p><img src="/img/Gadfly4.png" alt="png" /></p>
 
-<p>An alternate way is to assign a variable with a particular data set (the iris data set, which is information about a collectin of flowers) and plot.</p>
+<p>An alternate way is to assign a variable with a particular data set (the iris
+data set, which is information about a collection of flowers) and plot.</p>
 
 <pre><code class="language-julia">iris = dataset(&quot;datasets&quot;, &quot;iris&quot;)
 plot(iris, x=:SepalLength, y=:SepalWidth, color=:Species, Geom.point)
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/Gadfly5.png" alt="png" /></p>
+<p><img src="/img/Gadfly5.png" alt="png" /></p>
 
 <h2 id="high-resolution-graphics-into-files">High resolution graphics into files</h2>
 
-<p>Very often we need to create some high resolution graphics in a computing environment and then export it in a file, to use within some other application. For instance, a book may need a high quality diagram that is best created by some algorithm.</p>
+<p>Very often we need to create some high resolution graphics in a computing
+environment and then export it in a file, to use within some other application.
+For instance, a book may need a high quality diagram that is best created by
+some algorithm.</p>
 
 <p>This section demonstrates a simple technique to do this.</p>
 
-<p>The basic idea is to create a Scalable Vector Graphics file (of type .svg) and fill it with text commands that indicate what to draw for the graphics image. You can read more details of all that can be draw here: <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">https://en.wikipedia.org/wiki/Scalable_Vector_Graphics</a></p>
+<p>The basic idea is to create a Scalable Vector Graphics file (of type .svg) and
+fill it with text commands that indicate what to draw for the graphics image.
+You can read more details of all that can be draw here:
+<a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">https://en.wikipedia.org/wiki/Scalable_Vector_Graphics</a></p>
 
-<p>WARNING: images displayed are often &ldquo;cached&rdquo; by your browser (Firefox, Chrome, Safari, etc), which means the file is pre-loaded for convenience. However, if your Jupyter code changes the .svg file, the browser does not know to re-draw the new image. One way to force it to draw the new image is to re-load the page. (Remember to save first.)</p>
+<div class="admonition warning">
+<p class="admonition-title">Browser Caching</p>
+<p>WARNING: images displayed are often &ldquo;cached&rdquo; by your browser (Firefox, Chrome,
+Safari, etc), which means the file is pre-loaded for convenience. However, if
+your Jupyter code changes the .svg file, the browser does not know to re-draw
+the new image. One way to force it to draw the new image is to re-load the page.
+(Remember to save first.)</p>
+</div>
 
 <h3 id="example-1-two-lines">Example 1 - Two lines</h3>
 
-<p>In this example, we will simply draw a couple of lines. The file will have four text entries. The first entry marks the  file as an svg file, the last entry indicates the end of the svg file. Two entries in the middle draw two lines. The text will look like this:</p>
+<p>In this example, we will simply draw a couple of lines. The file will have four
+text entries. The first entry marks the  file as an svg file, the last entry
+indicates the end of the svg file. Two entries in the middle draw two lines. The
+text will look like this:</p>
 
 <pre><code>&lt;svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100%' viewBox='-1  -1 2 2'&gt;
 &lt;line x1='-1' y1='1'  x2='1' y2='-1' stroke='black' stroke-width='.01' /&gt;
@@ -570,11 +595,6 @@ plot(iris, x=:SepalLength, y=:SepalWidth, color=:Species, Geom.point)
     write(f,&quot;&lt;line x1='-1' y1='-1' x2='1' y2='1' stroke='red' stroke-width='.01' /&gt; \n&quot;)
     write(f,&quot;&lt;/svg&gt;&quot;)
 end
-
-
-</code></pre>
-
-<pre><code>6
 </code></pre>
 
 <p>To display the file, we use either of these two Markdown commands:</p>
@@ -585,13 +605,16 @@ end
 
 <p>The second choice gives you a bit more control over the size of the output.</p>
 
-<p><img src="http://intro.syzygy.ca/img/simplegraphics.png" alt="The Simple Graphics" /></p>
+<p><img src="/img/simplegraphics.png" alt="The Simple Graphics" /></p>
 
-<p><img src="http://intro.syzygy.ca/img/simplegraphics.png" width="500" height="500"></p>
+<p><img src="/img/simplegraphics.png" width="500" height="500"></p>
 
 <h3 id="example-2-a-star-is-born">Example 2 - A star is born</h3>
 
-<p>Here is a slightly more interesting example. We draw a five-pointed star by connecting lines across 5 evenly spaced points on a circle. This is probably more fun to do algorithmically like this, rather than trying to do a freehand drawing of a star.</p>
+<p>Here is a slightly more interesting example. We draw a five-pointed star by
+connecting lines across 5 evenly spaced points on a circle. This is probably
+more fun to do algorithmically like this, rather than trying to do a freehand
+drawing of a star.</p>
 
 <pre><code class="language-julia">open(&quot;star.svg&quot;, &quot;w&quot;) do f
     write(f,&quot;&lt;svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100%' viewBox='-1  -1 2 2'&gt; \n&quot;)
@@ -606,48 +629,66 @@ end
 end
 </code></pre>
 
-<pre><code>6
-</code></pre>
-
-<p><img src="http://intro.syzygy.ca/img/star.png" width="200" height="200"></p>
+<p><img src="/img/star.png" width="200" height="200"></p>
 
 <h3 id="example-3-mathieu-spectra">Example 3 -  Mathieu Spectra</h3>
 
-<p>We construct spectra for the almost Mathieu operator, also known as the Hofstadter Butterfly. <a href="https://en.wikipedia.org/wiki/Hofstadter's_butterfly">https://en.wikipedia.org/wiki/Hofstadter's_butterfly</a></p>
+<p>We construct spectra for the almost Mathieu operator, also known as the
+Hofstadter Butterfly. <a href="https://en.wikipedia.org/wiki/Hofstadter's_butterfly">https://en.wikipedia.org/wiki/Hofstadter's_butterfly</a></p>
 
-<p>Personally, I&rsquo;ve done this before using MATLAB, taking a lot of care to make it fast. Here in Julia, it seems to be fast even without any special tricks. In particular, I leave the matrices U,V, in their natural form, and compute directly in their full matrix form.</p>
+<p>Personally, I&rsquo;ve done this before using MATLAB, taking a lot of care to make it
+fast. Here in Julia, it seems to be fast even without any special tricks. In
+particular, I leave the matrices U,V, in their natural form, and compute
+directly in their full matrix form.</p>
 
-<p>This code creates a file mathieu.svg which can be opened directly in Jupyter Hub using the browser. In fact, the image opened separately looks better than the display here.</p>
+<p>This code creates a file mathieu.svg which can be opened directly in Jupyter Hub
+using the browser. In fact, the image opened separately looks better than the
+display here.</p>
 
 <h3 id="the-math">The Math</h3>
 
-<p>The almost Mathieu operator describes the energy levels of an electron moving in a periodic crystal (2D), under the influence of a magnetic fields. This causes only certain energy levels to be allowed, depending on a parameter</p>
+<p>The almost Mathieu operator describes the energy levels of an electron moving in
+a periodic crystal (2D), under the influence of a magnetic fields. This causes
+only certain energy levels to be allowed, depending on a parameter</p>
 
 <p>$$\mu = e^{2\pi i \theta}.$$</p>
 
-<p>We take two universal unitaries $$u,v$$ which satisfy a commutation relation</p>
+<p>We take two universal unitaries $u,v$ which satisfy a commutation relation</p>
 
 <p>$$ vu = \mu uv.$$</p>
 
-<p>The related energy operator (almost Mathieu operator) is the linear, self adjoint operator</p>
+<p>The related energy operator (almost Mathieu operator) is the linear, self
+adjoint operator</p>
 
 <p>$$h = u + u^* + v + v^*.$$</p>
 
-<p>The curious thing is that the spectrum of $$h$$ is either a union of intervals, or a Cantor set, depending on whether $$\theta$$ is rational or irrational. Which seems odd in physics, that a tiny perturbation in one parameter should give such a fundamental change in the nature of the spectra.</p>
+<p>The curious thing is that the spectrum of $h$ is either a union of intervals,
+or a Cantor set, depending on whether $\theta$ is rational or irrational.
+Which seems odd in physics, that a tiny perturbation in one parameter should
+give such a fundamental change in the nature of the spectra.</p>
 
-<p>In the case where $$\theta = p/q$$ is rational, we can compute the spectrum exactly.</p>
+<p>In the case where $\theta = p/q$ is rational, we can compute the spectrum
+exactly.</p>
 
-<p>We define here two unitaries $$U$$ and $$V$$ that are $$q\times q$$ matrices. $$U$$ is a diagonal matrix, while $$V$$ is a permutation matrix. They satisfy the fundamental intertwining identity</p>
+<p>We define here two unitaries $U$ and $V$ that are $q\times q$ matrices.
+$U$ is a diagonal matrix, while $V$ is a permutation matrix. They satisfy
+the fundamental intertwining identity</p>
 
 <p>$$ VU = e^{2\pi i \theta} UV, \mbox{ where } \theta = p/q.$$</p>
 
-<p>Replacing $$U,V$$ by a scalar multiple $$z_1U, z_2V$$ will satisfy the same commutation constraint. Setting $$z_1 = z_2 = 1$$ gives one extreme set of spectral points, that form one-half of the interval endpoints that make up the spectrum. Setting $$z_1 = z_2 = e^{2\pi i/q}$$ gives the other extreme set, forming the other set of endpoints.</p>
+<p>Replacing $U,V$ by a scalar multiple $z_1U, z_2V$ will satisfy the same
+commutation constraint. Setting $z_1 = z_2 = 1$ gives one extreme set of
+spectral points, that form one-half of the interval endpoints that make up the
+spectrum. Setting $z_1 = z_2 = e^{2\pi i/q}$ gives the other extreme set,
+forming the other set of endpoints.</p>
 
 <h3 id="the-code">The code</h3>
 
-<p>The matrix $$H$$ defined below is the self adjoint sum of these unitaries, and $$L$$ has constants thrown in to get the other extreme points of the spectra.</p>
+<p>The matrix $H$ defined below is the self adjoint sum of these unitaries, and
+$L$ has constants thrown in to get the other extreme points of the spectra.</p>
 
-<p>We compute the eigenvalues, then throw them into a file that plots all the lines.</p>
+<p>We compute the eigenvalues, then throw them into a file that plots all the
+lines.</p>
 
 <pre><code class="language-julia">U(p,q) = diagm(exp(2*pi*1im*(1:q)*p/q))
 V(p,q) = circshift(eye(q),(0,1))
@@ -655,21 +696,14 @@ H(p,q) = U(p,q)+U(p,q)' + V(p,q)+V(p,q)'
 L(p,q) = exp(pi*1im/q)*U(p,q)+exp(-pi*1im/q)U(p,q)' + exp(pi*1im/q)*V(p,q)+exp(-pi*1im/q)*V(p,q)'
 eigH(p,q) = eig(H(p,q))[1]
 eigL(p,q) = eig(L(p,q))[1]
-</code></pre>
 
-<pre><code>eigL (generic function with 1 method)
-</code></pre>
 
-<pre><code class="language-julia">function printaline(f,xone,xtwo,y)
+function printaline(f,xone,xtwo,y)
     y8 = y*8
     print(f,&quot;&lt;line x1='$xone' y1='$y8' x2='$xtwo' y2='$y8' stroke='black' stroke-width='.01' /&gt; \n&quot;)
 end
-</code></pre>
 
-<pre><code>printaline (generic function with 1 method)
-</code></pre>
-
-<pre><code class="language-julia">f = open(&quot;mathieu.svg&quot;,&quot;w&quot;)
+f = open(&quot;mathieu.svg&quot;,&quot;w&quot;)
 print(f,&quot;&lt;svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100%' viewBox='-4  0 8 8'&gt; \n&quot;)
 printaline(f,-4,4,0)
 printaline(f,-4,4,1)
@@ -693,18 +727,24 @@ close(f)
 <pre><code>&lt;img src=&quot;/img/mathieu.svg&quot; width=&quot;600&quot; height=&quot;600&quot;&gt;
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/mathieu.png" width="600" height="600"></p>
+<p><img src="/img/mathieu.png" width="600" height="600"></p>
 
 <h2 id="animation-in-julia">Animation in Julia.</h2>
 
-<p>Animated plots in Julia can be created using the matplotlib tools that we know from Python.</p>
+<p>Animated plots in Julia can be created using the matplotlib tools that we know
+from Python.</p>
 
-<p>The idea is the same. There are three steps to creating an object that will contain the animation:
-- draw the empty figure
-- define an init function, and an animate function, that will draw the successive frames
-- create the animation using the FuncAnimation fucntion (which calls init and animate)</p>
+<p>The idea is the same. There are three steps to creating an object that will
+contain the animation:</p>
 
-<p>This object is then saved as an MP4 file, which can then be played in the notebook using an html command.</p>
+<ul>
+<li>draw the empty figure</li>
+<li>define an init function, and an animate function, that will draw the successive frames</li>
+<li>create the animation using the FuncAnimation fucntion (which calls init and animate)</li>
+</ul>
+
+<p>This object is then saved as an MP4 file, which can then be played in the
+notebook using an html command.</p>
 
 <p>For more ideas on animation, take a look here:
  <a href="http://nbviewer.jupyter.org/github/tom26/JuliaFun/blob/master/2D%203-Body%20Problem.ipynb">http://nbviewer.jupyter.org/github/tom26/JuliaFun/blob/master/2D%203-Body%20Problem.ipynb</a></p>
@@ -718,7 +758,8 @@ using PyCall
 @pyimport matplotlib.animation as anim
 </code></pre>
 
-<p>We first construct the empty figure. For convenience, we define 3 global data structures called lines.</p>
+<p>We first construct the empty figure. For convenience, we define 3 global data
+structures called lines.</p>
 
 <pre><code class="language-julia">#Construct Figure and Plot Data
 fig = figure(&quot;MyFigure&quot;,figsize=(10,10))
@@ -728,10 +769,7 @@ global line2 = ax[:plot]([],[],&quot;g-&quot;)[1]
 global line3 = ax[:plot]([],[],&quot;b-&quot;)[1]
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/J_Animation1.png" alt="png" /></p>
-
-<pre><code>PyObject &lt;matplotlib.lines.Line2D object at 0x7f3be6f4d2e8&gt;
-</code></pre>
+<p><img src="/img/J_Animation1.png" alt="png" /></p>
 
 <p>We now define the init function, which sets the data for the first frame</p>
 
@@ -747,12 +785,11 @@ function init()
 end
 </code></pre>
 
-<pre><code>init (generic function with 1 method)
-</code></pre>
+<p>Next is the animation function, which will draw each frame of the animation
+using index i.</p>
 
-<p>Next is the animation function, which will draw each frame of the animation using index i.</p>
-
-<p>In this case, we just draw three lines. The first is along the line x=y, going from point (0,0) to (i/10,i/10).</p>
+<p>In this case, we just draw three lines. The first is along the line x=y, going
+from point (0,0) to (i/10,i/10).</p>
 
 <pre><code class="language-julia"># animate draws the i-th frame, where i starts at i=0 as in Python
 function animate(i)
@@ -767,15 +804,9 @@ function animate(i)
 end
 </code></pre>
 
-<pre><code>animate (generic function with 1 method)
-</code></pre>
-
 <p>Now we create the animation object by calling the Python function FuncAnimaton.</p>
 
 <pre><code class="language-julia">myanim = anim.FuncAnimation(fig, animate, init_func=init, frames=100, interval=20)
-</code></pre>
-
-<pre><code>PyObject &lt;matplotlib.animation.FuncAnimation object at 0x7f3be65cc5c0&gt;
 </code></pre>
 
 <p>This is converted to an MP4 movie file and saved on disk in this format.</p>
@@ -798,11 +829,15 @@ display(&quot;text/html&quot;, html_video(&quot;3Lines.mp4&quot;))
 
 <h2 id="seismic-julia-package">Seismic Julia Package</h2>
 
-<p>The Seismic Package for Julia is under development by SAIG (Signal Analysis and Imaging Group) at the University of Alberta. This module provides tools to read, write, process, and plot 3D reflection seismic data.</p>
+<p>The Seismic Package for Julia is under development by SAIG (Signal Analysis and
+Imaging Group) at the University of Alberta. This module provides tools to read,
+write, process, and plot 3D reflection seismic data.</p>
 
-<p>We use this as an example of how to use a large, external Julia package in the syzygy system.</p>
+<p>We use this as an example of how to use a large, external Julia package in the
+syzygy system.</p>
 
-<p>To get started, you first notify Julia that you will be using the two packages PyPlot and Seismic. Enter the following command:</p>
+<p>To get started, you first notify Julia that you will be using the two packages
+PyPlot and Seismic. Enter the following command:</p>
 
 <pre><code class="language-julia">using PyPlot, Seismic
 </code></pre>
@@ -811,9 +846,12 @@ display(&quot;text/html&quot;, html_video(&quot;3Lines.mp4&quot;))
 
 <p>However, a few common problems may arise.</p>
 
-<p>First, the packages might not be found in the current path. In this case, you need to run <code>Pkg.add(&quot;PyPlot&quot;)</code> to install the PyPlot package. You may alos need to run <code>Pkg.add(&quot;Seismic&quot;)</code> to install the Seismic package.</p>
+<p>First, the packages might not be found in the current path. In this case, you
+need to run <code>Pkg.add(&quot;PyPlot&quot;)</code> to install the PyPlot package. You may alos need
+to run <code>Pkg.add(&quot;Seismic&quot;)</code> to install the Seismic package.</p>
 
-<p>These commands are entered like this (but don&rsquo;t use them unless you got the error message):</p>
+<p>These commands are entered like this (but don&rsquo;t use them unless you got the
+error message):</p>
 
 <pre><code class="language-julia">Pkg.add(&quot;PyPlot&quot;)
 Pkg.add(&quot;Seismic&quot;)
@@ -824,37 +862,46 @@ Pkg.add(&quot;Seismic&quot;)
 <pre><code class="language-julia">using PyPlot, Seismic
 </code></pre>
 
-<p>The second problem you may have is that during the &ldquo;using&rdquo; command execution, Julia may have trouble precompiling the modules (you will get an error message). Typically this is due to some incompatibility with the &ldquo;Compat&rdquo; module. This is a known problem which hopefully will be fixed soon. A work-around is to save your Notebook, close the Jupyter Server, then restart the Server. This seems to load in the compiled packages appropriately.</p>
+<p>The second problem you may have is that during the &ldquo;using&rdquo; command execution,
+Julia may have trouble precompiling the modules (you will get an error message).
+Typically this is due to some incompatibility with the &ldquo;Compat&rdquo; module. This is
+a known problem which hopefully will be fixed soon. A work-around is to save
+your Notebook, close the Jupyter Server, then restart the Server. This seems to
+load in the compiled packages appropriately.</p>
 
-<p>A third problem you may have is that these are large packages, and the 1 GigaByte of filespace you have been allotted may not be enough for all this. One solution is to get rid of any excess files you no longer need. (Just delete them.) Another solution is to request from your administrator a larger filespace allocation.</p>
+<p>A third problem you may have is that these are large packages, and the 1
+GigaByte of filespace you have been allotted may not be enough for all this. One
+solution is to get rid of any excess files you no longer need. (Just delete
+them.) Another solution is to request from your administrator a larger filespace
+allocation.</p>
 
 <p>You are now ready to use Seismic Julia.</p>
 
-<p>First, we use the &ldquo;download command&rdquo; to grab some data from the United States Geological Survey webserver, as follows:</p>
+<p>First, we use the &ldquo;download command&rdquo; to grab some data from the United States
+Geological Survey webserver, as follows:</p>
 
 <pre><code class="language-julia">download(&quot;http://certmapper.cr.usgs.gov/nersl/NPRA/seismic/1979/616_79/PROCESSED/616_79_PR.SGY&quot;, &quot;616_79_PR.SGY&quot;);
 
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+    100 11.3M  100 11.3M    0     0   189k      0  0:01:01  0:01:01 --:--:--  113k
+
+
+    number of traces: 1908
+    number of samples per trace: 1500
 </code></pre>
 
-<pre><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100 11.3M  100 11.3M    0     0   189k      0  0:01:01  0:01:01 --:--:--  113k
+<p>This creates a new file on you server, named &ldquo;616_79_PR.SGY&rdquo; which is 11
+Megabytes of data.</p>
 
-
-number of traces: 1908
-number of samples per trace: 1500
-</code></pre>
-
-<p>This creates a new file on you server, named &ldquo;616_79_PR.SGY&rdquo; which is 11 Megabytes of data.</p>
-
-<p>Use the &ldquo;SegyToSeis&rdquo; command to convert this SEGY-style file into a .seis file (the native file type for the Seismic Julia package).</p>
+<p>Use the &ldquo;SegyToSeis&rdquo; command to convert this SEGY-style file into a .seis file
+(the native file type for the Seismic Julia package).</p>
 
 <pre><code class="language-julia">SegyToSeis(&quot;616_79_PR.SGY&quot;, &quot;616_79_PR.seis&quot;);
-</code></pre>
 
-<pre><code>number of traces: 1908
-number of samples per trace: 1500
+    number of traces: 1908
+    number of samples per trace: 1500
 </code></pre>
 
 <p>This creates a new file called &ldquo;616_79_PR.seis&rdquo; which also is about 11 Megabytes large.</p>
@@ -869,11 +916,14 @@ number of samples per trace: 1500
 <pre><code class="language-julia">SeisPlot(d[1:500, :], e, cmap=&quot;PuOr&quot;, wbox=9);
 </code></pre>
 
-<p><img src="http://intro.syzygy.ca/img/J_Seismic1.png" alt="png" /></p>
+<p><img src="/img/J_Seismic1.png" alt="png" /></p>
 
-<p>This view is a cross-sectional image of the earth showing some interesting geological layers sloping down to the right. It was constructed from a seismic experiment using vibrational waves to explore the earth&rsquo;s subsurface.</p>
+<p>This view is a cross-sectional image of the earth showing some interesting
+geological layers sloping down to the right. It was constructed from a seismic
+experiment using vibrational waves to explore the earth&rsquo;s subsurface.</p>
 
-<p>To learn more about the many utilities available in Seismic Julia, refer to the source pages at: <a href="https://github.com/SeismicJulia">https://github.com/SeismicJulia</a></p>
+<p>To learn more about the many utilities available in Seismic Julia, refer to the
+source pages at: <a href="https://github.com/SeismicJulia">https://github.com/SeismicJulia</a></p>
 
 
 			<aside class="copyright" role="note">
@@ -954,6 +1004,8 @@ number of samples per trace: 1500
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -996,6 +1048,11 @@ number of samples per trace: 1500
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -19,7 +19,7 @@
       
       <guid>http://intro.syzygy.ca/python-for-computing/</guid>
       <description>Python for Computing There are many online resources for learning Python. A good place to start is the documentation provided by the Python Software Foundation, located here: https://www.python.org/doc/
-This chapter focuses on how to use Python within a Jupyter notebook. Doing simple calculations in Python is very straightforward. However, once you try to do somethig complex, there are a few tricks to learn. In particular, how to get plots to appear in the notebook, how to do animations, and a few other niceties.</description>
+This chapter focuses on how to use Python within a Jupyter notebook. Doing simple calculations in Python is very straightforward. However, once you try to do something complex, there are a few tricks to learn. In particular, how to get plots to appear in the notebook, how to do animations, and a few other niceties.</description>
     </item>
     
   </channel>

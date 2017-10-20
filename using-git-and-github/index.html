@@ -66,8 +66,6 @@
     </style>
 
     
-    <link rel="stylesheet" href="http://intro.syzygy.ca/static/application.css">
-    
     <script src="http://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
@@ -183,7 +181,7 @@
 
 
 
-<a  title="Front" href="http://intro.syzygy.ca/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
@@ -201,7 +199,7 @@
 
 
 
-<a  title="Getting Started" href="http://intro.syzygy.ca/getting-started/">
+<a  title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
@@ -219,7 +217,7 @@
 
 
 
-<a  title="The Basic Elements" href="http://intro.syzygy.ca/the-basic-elements/">
+<a  title="The Basic Elements" href="/the-basic-elements/">
 	
 	The Basic Elements
 </a>
@@ -237,7 +235,7 @@
 
 
 
-<a  title="Python for Computing" href="http://intro.syzygy.ca/python-for-computing/">
+<a  title="Python for Computing" href="/python-for-computing/">
 	
 	Python for Computing
 </a>
@@ -255,7 +253,7 @@
 
 
 
-<a  title="Julia for Computing" href="http://intro.syzygy.ca/julia-for-computing/">
+<a  title="Julia for Computing" href="/julia-for-computing/">
 	
 	Julia for Computing
 </a>
@@ -273,7 +271,7 @@
 
 
 
-<a  title="R for Computing" href="http://intro.syzygy.ca/r-for-computing/">
+<a  title="R for Computing" href="/r-for-computing/">
 	
 	R for Computing
 </a>
@@ -291,7 +289,7 @@
 
 
 
-<a  title="Unix Tricks" href="http://intro.syzygy.ca/unix-tricks/">
+<a  title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
@@ -309,7 +307,7 @@
 
 
 
-<a class="current" title="Using Git and GitHub" href="http://intro.syzygy.ca/using-git-and-github/">
+<a class="current" title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
@@ -330,7 +328,7 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="http://intro.syzygy.ca/troubleshooting/">
+<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
@@ -348,7 +346,7 @@
 
 
 
-<a  title="Acknowledgements" href="http://intro.syzygy.ca/acknowledgements/">
+<a  title="Acknowledgements" href="/acknowledgements/">
 	
 	Acknowledgements
 </a>
@@ -407,48 +405,67 @@
 
 <h2 id="using-git-and-github">Using Git and Github</h2>
 
-<p><strong>Git</strong> is a Unix command used for sharing code and other computer files with colleagues.</p>
+<p><strong>Git</strong> is a Unix command used for sharing code and other computer files with
+colleagues.</p>
 
-<p><strong>Github</strong> is a popular place on the web to store your code and other computer files, either privately or for the whole world to see. These collections are organized into units (like folders) called repositories.</p>
+<p><strong>Github</strong> is a popular place on the web to store your code and other computer
+files, either privately or for the whole world to see. These collections are
+organized into units (like folders) called repositories.</p>
 
-<p><strong>Git</strong> is also used for version control when working on a large computer project, where you need to keep track of changes in many different files, possibly written by many different people. Because <strong>Git</strong> can be used for very complex projects, it is a very powerful tool.</p>
+<p><strong>Git</strong> is also used for version control when working on a large computer
+project, where you need to keep track of changes in many different files,
+possibly written by many different people. Because <strong>Git</strong> can be used for very
+complex projects, it is a very powerful tool.</p>
 
-<p>Let&rsquo;s keep things simple here. The author of this book has a public <strong>Github</strong> site, which has many repositories that he has created for various purposes. You are welcome to look at his public site here: <a href="https://github.com/mlamoureux">https://github.com/mlamoureux</a></p>
+<p>Let&rsquo;s keep things simple here. The author of this book has a public <strong>Github</strong>
+site, which has many repositories that he has created for various purposes. You
+are welcome to look at his public site here: <a href="https://github.com/mlamoureux">https://github.com/mlamoureux</a></p>
 
-<p>There is a repository for the source code written for this eBook, you can look at it here: <a href="https://github.com/mlamoureux/UsingSyzygy">https://github.com/mlamoureux/UsingSyzygy</a></p>
+<p>There is a repository for the source code written for this eBook, you can look
+at it here: <a href="https://github.com/mlamoureux/UsingSyzygy">https://github.com/mlamoureux/UsingSyzygy</a></p>
 
-<p>To make a copy of this repository on your syzygy.ca account, simply open a new Notebook (say, in Python) and enter the following commands:</p>
+<p>To make a copy of this repository on your syzygy.ca account, simply open a new
+Notebook (say, in Python) and enter the following commands:</p>
 
-<pre><code class="language-python">%%bash
-git clone https://github.com/mlamoureux/UsingSyzygy.git 
-
+<pre><code class="language-python">!git clone https://github.com/mlamoureux/UsingSyzygy.git 
 </code></pre>
 
-<p>This will make a new folder on your Jupyter Hub called &ldquo;UsingSyzygy&rdquo; that will have all the code inside that folder. You can now open those files and run the code in your server.</p>
+<p>This will make a new folder on your Jupyter Hub called &ldquo;UsingSyzygy&rdquo; that will
+have all the code inside that folder. You can now open those files and run the
+code in your server.</p>
 
-<p>Now, as you get more experience with <strong>Git</strong> and <strong>Github</strong>, you might like to clone some other people&rsquo;s repositories and use their code. It is a good idea to keep your Jupyter Hub organized, so you can create a new folder, and clone the new stuff directly into that new folder. A series of Notebook commands to do this would look like this:</p>
+<p>Now, as you get more experience with <strong>Git</strong> and <strong>Github</strong>, you might like to
+clone some other people&rsquo;s repositories and use their code. It is a good idea to
+keep your account organized, so you can create a new folder, and clone the
+new stuff directly into that new folder. A series of Notebook commands to do
+this would look like this:</p>
 
 <pre><code class="language-python">%mkdir MyNewDirectory 
-
 </code></pre>
 
 <pre><code class="language-python">%cd MyNewDirectory
-
 </code></pre>
 
-<pre><code class="language-python">%%bash
-git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
-
+<pre><code class="language-shell">!git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
 </code></pre>
 
-<p>You can find THE-USER-NAME and THE-REPOSITORY-NAME.git right on <strong>Github</strong> when you are looking at someone&rsquo;s repository. There is a button on the right, that says &ldquo;Clone or download.&rdquo; Click on &ldquo;Clone or download&rdquo; and request a &ldquo;Clone with HTTPS.&rdquo; You will then get the https address for the repo, which you can paste into the <strong>git clone</strong> command above.</p>
+<p>You can find THE-USER-NAME and THE-REPOSITORY-NAME.git right on <strong>Github</strong> when
+you are looking at someone&rsquo;s repository. There is a button on the right, that
+says &ldquo;Clone or download.&rdquo; Click on &ldquo;Clone or download&rdquo; and request a &ldquo;Clone with
+HTTPS.&rdquo; You will then get the https address for the repo, which you can paste
+into the <strong>git clone</strong> command above.</p>
 
-<p>Of course, you can also do this in a terminal window (by opening &ldquo;New Terminal&rdquo; in the front page of your Jupyter server). But frankly, I hate the Unix terminal and its command line, so I would naturally advise you to be like me and just avoid Unix.  Use the Notebook directly. :-)</p>
+<p>Of course, you can also do this in a terminal window (by opening &ldquo;New Terminal&rdquo;
+in the front page of your Jupyter server). But frankly, I hate the Unix terminal
+and its command line, so I would naturally advise you to be like me and just
+avoid Unix.  Use the Notebook directly. :-)</p>
 
 <p>Some details on cloning <strong>Github</strong> repos are here:
 <a href="https://help.github.com/articles/cloning-a-repository/">https://help.github.com/articles/cloning-a-repository/</a></p>
 
-<p>IMPORTANT NOTE: If you are cloning from a PRIVATE repo on <strong>Github</strong> you will need to do it from the Unix terminal, as the server will ask you for a username and password (to ensure that you really have access to that private repo).</p>
+<p>IMPORTANT NOTE: If you are cloning from a PRIVATE repo on <strong>Github</strong> you will
+need to do it from the Unix terminal, as the server will ask you for a username
+and password (to ensure that you really have access to that private repo).</p>
 
 
 			<aside class="copyright" role="note">
@@ -529,6 +546,8 @@ git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git
 
     <script src="http://intro.syzygy.ca/javascripts/application.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
 
     <script>
       /* Add headers to scrollspy */
@@ -571,6 +590,11 @@ git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
