@@ -16,7 +16,7 @@ Click on the subsections to read further.
 
 
 Log into the syzygy service by using your home university credentials or Google
-credentials. Currently, four sites are up and running:
+credentials. Currently, the following sites are up and running:
 
 * [https://sfu.syzygy.ca](https://sfu.syzygy.ca) Simon Fraser University
 * [https://ubc.syzygy.ca](https://ubc.syzygy.ca) University of British Columbia
@@ -28,7 +28,7 @@ credentials. Currently, four sites are up and running:
 * [https://uvic.syzygy.ca](https://uvic.syzygy.ca) University of Victoria
 * [https://uwaterloo.syzygy.ca](https://uwaterloo.syzygy.ca) University of Waterloo
 * [https://cybera.syzygy.ca](https://cybera.syzygy.ca) Cybera (via Google Authentication)
-* [https://cybera.syzygy.ca](https://cybera.syzygy.ca) PIMS (via Google Authentication)
+* [https://cybera.syzygy.ca](https://pims.syzygy.ca) PIMS (via Google Authentication)
 
 Your "university credentials" will be something like your campus-wide login ID,
 student or employee number, etc. You will also need to enter the password
