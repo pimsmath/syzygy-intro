@@ -10,7 +10,7 @@ The syzygy service is a set of computational tools made available through a part
 
 Syzygy is pronounced like the start of "Sizzle" -- sizz eh gee. It means the [alignment of three or more celestial objects](http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html). In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.
 
-![syzygy-image](https://upload.wikimedia.org/wikipedia/commons/c/c2/Three_Planets_Dance_Over_La_Silla.jpg)
+![syzygy-image](/img/syzygy.jpg)
 (Image credit: [European Southern Observatory](https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg))
 
 
