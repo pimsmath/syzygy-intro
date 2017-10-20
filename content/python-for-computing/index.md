@@ -34,7 +34,9 @@ Python 2 (integer division) while 2/3 returns .66666666666 in **Python 3**
 (floating point division). And printing is a bit different. And there is enough
 new, good stuff in **Python 3** that you really should use it
 
-**Summary:** Use** Python 3**, please. 
+{{< note title="Note" >}}
+Use **Python 3**, please. 
+{{< /note >}}
 
 ## Plotting in a Python notebook
 
@@ -1141,10 +1143,6 @@ model = pd.ols(y=aapl_rets, x={'MSFT': msft_rets},window=256)
 
     /opt/conda/envs/python2/lib/python2.7/site-packages/ipykernel/__main__.py:2: FutureWarning: The pandas.stats.ols module is deprecated and will be removed in a future version. We refer to external packages like statsmodels, see some examples here: http://statsmodels.sourceforge.net/stable/regression.html
       from ipykernel import kernelapp as app
-```
-
-
-```python
 model.beta
 ```
 
@@ -1691,9 +1689,10 @@ plt.plot(t_arr,y-y_exact)
 ![png](/img/P_Soutput_9_1.png)
 
 Okay, I went up to one million steps, and the error only reduced to about
-1.0x10^\(-7\). Not much of an improvement.
+$1.0x10^\(-7\)$. Not much of an improvement.
 
-Let's try another experiment, where we go for a really long time. Say 100 time longer than the example above.
+Let's try another experiment, where we go for a really long time. Say 100 time
+longer than the example above.
 
 ```python
 numsteps=100001  # adjust this parameter
@@ -1709,9 +1708,12 @@ plt.plot(t_arr,y-y_exact)
 
 ![png](/img/P_Soutput_11_1.png)
 
-Interesting. My little test show the error grow linearly with the length of time. In the first time, 2x10^\(-7\). For 10 times longer, 2x10^\(-6\). For 100 times longer, 2x10^\(-5\). And so one.
+Interesting. My little test show the error grow linearly with the length of
+time. In the first time, $2x10^\(-7\)$. For 10 times longer, $2x10^\(-6\)$. For
+100 times longer, $2x10^\(-5\)$. And so one.
 
-A more subtle question: are these amplitude errors, or phase errors, or perhaps a combination?
+A more subtle question: are these amplitude errors, or phase errors, or perhaps
+a combination?
 
 ```python
 p1=np.size(t_arr)-1
@@ -1727,12 +1729,14 @@ plt.plot(t_arr[p0:p1],y[p0:p1]-y_exact[p0:p1])
 
 ![png](/img/P_Soutput_14_1.png)
 
-Ah ha! This looks like the negative derivative of the solution, which indicates we have a phase error. Because with phase error, we see the difference  
+Ah ha! This looks like the negative derivative of the solution, which indicates
+we have a phase error. Because with phase error, we see the difference  
 $$\cos(t + \delta) - \cos(t) \approx -\delta\cdot \sin(t)$$  
 while with an amplitude error, we would see  
 $$(1+\delta)\cos(t) - \cos(t) \approx \delta\cdot \cos(t).$$
 
-Let's plot the soluton and the error difference, to see if the derivative zeros line up with peaks.
+Let's plot the soluton and the error difference, to see if the derivative zeros
+line up with peaks.
 
 ```python
 plt.plot(t_arr[p0:p1],y_exact[p0:p1],t_arr[p0:p1],3000*(y[p0:p1]-y_exact[p0:p1]))
@@ -1740,17 +1744,21 @@ plt.plot(t_arr[p0:p1],y_exact[p0:p1],t_arr[p0:p1],3000*(y[p0:p1]-y_exact[p0:p1])
 
 ![png](/img/P_Soutput_16_1.png)
 
-Looking at the above, we see they don't quite line up. So a bit of phase error, a bit of amplitude error.
+Looking at the above, we see they don't quite line up. So a bit of phase error,
+a bit of amplitude error.
 
 ### The non-linear pendulum
 
-Well, it's not to hard to generalize this stuff to the non-linear pendulum, where the restoring force has a sin\(t\) in it. We want to observe the period changes with the initial conditions \(a bigger swing has a longer period\).
+Well, it's not to hard to generalize this stuff to the non-linear pendulum,
+where the restoring force has a sin\(t\) in it. We want to observe the period
+changes with the initial conditions \(a bigger swing has a longer period\).
 
 The differential equation is:
 
 $$ y''(t) + \omega^2 \sin(y(t)) = 0, \qquad y(0) = \epsilon, y'(0) = 0.$$
 
-To put this into the numerical solver, we need to reformulate as a 2 dimensional, first order system:
+To put this into the numerical solver, we need to reformulate as a 2
+dimensional, first order system:
 
 $$\mathbf{y} = (y,y')^T, \qquad \mathbf{y}'(t) = (y', -\omega^2 \sin(y))^T.$$
 
@@ -1778,11 +1786,17 @@ plt.plot(t_arr,y,t_arr,y_exact)
 
 ![png](/img/P_Soutput_19_1.png)
 
-With epsilon = 0.1 \(radians, which is about 5.7 degrees\), it is hard to see a period shift. With epsilon = 0.5 \(radians, which just under 30 degrees\), we clearly see a shift after ten cycles of oscillation.
+With epsilon = 0.1 \(radians, which is about 5.7 degrees\), it is hard to see a
+period shift. With epsilon = 0.5 \(radians, which just under 30 degrees\), we
+clearly see a shift after ten cycles of oscillation.
 
-How big is the shift? Can we figure this out easily with numerics? And how does it compare with the estimate given by the Poincare-Lindstedt method?
+How big is the shift? Can we figure this out easily with numerics? And how does
+it compare with the estimate given by the Poincare-Lindstedt method?
 
-It is kind of fun to set this up with epsilon = pi, which corresponds to an inverted pendulum. The pendulum sits upside down for a while, then slowly moves away from this unstable equilibrium point. The behaviour is very different than the linear harmonic oscillator. We show the example in the next cell.
+It is kind of fun to set this up with epsilon = pi, which corresponds to an
+inverted pendulum. The pendulum sits upside down for a while, then slowly moves
+away from this unstable equilibrium point. The behaviour is very different than
+the linear harmonic oscillator. We show the example in the next cell.
 
 ```python
 omega = .1   # basic frequency
@@ -1804,15 +1818,20 @@ plt.plot(t_arr,y,t_arr,y_exact)
 
 ### The Lorenz equation
 
-You've probably heard of the butterfly effect \(it's even a movie\). The idea is that weather can demonstrate chaotic behaviour, so that the flap of a butterfly wing in Brazil could eventually result in a tornado in Alabama.
+You've probably heard of the butterfly effect \(it's even a movie\). The idea is
+that weather can demonstrate chaotic behaviour, so that the flap of a butterfly
+wing in Brazil could eventually result in a tornado in Alabama.
 
-Lorenz was studying a simplified model for weather, given by a system of three simple ODEs:
+Lorenz was studying a simplified model for weather, given by a system of three
+simple ODEs:
 
 $$x' = \sigma(y-x), \quad y'=\rho x - y - xz, \quad z' = xy - \beta z$$
 
-where $$x,y,z$$ are functions of time, and $$\sigma, \rho,\beta$$ are fixed constants.
+where $$x,y,z$$ are functions of time, and $$\sigma, \rho,\beta$$ are fixed
+constants.
 
-When $$\rho$$ is small, the behaviour is quite predictable. But when $$\rho$$ gets better than about 24.7, you get strange, aperiodic behaviour.
+When $$\rho$$ is small, the behaviour is quite predictable. But when $$\rho$$
+gets better than about 24.7, you get strange, aperiodic behaviour.
 
 Here is some code that demonstrates the behaviour. We also include 3D plots
 
@@ -1873,12 +1892,17 @@ ax.set_zlabel('z')
 
 ![png](/img/P_Soutput_25_1.png)
 
-You should play around with the time interval \(in the definition of varible t\) to observe the predictable, followed by chaotic behaviour. ANd play with other parameters.
+You should play around with the time interval \(in the definition of varible t\)
+to observe the predictable, followed by chaotic behaviour. ANd play with other
+parameters.
 
 ### van der Pol equation
 
-This equation is used as a testbed for numerical software. It is nonlinear, and collapses to a periodic orbit very quickly. We can include information about the Jacobian, the derivative of the vector function  $$\mathbf{f}$$  
- in the ODE system $$\mathbf{y}' = \mathbf{f}(\mathbf{y},t)$$, into the ODE solver, to help it choose appropriate step sizes and reduce errors.
+This equation is used as a testbed for numerical software. It is nonlinear, and
+collapses to a periodic orbit very quickly. We can include information about the
+Jacobian, the derivative of the vector function  $$\mathbf{f}$$  in the ODE
+system $$\mathbf{y}' = \mathbf{f}(\mathbf{y},t)$$, into the ODE solver, to help
+it choose appropriate step sizes and reduce errors.
 
 The van der Pol equation is this:
 
@@ -1919,13 +1943,13 @@ print("mu = %g, number of Jacobian calls is %d" % (mu, info['nje'][-1]))
 plt.plot(t,y)
 ```
 
-```
 mu = 3, number of Jacobian calls is 0
-```
 
 ![png](/img/P_Soutput_28_2.png)
 
-Try playing with the mu parameter. mu=0 gives the harmonic oscillator. mu=10 starts giving pointy spikes. For mu big, you might want to increase the range of to values, from \[0,30\] to a larger interval like \[0,100\]. Etc.
+Try playing with the mu parameter. mu=0 gives the harmonic oscillator. mu=10
+starts giving pointy spikes. For mu big, you might want to increase the range of
+to values, from \[0,30\] to a larger interval like \[0,100\]. Etc.
 
 ```python
 mu=10 # adjust from 0 to 10, say
@@ -1945,16 +1969,12 @@ mu = 10, number of Jacobian calls is 0
 ![png](/img/P_Soutput_30_2.png)
 
 
-
-
-## Audio Generation
-
-
 # Audio Generation
 
 With a few lines of code, we can produce sound and play it. 
 
-We will import a few tools to make this possible, including pylab for plotting and numerical work. 
+We will import a few tools to make this possible, including pylab for plotting
+and numerical work. 
 
 
 ```python
@@ -1963,7 +1983,10 @@ from pylab import *
 from IPython.display import Audio
 ```
 
-We now set up five seconds of sound, sampled at 8000 times per second. We generate two pure tones together at 440 and 442 Hertz. This corresponds to a musical note at A above middle C. The slight difference in frequecies will cause a beating, or fluctuation of the sound at 2 beats per second. 
+We now set up five seconds of sound, sampled at 8000 times per second. We
+generate two pure tones together at 440 and 442 Hertz. This corresponds to a
+musical note at A above middle C. The slight difference in frequencies will
+cause a beating, or fluctuation of the sound at 2 beats per second. 
 
 
 ```python
@@ -2016,35 +2039,37 @@ By zooming in on the relevant part of the signal, we can see the presence of ene
 plot(freqs[2100:2300],fsig[2100:2300])
 ```
 
-
-
-
-    [<matplotlib.lines.Line2D at 0x7fdb581e5940>]
-
-
-
-
 ![png](/img/P_Auoutput_7_1.png)
 
 
 Some note on audio in the computer.
 
-The sound we hear with our ears are the rapid vibrations of air pressure on our eardrums, usually generated from vibrations of some object like a guitar string, drum head, or the vocal cords of a human. These sounds are represented as a function of time. In the computer, we represent this function as a list of numbers, or samples, that indicate the value of the function at a range of time values. 
+The sound we hear with our ears are the rapid vibrations of air pressure on our
+eardrums, usually generated from vibrations of some object like a guitar string,
+drum head, or the vocal cords of a human. These sounds are represented as a
+function of time. In the computer, we represent this function as a list of
+numbers, or samples, that indicate the value of the function at a range of time
+values. 
 
-Usually, we sample at uniform time intervals. In the example above, we have 8000 samples per second, for a length of 5 seconds. The Shannon sampling theorem tells us that we need to sample at least as fast as twice the highest frequency that we want to reproduce. 
+Usually, we sample at uniform time intervals. In the example above, we have 8000
+samples per second, for a length of 5 seconds. The Shannon sampling theorem
+tells us that we need to sample at least as fast as twice the highest frequency
+that we want to reproduce. 
 
-Humans with exceptional hearing can hear frequencies up to 20,000 Hz (20 kHz). This suggests we should sample at least at 40,000 samples per second for high quality audio. In fact, a compact disk is sampled at 44100 samples per second, and digital audio tapes at 48000 samples per second. 
+Humans with exceptional hearing can hear frequencies up to 20,000 Hz (20 kHz).
+This suggests we should sample at least at 40,000 samples per second for high
+quality audio. In fact, a compact disk is sampled at 44100 samples per second,
+and digital audio tapes at 48000 samples per second. 
 
-But, since computer speakers are often of lower quality, we typically sample at lower rates like 8000, 10000, or 22050 samples per second. That give sound that is "good enough" and saves on computer memory. 
+But, since computer speakers are often of lower quality, we typically sample at
+lower rates like 8000, 10000, or 22050 samples per second. That give sound that
+is "good enough" and saves on computer memory. 
 
 
-```python
-
-```
 
 ## YouTube
- With just a couple of lines, you can insert a YouTube video into your Jupyter notebook.
-
+With just a couple of lines, you can insert a YouTube video into your Jupyter
+notebook.
 
 ```python
 from IPython.display import YouTubeVideo
@@ -2067,26 +2092,30 @@ YouTubeVideo('kthi--SH2Nk')   # Counting to 100 in Cree
 
 # d3 and fancy user interface
 
-We can use a resource called d3 to great very complex user interfaces in a Notebook.
+We can use a resource called d3 to great very complex user interfaces in a
+Notebook.
 
-In this example,  a cluster of balls is created that moves around as the computer mouse chases the balls, as displayed here. Click the picture to interact with the example.
+In this example, a cluster of balls is created that moves around as the
+computer mouse chases the balls, as displayed here. Click the picture to
+interact with the example.
 
 <a href="/img/assets/P_d3_html.html">
   <img src="/img/assets/Balls.png" alt="Chase the balls" >
 </a>
 
 
-
-This code was poached from here:  
+This code was poached from here:
 [https://github.com/skariel/IPython_d3_js_demo/blob/master/d3_js_demo.ipynb](https://github.com/skariel/IPython_d3_js_demo/blob/master/d3_js_demo.ipynb)
 
 There are three cells in this example.
-- the first cell creates a file, which has some html code and javascript to control the balls
-- the second cell defines Python functions that edie the file, to adjust the number of balls, etc.
-- the third cell calls the Python funciton f1 that launches the html and javascript. 
+  - the first cell creates a file, which has some html code and javascript to
+    control the balls
+  - the second cell defines Python functions that edie the file, to adjust the
+    number of balls, etc.
+  - the third cell calls the Python funciton f1 that launches the html and
+    javascript. 
 
 Here is the first cell. 
-
 ```python
 %%writefile f1.template
 <!DOCTYPE html>
@@ -2231,7 +2260,3 @@ Here is the third and final cell.
 ```python
 f1(ball_count=50, color_count=17, rad_fac=10, rad_min=3, w=600)
 ```
-
-
-
-

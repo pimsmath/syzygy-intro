@@ -27,7 +27,7 @@ googleAnalytics = ""
 
     # Custom assets
     custom_css = ['static/application.css']
-    custom_js  = []
+    custom_js  = ["https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"]
 
     # Syntax highlighting theme
     highlight_css  = ""
@@ -98,8 +98,8 @@ googleAnalytics = ""
     weight = 90
 
 [[menu.main]]
-    name   = "Acknowledgments"
-    url    = "acknowledgments/"
+    name   = "Acknowledegments"
+    url    = "acknowledegments/"
     weight = 100
 
 

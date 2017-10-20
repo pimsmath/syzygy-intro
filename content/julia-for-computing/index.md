@@ -6,36 +6,49 @@ weight: 40
 
 ## Julia for Computing
 
-The Julia computing language is a relative newcomer to the compute world that is proving to be very powerful and effective for scientific computation. It aims to combine the flexibility and ease-of-use of am interpreted, dynamic language (like Matlab) with the speed and efficiency of a compiled, statically typed language (like C or C++). 
+The Julia computing language is a relative newcomer to the compute world that is
+proving to be very powerful and effective for scientific computation. It aims to
+combine the flexibility and ease-of-use of am interpreted, dynamic language
+(like Matlab) with the speed and efficiency of a compiled, statically typed
+language (like C or C++). 
 
-There are many online resources for learning the Julia language. A good place to start is the documentation provided by the Julia developers at: http://docs.julialang.org/
+There are many online resources for learning the Julia language. A good place to
+start is the documentation provided by the Julia developers at:
+http://docs.julialang.org/
 
-A good resource for new users is here: https://en.wikibooks.org/wiki/Introducing_Julia
+A good resource for new users is the [Introducing Julia
+wikibook](https://en.wikibooks.org/wiki/Introducing_Julia)
 
-There are many software packages that have been developed for Julia to do many common computational tasks. The list of registered Julia packages can be found at http://pkg.julialang.org. 
+There are many software packages that have been developed for Julia to do many
+common computational tasks. The list of registered Julia packages can be found
+at http://pkg.julialang.org. 
 
-This chapter focuses on how to use Julia within a Jupyter notebook. Doing simple calculations in Julia is very straightforward. We show how to make a few plots, and how to build rich graphics files. 
+This chapter focuses on how to use Julia within a Jupyter notebook. Doing simple
+calculations in Julia is very straightforward. We show how to make a few plots,
+and how to build rich graphics files. 
 
- A couple of caveats: The Julia language is still under development, and so some functionality is a bit shaky. For instance, loading a new package (Pkg.add("whatever")) often will fail. Also, the "binder button" in this book will not run Julia code for you. 
-
-
+ A couple of caveats: The Julia language is still under development, and so some
+ functionality is a bit shaky. For instance, loading a new package
+ (Pkg.add("whatever")) often will fail. Also, the "binder button" in this book
+ will not run Julia code for you. 
 
 ## Plotting with PyPlot
 
-In Julia, the PyPlot package will be most familiar to users of Python's PyPlot package, as well Matlab users.
-Unlike Python, no "magic" commands are needed to get Julia to plot onto the Jupyter notebook page.
+In Julia, the PyPlot package will be most familiar to users of Python's PyPlot
+package, as well Matlab users.  Unlike Python, no "magic" commands are needed to
+get Julia to plot onto the Jupyter notebook page.
 
-To learn more about the PyPlot package for Julia, refer to the Github repo:https://github.com/JuliaPy/PyPlot.jl
+To learn more about the PyPlot package for Julia, refer to the Github
+repo:https://github.com/JuliaPy/PyPlot.jl
 
-To start, begin with the "using" command to inform Julia that you wish to use the PyPlot package.
-
+To start, begin with the "using" command to inform Julia that you wish to use
+the PyPlot package.
 
 ```julia
 using PyPlot
 ```
 
 To plot an array of numbers, simply use the "plot" command. 
-
 
 ```julia
 plot([1,2,3,4])
@@ -44,14 +57,7 @@ plot([1,2,3,4])
 ![png](/img/output_3_0.png) 
 
 
-
-    1-element Array{Any,1}:
-     PyObject <matplotlib.lines.Line2D object at 0x7f6e338e1cf8>
-
-
-
 To plot y versus x values, put them both into the plot command.
-
 
 ```julia
 x = linspace(-3, 3)
@@ -62,17 +68,8 @@ plot(x,y)
 
 ![png](/img/output_5_0.png)
 
-
-
-
-
-    1-element Array{Any,1}:
-     PyObject <matplotlib.lines.Line2D object at 0x7f6e3387cbe0>
-
-
-
-To plot a surface, creat your x and y variables, expand to a grid, and use this to define the z values on the surface
-
+To plot a surface, create your x and y variables, expand to a grid, and use this
+to define the z values on the surface
 
 ```julia
 n = 100
@@ -91,29 +88,13 @@ plot_surface(x,y,z)
 ![png](/img/output_7_0.png)
 
 
-
-
-
-    PyObject <mpl_toolkits.mplot3d.art3d.Poly3DCollection object at 0x7f6e330b1550>
-
-
-
 You might like to color your surface plot with a color map:
-
 
 ```julia
 plot_surface(x,y,z,cmap="jet")
 ```
 
-
 ![png](/img/output_9_0.png)
-
-
-
-
-
-    PyObject <mpl_toolkits.mplot3d.art3d.Poly3DCollection object at 0x7f6e337812e8>
-
 
 
 To plot this surface instead as an image, use the "imshow" command, which is somewhat like "imagesc" in Matlab.
@@ -127,25 +108,26 @@ imshow(z)
 ![png](/img/output_11_0.png)
 
 
-
-
-
-    PyObject <matplotlib.image.AxesImage object at 0x7f6e336a7be0>
-
-
 ## Plotting with Gadfly
 
-The Gadfly package for Julia is a very nice plotting package that allows interactive control of the plots from within the notebook. According to the documentation, it is based largely on Hadley Wickhams's ggplot2 (http://ggplot2.org/) for R and Leland Wilkinson's book The Grammar of Graphics (https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html). It was Daniel C. Jones' brainchild and is now maintained by the community.
+The Gadfly package for Julia is a very nice plotting package that allows
+interactive control of the plots from within the notebook. According to the
+documentation, it is based largely on Hadley Wickhams's
+[ggplot2](http://ggplot2.org/) for R and Leland Wilkinson's book [The Grammar of
+Graphics](https://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/GOG.html). It
+was Daniel C. Jones' brainchild and is now maintained by the community.
 
 Details on the package are here: http://gadflyjl.org/stable/index.html
 
-To start using Gadfly, use the "using" command to inform Julia that you want to use this package. 
+To start using Gadfly, use the "using" command to inform Julia that you want to
+use this package. 
 
 ```julia
 using Gadfly
 ```
 
-Use the plot command to plot x and y values. Clicking on the graph gives you access to controls to pan and zoom.
+Use the plot command to plot x and y values. Clicking on the graph gives you
+access to controls to pan and zoom.
 
  ```julia
 plot(x=[1,2,3,4,5,6],y=[1,4,9,16,25,36])
@@ -153,7 +135,8 @@ plot(x=[1,2,3,4,5,6],y=[1,4,9,16,25,36])
 
 ![png](/img/Gadfly1.png)
 
-A few details line lines and points can be added explicitly to the plot, as follows. 
+A few details line lines and points can be added explicitly to the plot, as
+follows. 
 
 ```julia
 plot(x=[0,1,2,3,4,5,6], y=[0,1,4,9,16,25,36], Geom.point, Geom.line)
@@ -167,7 +150,8 @@ plot([sin, cos], 0, 30)
 ```
 ![png](/img/Gadfly3.png)
 
-Gadfly excels at plotting data from large data sets. Here we load in some standard R data sets and plot the information therein. 
+Gadfly excels at plotting data from large data sets. Here we load in some
+standard R data sets and plot the information therein. 
 
 ```julia
 using RDatasets
@@ -176,7 +160,8 @@ plot(dataset("datasets", "iris"), x="SepalLength", y="SepalWidth", Geom.point)
 
 ![png](/img/Gadfly4.png)
 
-An alternate way is to assign a variable with a particular data set (the iris data set, which is information about a collectin of flowers) and plot. 
+An alternate way is to assign a variable with a particular data set (the iris
+data set, which is information about a collection of flowers) and plot. 
 
 ```julia
 iris = dataset("datasets", "iris")
@@ -189,17 +174,32 @@ plot(iris, x=:SepalLength, y=:SepalWidth, color=:Species, Geom.point)
 
 ## High resolution graphics into files
 
-Very often we need to create some high resolution graphics in a computing environment and then export it in a file, to use within some other application. For instance, a book may need a high quality diagram that is best created by some algorithm.
+Very often we need to create some high resolution graphics in a computing
+environment and then export it in a file, to use within some other application.
+For instance, a book may need a high quality diagram that is best created by
+some algorithm.
 
 This section demonstrates a simple technique to do this.
 
-The basic idea is to create a Scalable Vector Graphics file (of type .svg) and fill it with text commands that indicate what to draw for the graphics image. You can read more details of all that can be draw here: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+The basic idea is to create a Scalable Vector Graphics file (of type .svg) and
+fill it with text commands that indicate what to draw for the graphics image.
+You can read more details of all that can be draw here:
+https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 
-WARNING: images displayed are often "cached" by your browser (Firefox, Chrome, Safari, etc), which means the file is pre-loaded for convenience. However, if your Jupyter code changes the .svg file, the browser does not know to re-draw the new image. One way to force it to draw the new image is to re-load the page. (Remember to save first.)
+{{< warning title="Browser Caching" >}}
+WARNING: images displayed are often "cached" by your browser (Firefox, Chrome,
+Safari, etc), which means the file is pre-loaded for convenience. However, if
+your Jupyter code changes the .svg file, the browser does not know to re-draw
+the new image. One way to force it to draw the new image is to re-load the page.
+(Remember to save first.)
+{{< /warning >}}
 
 ### Example 1 - Two lines
 
-In this example, we will simply draw a couple of lines. The file will have four text entries. The first entry marks the  file as an svg file, the last entry indicates the end of the svg file. Two entries in the middle draw two lines. The text will look like this: 
+In this example, we will simply draw a couple of lines. The file will have four
+text entries. The first entry marks the  file as an svg file, the last entry
+indicates the end of the svg file. Two entries in the middle draw two lines. The
+text will look like this: 
 ```
 <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100%' viewBox='-1  -1 2 2'>
 <line x1='-1' y1='1'  x2='1' y2='-1' stroke='black' stroke-width='.01' />
@@ -217,16 +217,7 @@ open("simplegraphics.svg","w") do f
     write(f,"<line x1='-1' y1='-1' x2='1' y2='1' stroke='red' stroke-width='.01' /> \n")
     write(f,"</svg>")
 end
-
-
 ```
-
-
-
-
-    6
-
-
 
 To display the file, we use either of these two Markdown commands:
 ```
@@ -241,7 +232,10 @@ The second choice gives you a bit more control over the size of the output.
 
 ### Example 2 - A star is born
 
-Here is a slightly more interesting example. We draw a five-pointed star by connecting lines across 5 evenly spaced points on a circle. This is probably more fun to do algorithmically like this, rather than trying to do a freehand drawing of a star. 
+Here is a slightly more interesting example. We draw a five-pointed star by
+connecting lines across 5 evenly spaced points on a circle. This is probably
+more fun to do algorithmically like this, rather than trying to do a freehand
+drawing of a star. 
 
 
 ```julia
@@ -257,28 +251,28 @@ open("star.svg", "w") do f
     write(f,"</svg>")
 end
 ```
-
-
-
-
-    6
-
-
-
 <img src="/img/star.png" width="200" height="200">
 
 ### Example 3 -  Mathieu Spectra
 
-We construct spectra for the almost Mathieu operator, also known as the Hofstadter Butterfly. https://en.wikipedia.org/wiki/Hofstadter's_butterfly
+We construct spectra for the almost Mathieu operator, also known as the
+Hofstadter Butterfly. https://en.wikipedia.org/wiki/Hofstadter's_butterfly
 
-Personally, I've done this before using MATLAB, taking a lot of care to make it fast. Here in Julia, it seems to be fast even without any special tricks. In particular, I leave the matrices U,V, in their natural form, and compute directly in their full matrix form.
+Personally, I've done this before using MATLAB, taking a lot of care to make it
+fast. Here in Julia, it seems to be fast even without any special tricks. In
+particular, I leave the matrices U,V, in their natural form, and compute
+directly in their full matrix form.
 
-This code creates a file mathieu.svg which can be opened directly in Jupyter Hub using the browser. In fact, the image opened separately looks better than the display here. 
+This code creates a file mathieu.svg which can be opened directly in Jupyter Hub
+using the browser. In fact, the image opened separately looks better than the
+display here. 
 
 
 ### The Math
 
-The almost Mathieu operator describes the energy levels of an electron moving in a periodic crystal (2D), under the influence of a magnetic fields. This causes only certain energy levels to be allowed, depending on a parameter
+The almost Mathieu operator describes the energy levels of an electron moving in
+a periodic crystal (2D), under the influence of a magnetic fields. This causes
+only certain energy levels to be allowed, depending on a parameter
 
 $$\mu = e^{2\pi i \theta}.$$
 
@@ -286,25 +280,38 @@ We take two universal unitaries $$u,v$$ which satisfy a commutation relation
 
 $$ vu = \mu uv.$$
 
-The related energy operator (almost Mathieu operator) is the linear, self adjoint operator
+The related energy operator (almost Mathieu operator) is the linear, self
+adjoint operator
 
 $$h = u + u^* + v + v^*.$$
 
-The curious thing is that the spectrum of $$h$$ is either a union of intervals, or a Cantor set, depending on whether $$\theta$$ is rational or irrational. Which seems odd in physics, that a tiny perturbation in one parameter should give such a fundamental change in the nature of the spectra. 
+The curious thing is that the spectrum of $$h$$ is either a union of intervals,
+or a Cantor set, depending on whether $$\theta$$ is rational or irrational.
+Which seems odd in physics, that a tiny perturbation in one parameter should
+give such a fundamental change in the nature of the spectra. 
 
-In the case where $$\theta = p/q$$ is rational, we can compute the spectrum exactly.
+In the case where $$\theta = p/q$$ is rational, we can compute the spectrum
+exactly.
 
-We define here two unitaries $$U$$ and $$V$$ that are $$q\times q$$ matrices. $$U$$ is a diagonal matrix, while $$V$$ is a permutation matrix. They satisfy the fundamental intertwining identity
+We define here two unitaries $$U$$ and $$V$$ that are $$q\times q$$ matrices.
+$$U$$ is a diagonal matrix, while $$V$$ is a permutation matrix. They satisfy
+the fundamental intertwining identity
 
 $$ VU = e^{2\pi i \theta} UV, \mbox{ where } \theta = p/q.$$
 
-Replacing $$U,V$$ by a scalar multiple $$z_1U, z_2V$$ will satisfy the same commutation constraint. Setting $$z_1 = z_2 = 1$$ gives one extreme set of spectral points, that form one-half of the interval endpoints that make up the spectrum. Setting $$z_1 = z_2 = e^{2\pi i/q}$$ gives the other extreme set, forming the other set of endpoints. 
+Replacing $$U,V$$ by a scalar multiple $$z_1U, z_2V$$ will satisfy the same
+commutation constraint. Setting $$z_1 = z_2 = 1$$ gives one extreme set of
+spectral points, that form one-half of the interval endpoints that make up the
+spectrum. Setting $$z_1 = z_2 = e^{2\pi i/q}$$ gives the other extreme set,
+forming the other set of endpoints. 
 
 ### The code
 
-The matrix $$H$$ defined below is the self adjoint sum of these unitaries, and $$L$$ has constants thrown in to get the other extreme points of the spectra. 
+The matrix $$H$$ defined below is the self adjoint sum of these unitaries, and
+$$L$$ has constants thrown in to get the other extreme points of the spectra. 
 
-We compute the eigenvalues, then throw them into a file that plots all the lines. 
+We compute the eigenvalues, then throw them into a file that plots all the
+lines. 
 
 
 ```julia
@@ -314,32 +321,13 @@ H(p,q) = U(p,q)+U(p,q)' + V(p,q)+V(p,q)'
 L(p,q) = exp(pi*1im/q)*U(p,q)+exp(-pi*1im/q)U(p,q)' + exp(pi*1im/q)*V(p,q)+exp(-pi*1im/q)*V(p,q)'
 eigH(p,q) = eig(H(p,q))[1]
 eigL(p,q) = eig(L(p,q))[1]
-```
 
 
-
-
-    eigL (generic function with 1 method)
-
-
-
-
-```julia
 function printaline(f,xone,xtwo,y)
     y8 = y*8
     print(f,"<line x1='$xone' y1='$y8' x2='$xtwo' y2='$y8' stroke='black' stroke-width='.01' /> \n")
 end
-```
 
-
-
-
-    printaline (generic function with 1 method)
-
-
-
-
-```julia
 f = open("mathieu.svg","w")
 print(f,"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%' height='100%' viewBox='-4  0 8 8'> \n")
 printaline(f,-4,4,0)
@@ -367,20 +355,20 @@ We now display the spectra using the image command in Markdown language.
 <img src="/img/mathieu.png" width="600" height="600">
 
 
-
-
-
-
 ## Animation in Julia. 
 
-Animated plots in Julia can be created using the matplotlib tools that we know from Python.
+Animated plots in Julia can be created using the matplotlib tools that we know
+from Python.
 
-The idea is the same. There are three steps to creating an object that will contain the animation:
-- draw the empty figure
-- define an init function, and an animate function, that will draw the successive frames
-- create the animation using the FuncAnimation fucntion (which calls init and animate)
+The idea is the same. There are three steps to creating an object that will
+contain the animation:
 
-This object is then saved as an MP4 file, which can then be played in the notebook using an html command.
+  - draw the empty figure
+  - define an init function, and an animate function, that will draw the successive frames
+  - create the animation using the FuncAnimation fucntion (which calls init and animate)
+
+This object is then saved as an MP4 file, which can then be played in the
+notebook using an html command.
 
 For more ideas on animation, take a look here: 
  http://nbviewer.jupyter.org/github/tom26/JuliaFun/blob/master/2D%203-Body%20Problem.ipynb
@@ -389,14 +377,14 @@ Let's do a simple animation, drawing 3 lines across a plot.
 
 First, tell Julia the tools we need to load in:
 
-
 ```julia
 using PyPlot
 using PyCall
 @pyimport matplotlib.animation as anim
 ```
 
-We first construct the empty figure. For convenience, we define 3 global data structures called lines. 
+We first construct the empty figure. For convenience, we define 3 global data
+structures called lines. 
 
 
 ```julia
@@ -408,16 +396,7 @@ global line2 = ax[:plot]([],[],"g-")[1]
 global line3 = ax[:plot]([],[],"b-")[1]
 ```
 
-
 ![png](/img/J_Animation1.png)
-
-
-
-
-
-    PyObject <matplotlib.lines.Line2D object at 0x7f3be6f4d2e8>
-
-
 
 We now define the init function, which sets the data for the first frame
 
@@ -435,16 +414,11 @@ function init()
 end
 ```
 
+Next is the animation function, which will draw each frame of the animation
+using index i.
 
-
-
-    init (generic function with 1 method)
-
-
-
-Next is the animation function, which will draw each frame of the animation using index i.
-
-In this case, we just draw three lines. The first is along the line x=y, going from point (0,0) to (i/10,i/10).
+In this case, we just draw three lines. The first is along the line x=y, going
+from point (0,0) to (i/10,i/10).
 
 
 ```julia
@@ -461,13 +435,6 @@ function animate(i)
 end
 ```
 
-
-
-
-    animate (generic function with 1 method)
-
-
-
 Now we create the animation object by calling the Python function FuncAnimaton.
 
 
@@ -475,22 +442,13 @@ Now we create the animation object by calling the Python function FuncAnimaton.
 myanim = anim.FuncAnimation(fig, animate, init_func=init, frames=100, interval=20)
 ```
 
-
-
-
-    PyObject <matplotlib.animation.FuncAnimation object at 0x7f3be65cc5c0>
-
-
-
 This is converted to an MP4 movie file and saved on disk in this format.
-
 
 ```julia
 myanim[:save]("3Lines.mp4", bitrate=-1, extra_args=["-vcodec", "libx264", "-pix_fmt", "yuv420p"])
 ```
 
 Finally, we display the movie in a Julia cell as follows. Note it has animation controls for the user. 
-
 
 ```julia
 # Function for creating an embedded video given a filename
@@ -509,11 +467,15 @@ display("text/html", html_video("3Lines.mp4"))
 
 ## Seismic Julia Package
 
-The Seismic Package for Julia is under development by SAIG (Signal Analysis and Imaging Group) at the University of Alberta. This module provides tools to read, write, process, and plot 3D reflection seismic data. 
+The Seismic Package for Julia is under development by SAIG (Signal Analysis and
+Imaging Group) at the University of Alberta. This module provides tools to read,
+write, process, and plot 3D reflection seismic data. 
 
-We use this as an example of how to use a large, external Julia package in the syzygy system.
+We use this as an example of how to use a large, external Julia package in the
+syzygy system.
 
-To get started, you first notify Julia that you will be using the two packages PyPlot and Seismic. Enter the following command:
+To get started, you first notify Julia that you will be using the two packages
+PyPlot and Seismic. Enter the following command:
 
 
 ```julia
@@ -525,9 +487,12 @@ If all goes well, this will load in the required packages.
 
 However, a few common problems may arise. 
 
-First, the packages might not be found in the current path. In this case, you need to run `Pkg.add("PyPlot")` to install the PyPlot package. You may alos need to run `Pkg.add("Seismic")` to install the Seismic package.
+First, the packages might not be found in the current path. In this case, you
+need to run `Pkg.add("PyPlot")` to install the PyPlot package. You may alos need
+to run `Pkg.add("Seismic")` to install the Seismic package.
 
-These commands are entered like this (but don't use them unless you got the error message):
+These commands are entered like this (but don't use them unless you got the
+error message):
 
 ```julia
 Pkg.add("PyPlot")
@@ -538,20 +503,28 @@ Once you've added the packages, you should again use the command
 using PyPlot, Seismic
 ```
 
-The second problem you may have is that during the "using" command execution, Julia may have trouble precompiling the modules (you will get an error message). Typically this is due to some incompatibility with the "Compat" module. This is a known problem which hopefully will be fixed soon. A work-around is to save your Notebook, close the Jupyter Server, then restart the Server. This seems to load in the compiled packages appropriately.
+The second problem you may have is that during the "using" command execution,
+Julia may have trouble precompiling the modules (you will get an error message).
+Typically this is due to some incompatibility with the "Compat" module. This is
+a known problem which hopefully will be fixed soon. A work-around is to save
+your Notebook, close the Jupyter Server, then restart the Server. This seems to
+load in the compiled packages appropriately.
 
-A third problem you may have is that these are large packages, and the 1 GigaByte of filespace you have been allotted may not be enough for all this. One solution is to get rid of any excess files you no longer need. (Just delete them.) Another solution is to request from your administrator a larger filespace allocation. 
+A third problem you may have is that these are large packages, and the 1
+GigaByte of filespace you have been allotted may not be enough for all this. One
+solution is to get rid of any excess files you no longer need. (Just delete
+them.) Another solution is to request from your administrator a larger filespace
+allocation. 
 
 You are now ready to use Seismic Julia.
 
 
-First, we use the "download command" to grab some data from the United States Geological Survey webserver, as follows:
+First, we use the "download command" to grab some data from the United States
+Geological Survey webserver, as follows:
 
 
 ```julia
 download("http://certmapper.cr.usgs.gov/nersl/NPRA/seismic/1979/616_79/PROCESSED/616_79_PR.SGY", "616_79_PR.SGY");
-
-```
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
@@ -561,19 +534,21 @@ download("http://certmapper.cr.usgs.gov/nersl/NPRA/seismic/1979/616_79/PROCESSED
 
     number of traces: 1908
     number of samples per trace: 1500
+```
 
+This creates a new file on you server, named "616_79_PR.SGY" which is 11
+Megabytes of data. 
 
-This creates a new file on you server, named "616_79_PR.SGY" which is 11 Megabytes of data. 
-
-Use the "SegyToSeis" command to convert this SEGY-style file into a .seis file (the native file type for the Seismic Julia package). 
+Use the "SegyToSeis" command to convert this SEGY-style file into a .seis file
+(the native file type for the Seismic Julia package). 
 
 
 ```julia
 SegyToSeis("616_79_PR.SGY", "616_79_PR.seis");
-```
 
     number of traces: 1908
     number of samples per trace: 1500
+```
 
 
 This creates a new file called "616_79_PR.seis" which also is about 11 Megabytes large. 
@@ -592,12 +567,12 @@ Finally, we plot the data in these data structures using "SeisPlot":
 SeisPlot(d[1:500, :], e, cmap="PuOr", wbox=9);
 ```
 
-
 ![png](/img/J_Seismic1.png)
 
 
-This view is a cross-sectional image of the earth showing some interesting geological layers sloping down to the right. It was constructed from a seismic experiment using vibrational waves to explore the earth's subsurface. 
+This view is a cross-sectional image of the earth showing some interesting
+geological layers sloping down to the right. It was constructed from a seismic
+experiment using vibrational waves to explore the earth's subsurface. 
 
-To learn more about the many utilities available in Seismic Julia, refer to the source pages at: https://github.com/SeismicJulia
-
-
+To learn more about the many utilities available in Seismic Julia, refer to the
+source pages at: https://github.com/SeismicJulia
