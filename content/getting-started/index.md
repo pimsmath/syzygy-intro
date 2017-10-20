@@ -28,7 +28,7 @@ credentials. Currently, the following sites are up and running:
 * [https://uvic.syzygy.ca](https://uvic.syzygy.ca) University of Victoria
 * [https://uwaterloo.syzygy.ca](https://uwaterloo.syzygy.ca) University of Waterloo
 * [https://cybera.syzygy.ca](https://cybera.syzygy.ca) Cybera (via Google Authentication)
-* [https://cybera.syzygy.ca](https://pims.syzygy.ca) PIMS (via Google Authentication)
+* [https://pims.syzygy.ca](https://pims.syzygy.ca) PIMS (via Google Authentication)
 
 Your "university credentials" will be something like your campus-wide login ID,
 student or employee number, etc. You will also need to enter the password
@@ -47,7 +47,6 @@ You can use any web browser that you like. However, some experience suggests the
 - Safari works fine, including on iPads and iPhones.
 - Internet Explorer is not something to use, for many good reasons. 
 
-Code samples for the book can also be launched on Binder: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/mlamoureux/usingsyzygy)
 
 ## Notebooks, terminals and Unix
 
@@ -90,19 +89,20 @@ At some point you will want to reorganize the many files and folders you have in
 your Jupyter Hub.
 
 If you like Unix, you can always open a new terminal and move files around using
-the "mv" or "cp" commands. 
+the `mv` or `cp` commands. 
 
 If you want to avoid Unix, you can use the  Hub's naming system to move files around. 
 
 Select a file in the Hub by clicking on the square box at the left of the file's
 name. You are then given the option to "rename" the file. Click on the rename
 button, and then enter one of the following:
-- newname  -- to give the file the new name
-- ../oldname -- to move the file up and out of the current folder, into the
-  previous forlder
-- foldername/oldname -- to move the file into the folder called "foldername."
-  This folder should already exist (because you created it earlier with a "new
-  folder" command).
+
+  - `newname`  -- to give the file the new name
+  - `../oldname` -- to move the file up and out of the current folder, into the
+    previous forlder
+  - `foldername/oldname` -- to move the file into the folder called "foldername."
+    This folder should already exist (because you created it earlier with a "new
+    folder" command).
 
 These renaming methods also work to move folders and their contents.
 
@@ -118,8 +118,6 @@ return the director root name. Typically something like `/home/username` or
 You can now use this to move a file into any folder. Just rename the file
 something like `/home/username/folderA/filename`. (the folderA better exist
 already, for you to move something into this.)
-
-
 
 See the [Unix Tricks](/unix-tricks/) section on Unix magic for more tips on
 moving files.
