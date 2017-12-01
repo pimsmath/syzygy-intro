@@ -6,7 +6,7 @@ weight: 80
 
 From time to time you might experience problems with the syzygy.ca service. The
 tips below may help you get things going again without further intervention, but
-if not, please contact {{ Site.params.email }}
+if not, please contact {{< email >}}
 
 ## Restarting your Server
 
@@ -59,7 +59,7 @@ your server (see above).
 
 The current default storage allocation for users is 1GB. If you find that you
 are getting out of storage messages or are unable to save files, you may have
-reached the quota. To recover from this, please email <jupyter@pims.math.ca> with
+reached the quota. To recover from this, please email {{< email >}} with
 your username and the name of the server you are using.
 
 ## Missing Output
