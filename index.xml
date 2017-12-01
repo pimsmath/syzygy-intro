@@ -104,8 +104,7 @@ Git is also used for version control when working on a large computer project, w
       <pubDate>Thu, 19 Oct 2017 17:56:50 +0700</pubDate>
       
       <guid>http://intro.syzygy.ca/troubleshooting/</guid>
-      <description>From time to time you might experience problems with the syzygy.ca service. The tips below may help you get things going again without further intervention, but if not, please contact {{ Site.params.email }}
-Restarting your Server Restarting your server can clear up a number of issues. If you see any of the following messages, please try restarting your server.
+      <description>From time to time you might experience problems with the syzygy.ca service. The tips below may help you get things going again without further intervention, but if not, please contact jupyter@pims.math.ca Restarting your Server Restarting your server can clear up a number of issues. If you see any of the following messages, please try restarting your server.
  500 internal server error, permissi9n failure checking authorization, I may need a new token  To restart your server, click on the Control panel button at the top right of the notebook.</description>
     </item>
     
