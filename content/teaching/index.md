@@ -37,9 +37,9 @@ changes) as the term progresses.
 
 
 We are in the process of rolling out this extension and making it available by
-default on all of our hubs so it is probably already installed and activated on
-your syzygy.ca instance, or it will be soon. To use it you need to construct
-URLs which specify the, repository you want to interact with. The URL will look
+default on all of our hubs so it may already be installed and activated on your
+syzygy.ca instance, or it will be soon. To use it you need to construct URLs
+which specify the, repository you want to interact with. The URL will look
 something like 
 ```http
 https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/data-8/materials-fa17
