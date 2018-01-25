@@ -1,11 +1,11 @@
 ---
-date: 2018-01-9T13:10:23+07:00
+date: 2018-01-22T15:10:23+07:00
 title: "Teaching with Syzygy"
 weight: 81
 ---
 
 JupyterHub can be a great resource for teaching and we we encourage people to
-use syzygy to help with teach their classes, but you should keep the following
+use syzygy to help teach their classes, but you should keep the following
 things in mind:
 
   * syzygy.ca hosts are *shared services*. Asking a large group of students to
@@ -38,26 +38,59 @@ changes) as the term progresses.
 
 We are in the process of rolling out this extension and making it available by
 default on all of our hubs so it may already be installed and activated on your
-syzygy.ca instance, or it will be soon. To use it you need to construct URLs
-which specify the, repository you want to interact with. The URL will look
-something like 
+syzygy.ca instance, or it will be soon. To use it, you need to construct URLs
+which specify the syzygy server you want to use and the repository you want to
+interact with. The URL will look something like 
 ```http
-https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/data-8/materials-fa17
+https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master
 ```
 
-  * **repo** is the URL of the git repository you want to clone. This parameter
-    is required.
-  * **branch** (optional) is the branch name to use when cloning from the repository. This
-    parameter is optional and defaults to master.
-  * **subPath** (optional) is the path of the directory / notebook inside the
-    repo to launch after cloning. This parameter is optional, and defaults to
-    opening the base directory of the linked Git repository.
+Where,
+
+  * **`repo=https://github.com/pimsubc/public-notebooks`** is required and
+    specifies the URL of the git repository you want to clone.
+  * **`branch=master`** is an optional git branch name (default "master")
+  * **`subPath=path/to/file.ipynb`** is an optional path within the repository to
+    restrict the clone to a specific file or directory of interest.
 
 The functionality is implemented as a notebook extension so doesn't depend on
-any specific kernel, the URLs will happily clone out *any* repository R,
-javascript, ...
+any specific kernel. It will happily clone out *any* repository, so you can use
+it with R, Python or any other kernel installed on your syzygy instance.
 
-### How NBGitPuller
+### nbgitpuller service demonstration
+
+The following link demonstrates the nbgitpuller service on pims.syzygy.ca by
+cloning out a [simple python3 example notebook](https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb).
+To try the service out, simply click on the following link:
+
+  * [nbgitpuller demo](https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb)
+
+Clicking on the link should trigger the following actions
+
+  1. Take you to [pims.syzygy.ca](https://pims.syzygy.ca)
+  2. Authenticate you via google (if you aren't already)
+  3. Start your server (if it isn't already started)
+  4. Clone out a copy of the notebook to
+     `public-notebooks/nbpuller-example1.ipynb`
+  5. Open the notebook in your browser.
+
+The full URL used in the link is
+```html
+https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb
+```
+
+Splitting this apart, we can see the pattern described above:
+
+  * **`https://pims.syzygy.ca/jupyter/user-redirect/git-pull`** refers to the
+    syzygy instance (pims.syzygy.ca).
+  * **`repo=https://github.com/pimsmath/repo=public-notebook`** tells nbpuller which
+    repository to use.
+  * **`branch=master`** specifies the master branch within the repository.
+  * **`subPath=nbpuller-example1.ipynb`** tells nbpuller to clone just that one
+    file.
+
+
+### How NBGitPuller Works
 
 As its name implies, NBGitPuller works by constructing and executing git
 commands. [Git](https://git-scm.com) is a distributed version control system
@@ -67,7 +100,7 @@ JupyterHub, log them in (if necessary) then try to grab a clone of the
 repository. If you're not familiar with git, this is essentially a copy of the
 remote files in the repository with the advantage that both the user and the
 repository owner can continue to modify their own copies of the files
-then ultimately merge them together (in the user's clone). To do all of this
+then ultimately merge them together (inside the user's clone). To do all of this
 NBGitPuller implements a subset of the git commands so that subsequent clicks on
 a link by the user will try to merge changes according to this plan:
 
