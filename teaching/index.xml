@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings on Introduction to Syzygy</title>
+    <link>http://intro.syzygy.ca/teaching/</link>
+    <description>Recent content in Teachings on Introduction to Syzygy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Michael Lamoureux</copyright>
+    <lastBuildDate>Mon, 22 Jan 2018 15:10:23 +0700</lastBuildDate>
+    
+	<atom:link href="http://intro.syzygy.ca/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching with Syzygy</title>
+      <link>http://intro.syzygy.ca/teaching/</link>
+      <pubDate>Mon, 22 Jan 2018 15:10:23 +0700</pubDate>
+      
+      <guid>http://intro.syzygy.ca/teaching/</guid>
+      <description>JupyterHub can be a great resource for teaching and we we encourage people to use syzygy to help teach their classes, but you should keep the following things in mind:
+ syzygy.ca hosts are shared services. Asking a large group of students to do the same task simultaneously may exhaust the available resources and make your experience very slow. When machines are under extreme resource pressure, they may decide to shutdown processes that they don&amp;rsquo;t have any hope of servicing.</description>
+    </item>
+    
+  </channel>
+</rss>
