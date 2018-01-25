@@ -63,7 +63,7 @@ The following link demonstrates the nbgitpuller service on pims.syzygy.ca by
 cloning out a [simple python3 example notebook](https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb).
 To try the service out, simply click on the following link:
 
-  * [nbgitpuller demo](https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb)
+  * <a href="https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a>
 
 Clicking on the link should trigger the following actions
 
