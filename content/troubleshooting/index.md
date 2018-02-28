@@ -77,7 +77,7 @@ the `~/.jupyter/jupyter_notebook_config.py` in your home directory.
 From inside a python 3 notebook you could do
 ```shell
 !mkdir -p ~/.jupyter
-!echo "c.FileContentsManager.pre_save_hook = None" > ~/.jupyter/jupyter_notebook_config
+!echo "c.FileContentsManager.pre_save_hook = None" > ~/.jupyter/jupyter_notebook_config.py
 ```
 
 The current pre_save hook looks like
