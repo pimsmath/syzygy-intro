@@ -1,4 +1,4 @@
-baseurl = "http://intro.syzygy.ca/"
+baseurl = "https://intro.syzygy.ca/"
 languageCode = "en-us"
 title = "Introduction to Syzygy"
 theme = "hugo-material-docs"
