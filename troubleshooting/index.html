@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Introduction to Syzygy</title>
+    <title>Troubleshooting - Introduction to Syzygy</title>
     <meta name="generator" content="Hugo 0.53" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
     
-    <link rel="canonical" href="https://intro.syzygy.ca/">
+    <link rel="canonical" href="https://intro.syzygy.ca/troubleshooting/">
     
     <meta name="author" content="Michael Lamoureux">
     
 
-    <meta property="og:url" content="https://intro.syzygy.ca/">
+    <meta property="og:url" content="https://intro.syzygy.ca/troubleshooting/">
     <meta property="og:title" content="Introduction to Syzygy">
     
     <meta name="apple-mobile-web-app-title" content="Introduction to Syzygy">
@@ -69,8 +69,6 @@
     <script src="https://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
-    <link href="https://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    
 
   </head>
   <body class="palette-primary-indigo palette-accent-orange">
@@ -99,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Introduction to Syzygy
+        Troubleshooting
       </div>
     </div>
 
@@ -183,14 +181,11 @@
 
 
 
-<a class="current" title="Front" href="/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -348,11 +343,14 @@
 
 
 
-<a  title="Troubleshooting/FAQ" href="/troubleshooting/">
+<a class="current" title="Troubleshooting/FAQ" href="/troubleshooting/">
 	
 	Troubleshooting/FAQ
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -419,29 +417,116 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction to Syzygy </h1>
+			<h1>Troubleshooting </h1>
 
-				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
-Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
-and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
-educators and innovators across Canada. This site is a brief introduction on how
-to use these computing tools.</p>
+			
+
+<p>From time to time you might experience problems with the syzygy.ca service. The
+tips below may help you get things going again without further intervention, but
+if not, please contact jupyter@pims.math.ca
+</p>
+
+<h2 id="restarting-your-server">Restarting your Server</h2>
+
+<p>Restarting your server can clear up a number of issues. If you see any of the
+following messages, please try restarting your server.</p>
 
 <ul>
-<li><a href="/getting-started/">Get started</a></li>
+<li><code>500 internal server error, permissi9n failure checking authorization, I may
+need a new token</code></li>
 </ul>
 
-<p><img src="/img/syzygy.jpg" alt="Syzygy Astronomy" />
-(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
-Observatory</a>)</p>
+<p>To restart your server, click on the Control panel button at the top right of
+the notebook. This should display a page with a red &ldquo;Stop My Server&rdquo; button.
+A few seconds after clicking the button, the red button should turn green and
+say &ldquo;My Server&rdquo;, click it again and you server should begin starting up again.
+It can take around 30 seconds for your server to restart.</p>
 
-<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
-alignment of three or more celestial objects. In this book, it represents the
-alignment of text, math, and code in a convenient tool called a Jupyter
-notebook.</p>
+<h2 id="broken-configuration-files">Broken Configuration Files</h2>
 
-			
+<p>Jupyter (and Python, and Julia &hellip;) store configuration files in your home
+directory, and from time to time these configuration files can become broken.
+The simplest fix for this is to simply delete the configuration files and
+revert back to the default configuration. In most cases the files are stored in
+hidden directories (e.g. .local), and the trick is just knowing where they are,
+here are some common ones</p>
+
+<ul>
+<li><code>~/.jupyter</code> - Jupyter Notebook configuration file</li>
+<li><code>~/.local</code> - Locally installed python packages (<code>pip install --user
+XXXX</code>)</li>
+<li><code>~/.julia</code> - Julia packages and configuration files.</li>
+<li><code>~/R</code> - R packages and configuration files.</li>
+</ul>
+
+<div class="admonition warning">
+<p class="admonition-title">Be Careful</p>
+<p>These files are unrecoverable once deleted</p>
+</div>
+
+<p>If you have determined that files in one or more of these locations is causing a
+problem for you, you can delete them using the UNIX rm command. From inside a
+notebook you can do e.g.</p>
+
+<pre><code class="language-shell">!rm ~/.jupyter/jupyter_notebook_config.py
+</code></pre>
+
+<p>Or from the terminal</p>
+
+<pre><code class="language-shell">rm ~/.jupyter/jupyter_notebook_config.py
+</code></pre>
+
+<p>Changes to the notebook configuration will only take effect once you restart
+your server (see above).</p>
+
+<h2 id="out-of-storage">Out of Storage</h2>
+
+<p>The current default storage allocation for users is 1GB. If you find that you
+are getting out of storage messages or are unable to save files, you may have
+reached the quota. To recover from this, please email jupyter@pims.math.ca
+ with
+your username and the name of the server you are using.</p>
+
+<h2 id="missing-output">Missing Output</h2>
+
+<p>The notebook uses a tool called nbconvert to create PDF (and other) versions of
+notebooks you have created for export. On some syzygy hosts when you run the
+export, you will find that the output cells from your code are missing and you
+can only see the input cells. This is because a <code>pre_save</code> hook is
+being used on that server to scrub output before saving (or exporting)
+notebooks. The reason for this is that it makes using git with notebooks much
+simpler. If you decide that you would like to keep the output cells in your
+notebook when saving, you can overrride this default by creating or modifying
+the <code>~/.jupyter/jupyter_notebook_config.py</code> in your home directory.</p>
+
+<p>From inside a python 3 notebook you could do</p>
+
+<pre><code class="language-shell">!mkdir -p ~/.jupyter
+!echo &quot;c.FileContentsManager.pre_save_hook = None&quot; &gt; ~/.jupyter/jupyter_notebook_config.py
+</code></pre>
+
+<p>The current pre_save hook looks like</p>
+
+<pre><code class="language-python">def scrub_output_pre_save(model, **kwargs):
+    &quot;&quot;&quot;scrub output before saving notebooks&quot;&quot;&quot;
+    # only run on notebooks
+    if model['type'] != 'notebook':
+        return
+    # only run on nbformat v4
+    if model['content']['nbformat'] != 4:
+        return
+
+    for cell in model['content']['cells']:
+        if cell['cell_type'] != 'code':
+            continue
+        cell['outputs'] = []
+        cell['execution_count'] = None
+
+c.FileContentsManager.pre_save_hook = scrub_output_pre_save
+</code></pre>
+
+<p>if you decide that you would like to scrub the output instead.</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -452,23 +537,37 @@ notebook.</p>
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://intro.syzygy.ca/using-git-and-github/" title="Using Git and GitHub">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Using Git and GitHub
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://intro.syzygy.ca/getting-started/" title="Getting Started">
+  
+      <a href="https://intro.syzygy.ca/teaching/" title="Teaching with Syzygy">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting Started
+              Teaching with Syzygy
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -476,8 +575,11 @@ notebook.</p>
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 

@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Introduction to Syzygy</title>
+    <title>Unix Tricks - Introduction to Syzygy</title>
     <meta name="generator" content="Hugo 0.53" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
     
-    <link rel="canonical" href="https://intro.syzygy.ca/">
+    <link rel="canonical" href="https://intro.syzygy.ca/unix-tricks/">
     
     <meta name="author" content="Michael Lamoureux">
     
 
-    <meta property="og:url" content="https://intro.syzygy.ca/">
+    <meta property="og:url" content="https://intro.syzygy.ca/unix-tricks/">
     <meta property="og:title" content="Introduction to Syzygy">
     
     <meta name="apple-mobile-web-app-title" content="Introduction to Syzygy">
@@ -69,8 +69,6 @@
     <script src="https://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
-    <link href="https://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    
 
   </head>
   <body class="palette-primary-indigo palette-accent-orange">
@@ -99,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Introduction to Syzygy
+        Unix Tricks
       </div>
     </div>
 
@@ -183,14 +181,11 @@
 
 
 
-<a class="current" title="Front" href="/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -294,11 +289,14 @@
 
 
 
-<a  title="Unix Tricks" href="/unix-tricks/">
+<a class="current" title="Unix Tricks" href="/unix-tricks/">
 	
 	Unix Tricks
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -419,29 +417,82 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction to Syzygy </h1>
+			<h1>Unix Tricks </h1>
 
-				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
-Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
-and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
-educators and innovators across Canada. This site is a brief introduction on how
-to use these computing tools.</p>
+			
+
+<h2 id="unix-tricks">Unix tricks</h2>
+
+<p>In the background, Jupyter Hub runs on Unix, and you can access the Unix bash
+shell to do all your Unix magic from the command line. Just open a new
+&ldquo;terminal&rdquo; from the front page of your Jupyter server.</p>
+
+<p>However, I am not a big Unix fan. I prefer to point and click. So here are a few
+tricks I&rsquo;ve learned to avoid the terminal commands.</p>
+
+<h2 id="unix-and-magic-in-a-notebook">Unix and Magic in a Notebook.</h2>
+
+<p>While running a Jupyter Notebook, you can access many Unix commands directly,
+without opening a terminal window using so called &ldquo;magic&rdquo; commands. These
+commands always start with the percent sign %.</p>
+
+<p>Here are a few familiar Unix commands you might find useful:</p>
 
 <ul>
-<li><a href="/getting-started/">Get started</a></li>
+<li><code>%ls</code> &ndash; to list all files in the current directory</li>
+<li><code>%cd</code> &ndash; to see the name of your current directory</li>
+<li><code>%cd dirname</code> - to change directory (enter the name of the directory you want)</li>
+<li><code>%cp oldfile newfile</code> &ndash; to copy the oldfile onto a newfile</li>
+<li><code>%rm filename</code> &ndash; to remove (delete) the file named &ldquo;filename&rdquo;</li>
 </ul>
 
-<p><img src="/img/syzygy.jpg" alt="Syzygy Astronomy" />
-(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
-Observatory</a>)</p>
+<p>Thankfully, you can move all around the directory tree using these magic
+commands. So for instance, you might want to copy a file from Directory1 into
+Directory2. You would use a command like this:
+  - <code>%cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename</code></p>
 
-<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
-alignment of three or more celestial objects. In this book, it represents the
-alignment of text, math, and code in a convenient tool called a Jupyter
-notebook.</p>
+<p>Where &ldquo;myusername&rdquo; is whatever the Jupyter server has called your account. Use
+the <code>%cd</code> (with no arguments) followed by <code>%pwd</code> to see the path to your home
+directory (including your user name.)</p>
 
-			
+<div class="admonition note">
+<p class="admonition-title">Advanced use</p>
+<p><p>In a python 3 kernel you can also run arbitrary unix commands by putting an
+exclamation mark &ldquo;!&rdquo; at the beginning of a line, e.g.</p>
+
+<pre><code>!cp /home/myusername/Directory1/filename /home/myusername/Directory2/filename
+</code></pre>
+
+<p>Whenever possible, prefer the &lsquo;%&rsquo; for, but ! is also available.</p>
+</p>
+</div>
+
+<h2 id="more-magic-in-a-notebook">More Magic in a Notebook</h2>
+
+<p>The magic system is much richer than just the unix commands listed above. A good
+reference to what is possible is available in the <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">ipython
+documentation</a></p>
+
+<p>With a double percentage sign %% you signal to Jupyter that the whole cell is to
+be interpreted accordingly. For instance a cell like this:</p>
+
+<pre><code class="language-python">%%latex
+\[ \int_0^1 f(x) \,dx = F(1) - F(0) \]
+</code></pre>
+
+<p>tells the notebook to read the whole cell as latex code, and render it
+accordingly.
+$$
+[ \int_0^1 f(x) \,dx = F(1) - F(0) ]
+$$</p>
+
+<p>To see all defined magic commands available in a Jupyter notebook, type the
+(magic) command
+- <code>%lsmagic</code></p>
+
+<p>Magics can help with debugging, working with files, defining macros and much
+much more.</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -452,23 +503,37 @@ notebook.</p>
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://intro.syzygy.ca/r-for-computing/" title="R for Computing">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              R for Computing
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://intro.syzygy.ca/getting-started/" title="Getting Started">
+  
+      <a href="https://intro.syzygy.ca/using-git-and-github/" title="Using Git and GitHub">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting Started
+              Using Git and GitHub
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -476,8 +541,11 @@ notebook.</p>
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 

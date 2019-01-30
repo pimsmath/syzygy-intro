@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Introduction to Syzygy</title>
+    <title>Using Git and GitHub - Introduction to Syzygy</title>
     <meta name="generator" content="Hugo 0.53" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
     
-    <link rel="canonical" href="https://intro.syzygy.ca/">
+    <link rel="canonical" href="https://intro.syzygy.ca/using-git-and-github/">
     
     <meta name="author" content="Michael Lamoureux">
     
 
-    <meta property="og:url" content="https://intro.syzygy.ca/">
+    <meta property="og:url" content="https://intro.syzygy.ca/using-git-and-github/">
     <meta property="og:title" content="Introduction to Syzygy">
     
     <meta name="apple-mobile-web-app-title" content="Introduction to Syzygy">
@@ -69,8 +69,6 @@
     <script src="https://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
-    <link href="https://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    
 
   </head>
   <body class="palette-primary-indigo palette-accent-orange">
@@ -99,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Introduction to Syzygy
+        Using Git and GitHub
       </div>
     </div>
 
@@ -183,14 +181,11 @@
 
 
 
-<a class="current" title="Front" href="/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -312,11 +307,14 @@
 
 
 
-<a  title="Using Git and GitHub" href="/using-git-and-github/">
+<a class="current" title="Using Git and GitHub" href="/using-git-and-github/">
 	
 	Using Git and GitHub
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -419,29 +417,74 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction to Syzygy </h1>
-
-				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
-Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
-and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
-educators and innovators across Canada. This site is a brief introduction on how
-to use these computing tools.</p>
-
-<ul>
-<li><a href="/getting-started/">Get started</a></li>
-</ul>
-
-<p><img src="/img/syzygy.jpg" alt="Syzygy Astronomy" />
-(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
-Observatory</a>)</p>
-
-<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
-alignment of three or more celestial objects. In this book, it represents the
-alignment of text, math, and code in a convenient tool called a Jupyter
-notebook.</p>
+			<h1>Using Git and GitHub </h1>
 
 			
+
+<h2 id="using-git-and-github">Using Git and Github</h2>
+
+<p><strong>Git</strong> is a Unix command used for sharing code and other computer files with
+colleagues.</p>
+
+<p><strong>Github</strong> is a popular place on the web to store your code and other computer
+files, either privately or for the whole world to see. These collections are
+organized into units (like folders) called repositories.</p>
+
+<p><strong>Git</strong> is also used for version control when working on a large computer
+project, where you need to keep track of changes in many different files,
+possibly written by many different people. Because <strong>Git</strong> can be used for very
+complex projects, it is a very powerful tool.</p>
+
+<p>Let&rsquo;s keep things simple here. The author of this book has a public <strong>Github</strong>
+site, which has many repositories that he has created for various purposes. You
+are welcome to look at his public site here: <a href="https://github.com/mlamoureux">https://github.com/mlamoureux</a></p>
+
+<p>There is a repository for the source code written for this eBook, you can look
+at it here: <a href="https://github.com/mlamoureux/UsingSyzygy">https://github.com/mlamoureux/UsingSyzygy</a></p>
+
+<p>To make a copy of this repository on your syzygy.ca account, simply open a new
+Notebook (say, in Python) and enter the following commands:</p>
+
+<pre><code class="language-python">!git clone https://github.com/mlamoureux/UsingSyzygy.git 
+</code></pre>
+
+<p>This will make a new folder on your Jupyter Hub called &ldquo;UsingSyzygy&rdquo; that will
+have all the code inside that folder. You can now open those files and run the
+code in your server.</p>
+
+<p>Now, as you get more experience with <strong>Git</strong> and <strong>Github</strong>, you might like to
+clone some other people&rsquo;s repositories and use their code. It is a good idea to
+keep your account organized, so you can create a new folder, and clone the
+new stuff directly into that new folder. A series of Notebook commands to do
+this would look like this:</p>
+
+<pre><code class="language-python">%mkdir MyNewDirectory 
+</code></pre>
+
+<pre><code class="language-python">%cd MyNewDirectory
+</code></pre>
+
+<pre><code class="language-shell">!git clone https://github.com/THE-USER-NAME/THE-REPOSITORY-NAME.git 
+</code></pre>
+
+<p>You can find THE-USER-NAME and THE-REPOSITORY-NAME.git right on <strong>Github</strong> when
+you are looking at someone&rsquo;s repository. There is a button on the right, that
+says &ldquo;Clone or download.&rdquo; Click on &ldquo;Clone or download&rdquo; and request a &ldquo;Clone with
+HTTPS.&rdquo; You will then get the https address for the repo, which you can paste
+into the <strong>git clone</strong> command above.</p>
+
+<p>Of course, you can also do this in a terminal window (by opening &ldquo;New Terminal&rdquo;
+in the front page of your Jupyter server). But frankly, I hate the Unix terminal
+and its command line, so I would naturally advise you to be like me and just
+avoid Unix.  Use the Notebook directly. :-)</p>
+
+<p>Some details on cloning <strong>Github</strong> repos are here:
+<a href="https://help.github.com/articles/cloning-a-repository/">https://help.github.com/articles/cloning-a-repository/</a></p>
+
+<p>IMPORTANT NOTE: If you are cloning from a PRIVATE repo on <strong>Github</strong> you will
+need to do it from the Unix terminal, as the server will ask you for a username
+and password (to ensure that you really have access to that private repo).</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -452,23 +495,37 @@ notebook.</p>
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://intro.syzygy.ca/unix-tricks/" title="Unix Tricks">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Unix Tricks
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://intro.syzygy.ca/getting-started/" title="Getting Started">
+  
+      <a href="https://intro.syzygy.ca/troubleshooting/" title="Troubleshooting">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting Started
+              Troubleshooting
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -476,8 +533,11 @@ notebook.</p>
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 

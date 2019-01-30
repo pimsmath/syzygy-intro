@@ -3,18 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://intro.syzygy.ca/introduction/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/getting-started/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/the-basic-elements/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/python-for-computing/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/julia-for-computing/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/r-for-computing/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/unix-tricks/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/using-git-and-github/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/troubleshooting/</loc>
+    <lastmod>2017-10-19T17:56:50+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/teaching/</loc>
+    <lastmod>2018-01-22T15:10:23+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://intro.syzygy.ca/acknowledgements/</loc>
+    <lastmod>2017-01-05T15:18:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://intro.syzygy.ca/</loc>
     <lastmod>2016-03-08T21:07:13+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://intro.syzygy.ca/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://intro.syzygy.ca/</loc>
-    <lastmod>2016-03-08T21:07:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   

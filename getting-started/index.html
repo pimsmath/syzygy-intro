@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Introduction to Syzygy</title>
+    <title>Getting Started - Introduction to Syzygy</title>
     <meta name="generator" content="Hugo 0.53" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
     
-    <link rel="canonical" href="https://intro.syzygy.ca/">
+    <link rel="canonical" href="https://intro.syzygy.ca/getting-started/">
     
     <meta name="author" content="Michael Lamoureux">
     
 
-    <meta property="og:url" content="https://intro.syzygy.ca/">
+    <meta property="og:url" content="https://intro.syzygy.ca/getting-started/">
     <meta property="og:title" content="Introduction to Syzygy">
     
     <meta name="apple-mobile-web-app-title" content="Introduction to Syzygy">
@@ -69,8 +69,6 @@
     <script src="https://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
-    <link href="https://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    
 
   </head>
   <body class="palette-primary-indigo palette-accent-orange">
@@ -99,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Introduction to Syzygy
+        Getting Started
       </div>
     </div>
 
@@ -183,14 +181,11 @@
 
 
 
-<a class="current" title="Front" href="/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -204,11 +199,14 @@
 
 
 
-<a  title="Getting Started" href="/getting-started/">
+<a class="current" title="Getting Started" href="/getting-started/">
 	
 	Getting Started
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -419,29 +417,129 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction to Syzygy </h1>
+			<h1>Getting Started </h1>
 
-				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
-Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
-and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
-educators and innovators across Canada. This site is a brief introduction on how
-to use these computing tools.</p>
+			
+
+<p>We quickly show you how to log in, and a few other pointers.</p>
+
+<p>Click on the subsections to read further.</p>
+
+<h2 id="logging-in-and-browsers">Logging In, and Browsers.</h2>
+
+<p><img src="/img/sfu-jupyter.png" alt="SFU login" 
+    width =300" align = "right"></p>
+
+<p>Log into the syzygy service by using your home university credentials or Google
+credentials. Currently, the following sites are up and running:</p>
 
 <ul>
-<li><a href="/getting-started/">Get started</a></li>
+<li><a href="https://sfu.syzygy.ca">https://sfu.syzygy.ca</a> Simon Fraser University</li>
+<li><a href="https://ubc.syzygy.ca">https://ubc.syzygy.ca</a> University of British Columbia</li>
+<li><a href="https://ucalgary.syzygy.ca">https://ucalgary.syzygy.ca</a> University of
+Calgary</li>
+<li><a href="https://uleth.syzygy.ca">https://uleth.syzygy.ca</a> University of Lethbridge</li>
+<li><a href="https://usask.syzygy.ca">https://usask.syzygy.ca</a> University of Saskatchewan</li>
+<li><a href="https://utoronto.syzygy.ca">https://utoronto.syzygy.ca</a> University of Toronto</li>
+<li><a href="https://uvic.syzygy.ca">https://uvic.syzygy.ca</a> University of Victoria</li>
+<li><a href="https://uwaterloo.syzygy.ca">https://uwaterloo.syzygy.ca</a> University of Waterloo</li>
+<li><a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> Cybera (via Google Authentication)</li>
+<li><a href="https://pims.syzygy.ca">https://pims.syzygy.ca</a> PIMS (via Google Authentication)</li>
 </ul>
 
-<p><img src="/img/syzygy.jpg" alt="Syzygy Astronomy" />
-(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
-Observatory</a>)</p>
+<p>Your &ldquo;university credentials&rdquo; will be something like your campus-wide login ID,
+student or employee number, etc. You will also need to enter the password
+connected to your campus-wide login ID or number. This information is held
+privately by your university IT group, so privacy is assured by your university.</p>
 
-<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
-alignment of three or more celestial objects. In this book, it represents the
-alignment of text, math, and code in a convenient tool called a Jupyter
-notebook.</p>
+<p>Anyone with Google credentials can use
+<a href="https://cybera.syzygy.ca">https://cybera.syzygy.ca</a> or
+<a href="https://pims.syzygy.ca">https://pims.syzygy.ca</a> for research, learning or
+innovation (including post secondary institutions, K-12 and business
+incubators).</p>
 
-			
+<p>You can use any web browser that you like. However, some experience suggests the following:
+- Firefox is better at rendering math formulas, but cut/copy/paste does not work in the terminal.
+- Chrome is better at cut/copy/paste in the terminal, important when using GIT, for instance.
+- Safari works fine, including on iPads and iPhones.
+- Internet Explorer is not something to use, for many good reasons.</p>
+
+<h2 id="notebooks-terminals-and-unix">Notebooks, terminals and Unix</h2>
+
+<p>Once you&rsquo;ve logged in, the syzygy service will start a <strong>server</strong> for you, which
+is the computing service you are accessing. (If it doesn&rsquo;t start automatically,
+click on the &ldquo;Start Server&rdquo; button.) Once the server is running, you will be
+presented with a list of files and folders that exist in your account. This is
+called the Hub, and is a view like the Finder on a Mac, or the File Explorer on
+a Windows computer.</p>
+
+<p>From this Hub, you can click on files and folders to open them, you can select
+them and take actions like renaming them, duplicating them, or removing them.
+Some of the files will have the suffix .ipynb, which stands for &ldquo;iPython
+Notebook.&rdquo; Despite the name, the Notebook might have nothing to do with Python
+&ndash; it is there for historical reasons.</p>
+
+<p>Notebooks are files containing formatted text, math formulas, and computer code.
+Most of the time you will be creating and working with Notebooks in syzygy,
+Each Notebook has a collection of cells, which you create, edit and run.</p>
+
+<p>So keep this as your focus for your work &ndash; you will work in Notebooks, and you
+will create pieces of text, math, and code to use.</p>
+
+<p>However, sometimes you need to know that in the background of the Jupyter Hub is
+a Unix machine that does all the work. In the PIMS case, this is running on
+hardware from Compute Canada, or Cybera.</p>
+
+<p>To access the Unix shell, you can open a terminal from the Hub, and do all the
+usual Unix bash shell operations. You can&rsquo;t access superuser commands (sudo,
+etc.) but you can do just about everything else you like in Unix. If you are an
+experienced Unix user, feel free to open a terminal and browse around.</p>
+
+<p>Personally, I try to avoid using the Unix shell, but there are times when it is
+a must. (For instance, to install certain packages, or to access files on Github
+or on remote machinces.) There are notes on how to do this later in this book.</p>
+
+<h2 id="moving-files-around">Moving files around</h2>
+
+<p>At some point you will want to reorganize the many files and folders you have in
+your Jupyter Hub.</p>
+
+<p>If you like Unix, you can always open a new terminal and move files around using
+the <code>mv</code> or <code>cp</code> commands.</p>
+
+<p>If you want to avoid Unix, you can use the  Hub&rsquo;s naming system to move files around.</p>
+
+<p>Select a file in the Hub by clicking on the square box at the left of the file&rsquo;s
+name. You are then given the option to &ldquo;rename&rdquo; the file. Click on the rename
+button, and then enter one of the following:</p>
+
+<ul>
+<li><code>newname</code>  &ndash; to give the file the new name</li>
+<li><code>../oldname</code> &ndash; to move the file up and out of the current folder, into the
+previous forlder</li>
+<li><code>foldername/oldname</code> &ndash; to move the file into the folder called &ldquo;foldername.&rdquo;
+This folder should already exist (because you created it earlier with a &ldquo;new
+folder&rdquo; command).</li>
+</ul>
+
+<p>These renaming methods also work to move folders and their contents.</p>
+
+<p>To move across several branches in the directory tree, you need to know the full
+path name of your files and where they are to go. This means you need to find
+out the name of your root tree structure. A fast way to do this is to use the
+magic command %cd in a notebook.</p>
+
+<p>Open a notebook, click on an empty cell, and type %cd, hit shift-return. It will
+return the director root name. Typically something like <code>/home/username</code> or
+<code>/home/usernumber</code>.</p>
+
+<p>You can now use this to move a file into any folder. Just rename the file
+something like <code>/home/username/folderA/filename</code>. (the folderA better exist
+already, for you to move something into this.)</p>
+
+<p>See the <a href="/unix-tricks/">Unix Tricks</a> section on Unix magic for more tips on
+moving files.</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -452,23 +550,37 @@ notebook.</p>
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://intro.syzygy.ca/introduction/" title="Introduction">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Introduction
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://intro.syzygy.ca/getting-started/" title="Getting Started">
+  
+      <a href="https://intro.syzygy.ca/the-basic-elements/" title="The Basic Elements">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting Started
+              The Basic Elements
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -476,8 +588,11 @@ notebook.</p>
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 

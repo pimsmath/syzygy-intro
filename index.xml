@@ -12,14 +12,121 @@
     
     
     <item>
-      <title>Introduction to Syzygy</title>
-      <link>https://intro.syzygy.ca/</link>
-      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      <title>Introduction</title>
+      <link>https://intro.syzygy.ca/introduction/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
       
-      <guid>https://intro.syzygy.ca/</guid>
-      <description>syzygy.ca is a project of the Pacific Institute for the Mathematical Sciences, Compute Canada and Cybera to bring Jupyter notebooks to researchers, educators and innovators across Canada. This site is a brief introduction on how to use these computing tools.
- Get started  (Image credit: European Southern Observatory)
-Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the alignment of three or more celestial objects.</description>
+      <guid>https://intro.syzygy.ca/introduction/</guid>
+      <description>Using Syzygy The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science (https://www.pims.math.ca), Compute Canada (https://www.computecanada.ca) and Cybera (http://www.cybera.ca/).
+Syzygy is pronounced like the start of &amp;ldquo;Sizzle&amp;rdquo; &amp;ndash; sizz eh gee. It means the alignment of three or more celestial objects. In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://intro.syzygy.ca/getting-started/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/getting-started/</guid>
+      <description>We quickly show you how to log in, and a few other pointers.
+Click on the subsections to read further.
+Logging In, and Browsers. Log into the syzygy service by using your home university credentials or Google credentials. Currently, the following sites are up and running:
+ https://sfu.syzygy.ca Simon Fraser University https://ubc.syzygy.ca University of British Columbia https://ucalgary.syzygy.ca University of Calgary https://uleth.syzygy.ca University of Lethbridge https://usask.syzygy.ca University of Saskatchewan https://utoronto.syzygy.ca University of Toronto https://uvic.</description>
+    </item>
+    
+    <item>
+      <title>The Basic Elements</title>
+      <link>https://intro.syzygy.ca/the-basic-elements/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/the-basic-elements/</guid>
+      <description>The syzygy computing service is an implementation of the Jupyter Hub on dedicated hardware accessible over the web. There is a great deal of information about Jupyter available at the Jupyter project site, http://jupyter.org/
+There are four key concepts to master:
+ the Hub the Notebook Markdown Language (in a Notebook) Computing (in a Notebook).  This chapter discusses all four.
+Using the Hub You get to the Hub by logging into the syzygy.</description>
+    </item>
+    
+    <item>
+      <title>Python for Computing</title>
+      <link>https://intro.syzygy.ca/python-for-computing/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/python-for-computing/</guid>
+      <description>Python for Computing There are many online resources for learning Python. A good place to start is the documentation provided by the Python Software Foundation, located here: https://www.python.org/doc/
+This chapter focuses on how to use Python within a Jupyter notebook. Doing simple calculations in Python is very straightforward. However, once you try to do something complex, there are a few tricks to learn. In particular, how to get plots to appear in the notebook, how to do animations, and a few other niceties.</description>
+    </item>
+    
+    <item>
+      <title>Julia for Computing</title>
+      <link>https://intro.syzygy.ca/julia-for-computing/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/julia-for-computing/</guid>
+      <description>Julia for Computing The Julia computing language is a relative newcomer to the compute world that is proving to be very powerful and effective for scientific computation. It aims to combine the flexibility and ease-of-use of am interpreted, dynamic language (like Matlab) with the speed and efficiency of a compiled, statically typed language (like C or C++).
+There are many online resources for learning the Julia language. A good place to start is the documentation provided by the Julia developers at: http://docs.</description>
+    </item>
+    
+    <item>
+      <title>R for Computing</title>
+      <link>https://intro.syzygy.ca/r-for-computing/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/r-for-computing/</guid>
+      <description>R for Computing Some notes on how to use R.
+(Note that the binder button will not run R code for you.)</description>
+    </item>
+    
+    <item>
+      <title>Unix Tricks</title>
+      <link>https://intro.syzygy.ca/unix-tricks/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/unix-tricks/</guid>
+      <description>Unix tricks In the background, Jupyter Hub runs on Unix, and you can access the Unix bash shell to do all your Unix magic from the command line. Just open a new &amp;ldquo;terminal&amp;rdquo; from the front page of your Jupyter server.
+However, I am not a big Unix fan. I prefer to point and click. So here are a few tricks I&amp;rsquo;ve learned to avoid the terminal commands.
+Unix and Magic in a Notebook.</description>
+    </item>
+    
+    <item>
+      <title>Using Git and GitHub</title>
+      <link>https://intro.syzygy.ca/using-git-and-github/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://intro.syzygy.ca/using-git-and-github/</guid>
+      <description>Using Git and Github Git is a Unix command used for sharing code and other computer files with colleagues.
+Github is a popular place on the web to store your code and other computer files, either privately or for the whole world to see. These collections are organized into units (like folders) called repositories.
+Git is also used for version control when working on a large computer project, where you need to keep track of changes in many different files, possibly written by many different people.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://intro.syzygy.ca/troubleshooting/</link>
+      <pubDate>Thu, 19 Oct 2017 17:56:50 +0700</pubDate>
+      
+      <guid>https://intro.syzygy.ca/troubleshooting/</guid>
+      <description>From time to time you might experience problems with the syzygy.ca service. The tips below may help you get things going again without further intervention, but if not, please contact jupyter@pims.math.ca Restarting your Server Restarting your server can clear up a number of issues. If you see any of the following messages, please try restarting your server.
+ 500 internal server error, permissi9n failure checking authorization, I may need a new token  To restart your server, click on the Control panel button at the top right of the notebook.</description>
+    </item>
+    
+    <item>
+      <title>Teaching with Syzygy</title>
+      <link>https://intro.syzygy.ca/teaching/</link>
+      <pubDate>Mon, 22 Jan 2018 15:10:23 +0700</pubDate>
+      
+      <guid>https://intro.syzygy.ca/teaching/</guid>
+      <description>JupyterHub can be a great resource for teaching and we we encourage people to use syzygy to help teach their classes, but you should keep the following things in mind:
+ syzygy.ca hosts are shared services. Asking a large group of students to do the same task simultaneously may exhaust the available resources and make your experience very slow. When machines are under extreme resource pressure, they may decide to shutdown processes that they don&amp;rsquo;t have any hope of servicing.</description>
+    </item>
+    
+    <item>
+      <title>Acknowledgements</title>
+      <link>https://intro.syzygy.ca/acknowledgements/</link>
+      <pubDate>Thu, 05 Jan 2017 15:18:00 -0800</pubDate>
+      
+      <guid>https://intro.syzygy.ca/acknowledgements/</guid>
+      <description>This eBook was written by Michael Lamoureux. The site was built by James Colliander with Hugo using the Material theme.
+The Syzygy service is brought to you by The Pacific Institute for the Mathematical Sciences in collaboration with and on infrastructure from Compute Canada and Cybera.
+  
+-- </description>
     </item>
     
   </channel>

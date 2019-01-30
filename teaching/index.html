@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Introduction to Syzygy</title>
+    <title>Teaching with Syzygy - Introduction to Syzygy</title>
     <meta name="generator" content="Hugo 0.53" />
 
     
     <meta name="description" content="An introduction syzygy.ca service.">
     
-    <link rel="canonical" href="https://intro.syzygy.ca/">
+    <link rel="canonical" href="https://intro.syzygy.ca/teaching/">
     
     <meta name="author" content="Michael Lamoureux">
     
 
-    <meta property="og:url" content="https://intro.syzygy.ca/">
+    <meta property="og:url" content="https://intro.syzygy.ca/teaching/">
     <meta property="og:title" content="Introduction to Syzygy">
     
     <meta name="apple-mobile-web-app-title" content="Introduction to Syzygy">
@@ -69,8 +69,6 @@
     <script src="https://intro.syzygy.ca/javascripts/modernizr.js"></script>
 
     
-    <link href="https://intro.syzygy.ca/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to Syzygy" />
-    
 
   </head>
   <body class="palette-primary-indigo palette-accent-orange">
@@ -99,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Introduction to Syzygy
+        Teaching with Syzygy
       </div>
     </div>
 
@@ -183,14 +181,11 @@
 
 
 
-<a class="current" title="Front" href="/">
+<a  title="Front" href="/">
 	
 	Front
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -330,11 +325,14 @@
 
 
 
-<a  title="Teaching with Syzygy" href="/teaching/">
+<a class="current" title="Teaching with Syzygy" href="/teaching/">
 	
 	Teaching with Syzygy
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -419,29 +417,138 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>Introduction to Syzygy </h1>
+			<h1>Teaching with Syzygy </h1>
 
-				<p><strong>syzygy.ca</strong> is a project of the <a href="https://www.pims.math.ca">Pacific Institute for the Mathematical
-Sciences</a>, <a href="https://computecanada.ca">Compute Canada</a>
-and <a href="https://cybera.ca">Cybera</a> to bring Jupyter notebooks to researchers,
-educators and innovators across Canada. This site is a brief introduction on how
-to use these computing tools.</p>
+			
+
+<p>JupyterHub can be a great resource for teaching and we we encourage people to
+use syzygy to help teach their classes, but you should keep the following
+things in mind:</p>
 
 <ul>
-<li><a href="/getting-started/">Get started</a></li>
+<li><p>syzygy.ca hosts are <em>shared services</em>. Asking a large group of students to
+do the same task simultaneously may exhaust the available resources and make
+your experience very slow. When machines are under extreme resource
+pressure, they may decide to shutdown processes that they don&rsquo;t have any
+hope of servicing. Try to plan ahead by splitting up and spreading out
+tasks.</p></li>
+
+<li><p>We have a very small support team. We try hard to make sure our services are
+always available, but we still have planned and unplanned outages. Normally
+we will try to resume the service as soon as possible, but this depends on
+lots of factors, and we can&rsquo;t always do it the same day.</p></li>
 </ul>
 
-<p><img src="/img/syzygy.jpg" alt="Syzygy Astronomy" />
-(Image credit: <a href="https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg">European Southern
-Observatory</a>)</p>
+<p>For these reasons we recommend against using syzygy for e.g. timed exams and we
+urge you to be careful when planning submission dates for homework etc.</p>
 
-<p>Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
-alignment of three or more celestial objects. In this book, it represents the
-alignment of text, math, and code in a convenient tool called a Jupyter
-notebook.</p>
+<h2 id="tools">Tools</h2>
 
-			
+<h3 id="nbgitpuller">NBGitPuller</h3>
+
+<p><a href="https://github.com/data-8/nbgitpuller">NBGitPuller</a> is a very useful server
+extension which uses specially constructed URLs to allow students to be guided
+through the process of cloning out git repositories. As an example, an
+instructor might maintain a collection of notebooks for their class, which they
+will update and extend through the term. By giving a specially constructed URL
+to their students, each student will automatically be given their own copy of
+the files at the start of term and can keep it in sync (without losing their
+changes) as the term progresses.</p>
+
+<p>We are in the process of rolling out this extension and making it available by
+default on all of our hubs so it may already be installed and activated on your
+syzygy.ca instance, or it will be soon. To use it, you need to construct URLs
+which specify the syzygy server you want to use and the repository you want to
+interact with. The URL will look something like</p>
+
+<pre><code class="language-http">https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master
+</code></pre>
+
+<p>Where,</p>
+
+<ul>
+<li><strong><code>repo=https://github.com/pimsubc/public-notebooks</code></strong> is required and
+specifies the URL of the git repository you want to clone.</li>
+<li><strong><code>branch=master</code></strong> is an optional git branch name (default &ldquo;master&rdquo;)</li>
+<li><strong><code>subPath=path/to/file.ipynb</code></strong> is an optional path within the repository to
+restrict the clone to a specific file or directory of interest.</li>
+</ul>
+
+<p>The functionality is implemented as a notebook extension so doesn&rsquo;t depend on
+any specific kernel. It will happily clone out <em>any</em> repository, so you can use
+it with R, Python or any other kernel installed on your syzygy instance.</p>
+
+<h3 id="nbgitpuller-service-demonstration">nbgitpuller service demonstration</h3>
+
+<p>The following link demonstrates the nbgitpuller service on pims.syzygy.ca by
+cloning out a <a href="https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb">simple python3 example notebook</a>.
+To try the service out, simply click on the following link:</p>
+
+<ul>
+<li><a href="https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a></li>
+</ul>
+
+<p>Clicking on the link should trigger the following actions</p>
+
+<ol>
+<li>Take you to <a href="https://pims.syzygy.ca">pims.syzygy.ca</a></li>
+<li>Authenticate you via google (if you aren&rsquo;t already)</li>
+<li>Start your server (if it isn&rsquo;t already started)</li>
+<li>Clone out a copy of the notebook to
+ <code>public-notebooks/nbpuller-example1.ipynb</code></li>
+<li>Open the notebook in your browser.</li>
+</ol>
+
+<p>The full URL used in the link is</p>
+
+<pre><code class="language-html">https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&amp;branch=master&amp;subPath=nbpuller-example1.ipynb
+</code></pre>
+
+<p>Splitting this apart, we can see the pattern described above:</p>
+
+<ul>
+<li><strong><code>https://pims.syzygy.ca/jupyter/user-redirect/git-pull</code></strong> refers to the
+syzygy instance (pims.syzygy.ca).</li>
+<li><strong><code>repo=https://github.com/pimsmath/repo=public-notebook</code></strong> tells nbpuller which
+repository to use.</li>
+<li><strong><code>branch=master</code></strong> specifies the master branch within the repository.</li>
+<li><strong><code>subPath=nbpuller-example1.ipynb</code></strong> tells nbpuller to clone just that one
+file.</li>
+</ul>
+
+<h3 id="how-nbgitpuller-works">How NBGitPuller Works</h3>
+
+<p>As its name implies, NBGitPuller works by constructing and executing git
+commands. <a href="https://git-scm.com">Git</a> is a distributed version control system
+which lets you keep track of changes and merge them with other people&rsquo;s.  The
+initial click on an NBGitPuller link will take the user to the relevant
+JupyterHub, log them in (if necessary) then try to grab a clone of the
+repository. If you&rsquo;re not familiar with git, this is essentially a copy of the
+remote files in the repository with the advantage that both the user and the
+repository owner can continue to modify their own copies of the files
+then ultimately merge them together (inside the user&rsquo;s clone). To do all of this
+NBGitPuller implements a subset of the git commands so that subsequent clicks on
+a link by the user will try to merge changes according to this plan:</p>
+
+<ul>
+<li>If content has changed in both places, prefer local (user) changes over remote
+changes.</li>
+<li>If a file was deleted locally but present in the remote, remote file is
+restored to local repository. This allows users to get a &lsquo;fresh copy&rsquo; of a file
+by just deleting the file locally &amp; clicking the link again.</li>
+<li>If a file exists locally but is untracked by git (maybe someone uploaded it
+manually), then rename the file, and pull in remote copy.</li>
+</ul>
+
+<p>Since git is doing all of the heavy lifting here it is also possible to use git
+directly to do more advanced tasks (e.g. different merging strategies) with the
+caveat that mixing ordinary git commands and NBGitPuller is not a good idea.
+Once you start using git &ldquo;manually&rdquo; for that repository you should avoid using
+the NBGitPuller links as the merging patterns will almost certainly be
+different. As the <a href="https://github.com/data-8/nbgitpuller">NBGitPuller
+documentation</a> says &ldquo;[this] is going to
+cause surprises on an ongoing basis, and should be avoided.&rdquo;</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -452,23 +559,37 @@ notebook.</p>
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://intro.syzygy.ca/troubleshooting/" title="Troubleshooting">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Troubleshooting
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://intro.syzygy.ca/getting-started/" title="Getting Started">
+  
+      <a href="https://intro.syzygy.ca/acknowledgements/" title="Acknowledgements">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting Started
+              Acknowledgements
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -476,8 +597,11 @@ notebook.</p>
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 
