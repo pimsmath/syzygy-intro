@@ -50,8 +50,7 @@ Where,
   * **`repo=https://github.com/pimsubc/public-notebooks`** is required and
     specifies the URL of the git repository you want to clone.
   * **`branch=master`** is an optional git branch name (default "master")
-  * **`subPath=path/to/file.ipynb`** is an optional path within the repository to
-    restrict the clone to a specific file or directory of interest.
+  * **`subPath=path/to/file.ipynb`** is an optional argument that specifies the path of the directory / notebook inside the repo to launch after cloning. By default, the base directory of the linked Git repository is opened. It's recommended that you speciy a subPath to a specific file if you want that file to open after users click the link.
 
 The functionality is implemented as a notebook extension so doesn't depend on
 any specific kernel. It will happily clone out *any* repository, so you can use
@@ -86,8 +85,7 @@ Splitting this apart, we can see the pattern described above:
   * **`repo=https://github.com/pimsmath/repo=public-notebook`** tells nbpuller which
     repository to use.
   * **`branch=master`** specifies the master branch within the repository.
-  * **`subPath=nbpuller-example1.ipynb`** tells nbpuller to clone just that one
-    file.
+  * **`subPath=nbpuller-example1.ipynb`** tells nbpuller to open that file (`nbpuller-example1.ipynb`) automatically after cloning.
 
 
 ### How NBGitPuller Works
