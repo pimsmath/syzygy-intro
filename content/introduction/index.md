@@ -17,7 +17,7 @@ Syzygy is pronounced like the start of "Sizzle" -- sizz eh gee. It means the [al
 This eBook is a brief introduction on how to use these computing tools.
 
 Code samples for the book can be launched on Binder. Click here:  
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/mlamoureux/usingsyzygy)
+[![Binder](https://mybinder.org/badge.svg)](http://mybinder.org:/repo/mlamoureux/usingsyzygy)
 
 If you have a Jupyter server \(such as XXX.syzygy.ca\) you may clone a github repository of all the code in this book using this command from your Unix/bash shell:
 
@@ -25,4 +25,4 @@ If you have a Jupyter server \(such as XXX.syzygy.ca\) you may clone a github re
 git clone https://github.com/pimsmath/syzygy-intro
 ```
 
-![Pims logo](http://media.pims.math.ca/logos/webhorizfulllarge.png)
+![Pims logo](https://media.pims.math.ca/logos/webhorizfulllarge.png)
