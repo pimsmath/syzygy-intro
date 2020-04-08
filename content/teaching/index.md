@@ -20,41 +20,58 @@ things in mind:
     we will try to resume the service as soon as possible, but this depends on
     lots of factors, and we can't always do it the same day.
 
-For these reasons we recommend against using syzygy for e.g. timed exams and we
+For these reasons we recommend against using syzygy for e.g. Timed exams and we
 urge you to be careful when planning submission dates for homework etc.
 
 ## Tools
 
 ### NBGitPuller
 [NBGitPuller](https://github.com/data-8/nbgitpuller) is a very useful server
-extension which uses specially constructed URLs to allow students to be guided
-through the process of cloning out git repositories. As an example, an
-instructor might maintain a collection of notebooks for their class, which they
-will update and extend through the term. By giving a specially constructed URL
-to their students, each student will automatically be given their own copy of
-the files at the start of term and can keep it in sync (without losing their
-changes) as the term progresses.
+extension which uses specially constructed URLs to guide students through the
+process of cloning out git repositories. As an example, an instructor might
+maintain a collection of notebooks, which they will update and extend throughout
+the term. By giving a specially constructed URL to their students, each student
+will automatically be given their own copy of the files at the start of term and
+can keep it in sync (without losing their changes) as the term progresses.
 
 
-We are in the process of rolling out this extension and making it available by
-default on all of our hubs so it may already be installed and activated on your
-syzygy.ca instance, or it will be soon. To use it, you need to construct URLs
-which specify the syzygy server you want to use and the repository you want to
-interact with. The URL will look something like 
-```http
-https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master
+To use it, you need to construct long and complicated URLs, but fortunately
+there is a handy [nbgitpull link
+generator](https://jupyterhub.github.io/nbgitpuller/link) to help you. The
+generator will ask for your JupyterHub server (use
+`https://uxxx.syzygy.ca/jupyter/` where `uxxx is the name of your university), a
+github repository, and (optionally) file you would like to open once the
+repository has been cloned. After you fill all that information in, the
+generator will produce a long complicated link which might look like...
+
+```
+https://uxxx.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpimsmath%2Fpublic-notebooks&urlpath=tree%2Fpublic-notebooks%2Fpath%2Fto%2Ffile.ipynb&branch=master
 ```
 
-Where,
+When the student visits the link for the first time the repository will be
+cloned out into their home directory. When they visit the same link later in the
+term git will "pull" in any changes from the repository and try to merge them
+safely with the student's existing work (see below for more details of how the
+merge works).
 
-  * **`repo=https://github.com/pimsubc/public-notebooks`** is required and
+
+The strange characters in query string are HTML encoded versions of the familiar
+ascii characters. For instance, `http://` becomes `http%3A%2F%2F`. It is
+important that these values are properly encoded or they might be ignored by the
+hub.  Some URL shortening services (e.g. bit.ly) will strip the encoding and may
+break the links, so where possible please distribute the full (encoded) link
+produced by the generator or use a shortening service which doesn't strip the
+encoding (e.g. [tinyurl](https://tinyurl.com/)). The parameters in the query
+string are...
+
+  * **`repo=https:%3A%2F%2Fgithub.com%2Fpimsubc%2Fpublic-notebooks`** is required and
     specifies the URL of the git repository you want to clone.
   * **`branch=master`** is an optional git branch name (default "master")
-  * **`subPath=path/to/file.ipynb`** is an optional argument that specifies the path of the directory / notebook inside the repo to launch after cloning. By default, the base directory of the linked Git repository is opened. It's recommended that you speciy a subPath to a specific file if you want that file to open after users click the link.
+  * **`urlpath=tree%2Fpublic-notebooks%2Fpath%2Fto%2Ffile.ipynb`** is an optional argument that specifies the path of the directory / notebook inside the repo to launch after cloning. By default, the base directory of the linked Git repository is opened. It's recommended that you specify a path to a specific file if you want that file to open after users click the link.
 
-The functionality is implemented as a notebook extension so doesn't depend on
-any specific kernel. It will happily clone out *any* repository, so you can use
-it with R, Python or any other kernel installed on your syzygy instance.
+NBGitPuller is implemented as a notebook extension so doesn't depend on any
+specific kernel. It will happily clone out *any* repository, so you can use it
+with R, Python or any other kernel installed on your syzygy instance.
 
 ### nbgitpuller service demonstration
 
@@ -62,7 +79,7 @@ The following link demonstrates the nbgitpuller service on pims.syzygy.ca by
 cloning out a [simple python3 example notebook](https://github.com/pimsmath/public-notebooks/blob/master/nbpuller-example1.ipynb).
 To try the service out, simply click on the following link:
 
-  * <a href="https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb" target="_blank">nbgitpuller example</a>
+  * [nbgitpuller example](https://pims.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpimsmath%2Fpublic-notebooks&urlpath=tree%2Fpublic-notebooks%2Fnbpuller-example1.ipynb&branch=master) (You may want to open this in a new tab...)
 
 Clicking on the link should trigger the following actions
 
@@ -74,18 +91,18 @@ Clicking on the link should trigger the following actions
   5. Open the notebook in your browser.
 
 The full URL used in the link is
-```html
-https://pims.syzygy.ca/jupyter/user-redirect/git-pull?repo=https://github.com/pimsmath/public-notebooks&branch=master&subPath=nbpuller-example1.ipynb
+```
+https://pims.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpimsmath%2Fpublic-notebooks&urlpath=tree%2Fpublic-notebooks%2Fnbpuller-example1.ipynb&branch=master
 ```
 
 Splitting this apart, we can see the pattern described above:
 
-  * **`https://pims.syzygy.ca/jupyter/user-redirect/git-pull`** refers to the
+  * **`https://pims.syzygy.ca/jupyter/hub/user-redirect/git-pull`** refers to the
     syzygy instance (pims.syzygy.ca).
-  * **`repo=https://github.com/pimsmath/repo=public-notebook`** tells nbpuller which
-    repository to use.
+  * **`https%3A%2F%2Fgithub.com%2Fpimsmath%2Fpublic-notebooks`** tells nbpuller which
+    repository to use (`https://github.com/pimsmath/public-notebooks`).
   * **`branch=master`** specifies the master branch within the repository.
-  * **`subPath=nbpuller-example1.ipynb`** tells nbpuller to open that file (`nbpuller-example1.ipynb`) automatically after cloning.
+  * **`urlpath=tree%2Fpublic-notebooks%2Fnbpuller-example1.ipynb`** tells nbpuller to open that file (`nbpuller-example1.ipynb`) automatically after cloning.
 
 
 ### How NBGitPuller Works

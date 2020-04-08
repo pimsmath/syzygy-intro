@@ -18,16 +18,31 @@ Click on the subsections to read further.
 Log into the syzygy service by using your home university credentials or Google
 credentials. Currently, the following sites are up and running:
 
+* [https://bcit.syzygy.ca](https://bcit.syzygy.ca) British Columbia Institute of
+  Technology
+* [https://brocku.syzygy.ca](https://brocku.syzygy.ca) Brock University
+* [https://mcgill.syzygy.ca](https://mcgill.syzygy.ca) McGill University
 * [https://mcmaster.syzygy.ca](https://mcmaster.syzygy.ca) McMaster University
+* [https://queensu.syzygy.ca](https://queensu.syzygy.ca) Queens University
 * [https://sfu.syzygy.ca](https://sfu.syzygy.ca) Simon Fraser University
+* [https://ualberta.syzygy.ca](https://ualberta.syzygy.ca) University of Alberta
 * [https://ubc.syzygy.ca](https://ubc.syzygy.ca) University of British Columbia
 * [https://ucalgary.syzygy.ca](https://ucalgary.syzygy.ca) University of
   Calgary
 * [https://uleth.syzygy.ca](https://uleth.syzygy.ca) University of Lethbridge
+* [https://umanitoba.syzygy.ca](https://umanitoba.syzygy.ca) University of
+  Manitoba
+* [https://unb.syzygy.ca](https://unb.syzygy.ca) University of New Brunswick
+* [https://unbc.syzygy.ca](https://unbc.syzygy.ca) University of Northern
+  British Columbia
+* [https://uottawa.syzygy.ca](https://uottawa.syzygy.ca) University of Ottawa
+* [https://uregina.syzygy.ca](https://uregina.syzygy.ca) University of Regina
 * [https://usask.syzygy.ca](https://usask.syzygy.ca) University of Saskatchewan
 * [https://utoronto.syzygy.ca](https://utoronto.syzygy.ca) University of Toronto
 * [https://uvic.syzygy.ca](https://uvic.syzygy.ca) University of Victoria
+* [https://uw.syzygy.ca](https://uw.syzygy.ca) University of Washington
 * [https://uwaterloo.syzygy.ca](https://uwaterloo.syzygy.ca) University of Waterloo
+* [https://yorku.syzygy.ca](https://yorku.syzygy.ca) York University
 * [https://cybera.syzygy.ca](https://cybera.syzygy.ca) Cybera (via Google Authentication)
 * [https://pims.syzygy.ca](https://pims.syzygy.ca) PIMS (via Google Authentication)
 
