@@ -19,7 +19,7 @@ googleAnalytics = ""
     provider = "GitHub"
     repo_url = "https://github.com/pimsmath/syzygy-intro"
 
-    version = "0.2.0"
+    version = "0.3.0"
     logo = ""
     favicon = "/img/logos/favicon.ico"
 
