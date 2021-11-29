@@ -70,12 +70,6 @@ googleAnalytics = ""
 
 
 [[menu.main]]
-    name   = "Julia for Computing"
-    url    = "julia-for-computing/"
-    weight = 50
-
-
-[[menu.main]]
     name   = "R for Computing"
     url    = "r-for-computing/"
     weight = 60

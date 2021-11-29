@@ -34,7 +34,6 @@ here are some common ones
   * `~/.jupyter` - Jupyter Notebook configuration file
   * `~/.local` - Locally installed python packages (`pip install --user
     XXXX`)
-  * `~/.julia` - Julia packages and configuration files.
   * `~/R` - R packages and configuration files.
 
 {{< warning title="Be Careful" >}}
