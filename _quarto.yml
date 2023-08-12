@@ -10,7 +10,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
     right:
       - href: contact.qmd
         text: Contact
