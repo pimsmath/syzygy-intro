@@ -1,0 +1,44 @@
+{
+  "index.qmd": {
+    "index.html": "d8f61646"
+  },
+  "about.qmd": {
+    "about.html": "6f8176e8"
+  },
+  "introduction/index.qmd": {
+    "index.html": "49337018"
+  },
+  "python/index.qmd": {
+    "index.html": "0ba67819"
+  },
+  "introduction/SUMMARY.md": {
+    "SUMMARY.html": "3c0a104d"
+  },
+  "r/index.qmd": {
+    "index.html": "84e526f6"
+  },
+  "troubleshooting/index.qmd": {
+    "index.html": "b3106537"
+  },
+  "unix/index.qmd": {
+    "index.html": "719aee3a"
+  },
+  "teaching/index.qmd": {
+    "index.html": "e1770dd6"
+  },
+  "git/index.qmd": {
+    "index.html": "d592fd40"
+  },
+  "basic-elements/index.qmd": {
+    "index.html": "28bf1b72"
+  },
+  "first-steps/index.qmd": {
+    "index.html": "49323654"
+  },
+  "acknowledgements/index.qmd": {
+    "index.html": "fc139f88"
+  },
+  "contact.qmd": {
+    "contact.html": "0ae73d5b"
+  }
+}

@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "Introduction to Syzygy"
+  site-url: https://intro.syzygy.ca/
+  repo-url: https://github.com/pimsmath/syzygy-intro
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    right:
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    center:
+      - text: &copy; 2023 Michael Lamoureux
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Getting Started"
+        contents:
+          - first-steps/index.qmd
+          - basic-elements/index.qmd
+      - section: "Language Kernels"
+        contents:
+          - python/index.qmd
+          - r/index.qmd
+      - section: "Tips"
+        contents:
+          - unix/index.qmd
+          - git/index.qmd
+          - teaching/index.qmd
+          - troubleshooting/index.qmd
+      - acknowledgements/index.qmd
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    html-math-method: katex  
+    toc: true
+
+
+

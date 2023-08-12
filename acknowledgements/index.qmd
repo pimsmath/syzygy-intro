@@ -1,0 +1,15 @@
+---
+title: "Acknowledgements"
+weight: 401
+---
+
+This eBook was written by Michael Lamoureux. The site was built by James Colliander with [Hugo](https://www.gohugo.io/) using the [Material theme](http://github.com/digitalcraftsman/hugo-material-docs), then converted to quarto by [PIMS staff](https://pims.math.ca).
+
+The Syzygy service is brought to you by The [Pacific Institute for the Mathematical Sciences](https://www.pims.math.ca) in collaboration with and on infrastructure from the [Digital Research Alliance](https://alliancecan.ca/en) (formerly Compute Canada) and [Cybera](https://cybera.ca).
+
+<a href="http://pims.math.ca"><img src="/img/logos/pims-horiz.png" title="PIMS" width="500" height="" /></a>
+<br/><p>&nbsp;</p>
+<a href="http://alliancecan.ca/"><img src="/img/logos/dra.svg" title="Compute Canada" width="500" height="" /></a>
+<br/><p>&nbsp;</p>
+<a href="http://cybera.ca/"><img src="/img/logos/cybera-png-main.png" title="Cybera" width="500" height="" /></a>
+
