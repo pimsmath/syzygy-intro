@@ -5,7 +5,7 @@ everything your code needs then use quarto itself to to push the finished
 content up to netlify.
 
 ```bash
-conda activat quarto
+conda activate quarto
 quarto publish netlify
 ```
 
