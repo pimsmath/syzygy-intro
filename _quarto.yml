@@ -15,7 +15,7 @@ website:
         text: Contact
   page-footer:
     center:
-      - text: &copy; 2023 Michael Lamoureux
+      - text: © 2023 Michael Lamoureux. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a><br/><a href="https://creativecommons.org/licenses/by/4.0/"><img src="./img/cc-by-4.0.svg"/></a>
 
   sidebar:
     style: "docked"
