@@ -4,7 +4,7 @@ title: "Introduction"
 
 # Using Syzygy
 
-The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science \([https://www.pims.math.ca](https://www.pims.math.ca)\), Compute Canada \([https://www.computecanada.ca](https://www.computecanada.ca)\) and Cybera \([http://www.cybera.ca/](http://www.cybera.ca/)\).
+The syzygy service is a set of computational tools made available through a partnership of the Pacific Institute for the Mathematical Science \([https://www.pims.math.ca](https://www.pims.math.ca)\), [Digital Research Alliance](https://alliancecan.ca/en) and Cybera \([http://www.cybera.ca/](http://www.cybera.ca/)\).
 
 Syzygy is pronounced like the start of "Sizzle" -- sizz eh gee. It means the [alignment of three or more celestial objects](http://www.nytimes.com/1981/03/31/science/science-watch-a-really-big-syzygy.html). In this book, it represents the alignment of text, math, and code in a convenient tool called a Jupyter notebook.
 

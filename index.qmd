@@ -3,16 +3,14 @@ title: Introduction to Syzygy
 type: index
 ---
 **syzygy.ca** is a project of the [Pacific Institute for the Mathematical
-Sciences](https://www.pims.math.ca), [Compute Canada](https://computecanada.ca)
+Sciences](https://www.pims.math.ca), [Digital Research Alliance](https://alliancecan.ca/en) 
 and [Cybera](https://cybera.ca) to bring Jupyter notebooks to researchers,
 educators and innovators across Canada. This site is a brief introduction on how
 to use these computing tools.
 
-  * [Get started](/getting-started/)
+  * [Get started](/first-steps/)
 
-![Syzygy Astronomy](/img/syzygy.jpg)
-(Image credit: [European Southern
-Observatory](https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg))
+![Image credit: [European Southern Observatory](https://commons.wikimedia.org/wiki/File:Three_Planets_Dance_Over_La_Silla.jpg)](/img/syzygy.jpg)
 
 Syzygy is pronounced like the start of “Sizzle” – sizz eh gee. It means the
 alignment of three or more celestial objects. In this book, it represents the
